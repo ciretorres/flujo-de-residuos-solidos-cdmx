@@ -13,12 +13,12 @@ Flujo de residuos sólidos urbanos\n El flujo presenta la gestión que tienen lo
 * CEDA: Central de Abastos
 * RME: Residuos de Manejo Especial
 
-Referencias:	
+Referencias:
 [Inventario de Residuos Sólidos, Ciudad de México 2015. SEDEMA](http://www.cms.sedema.cdmx.gob.mx/storage/app/media/IRS-2015-14-dic-2016.compressed.pdf)	
 [Guía de estilo básica para portales web de la Administración Pública de la Ciudad de México](http://www.cdmx.gob.mx/storage/app/media/Guia_Estilos_Sitios_Web_CDMX_v.1.3.pdf)	
 
 
-<img src="images/MapaCharlesMinard.png">
+<img src="data/MapaCharlesMinard.png">
 (MapaCharlesMinard.png)
 (Prototipo_I.png)
 (Rediseño_I.jpg)	
@@ -57,5 +57,5 @@ Numbered list:
   3. pears
 
 A [link](http://example.com).
-
+![prototipoi](https://user-images.githubusercontent.com/18044759/34275545-696eb8a0-e663-11e7-81c7-175ff66325d3.png)
 ![Image](https://upload.wikimedia.org/wikipedia/commons/f/f0/Image_icon.png)
