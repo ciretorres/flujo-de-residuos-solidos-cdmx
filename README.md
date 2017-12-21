@@ -19,12 +19,11 @@ Referencias:
 
 
 <img src="data/MapaCharlesMinard.png">
-(MapaCharlesMinard.png)
-(Prototipo_I.png)
-(Rediseño_I.jpg)	
-(Prototipo_II.png)
-(Rediseño_II.jpg)
-(FlujoMinardFinal.png)
+<img src="data/PrototipoI.png.png">
+<img src="data/RedisenoI.jpg">
+<img src="data/PrototipoII.png">
+<img src="data/Rediseño_II.jpg">
+<img src="data/FlujoMinardFinal.png">
 
 Paragraphs are separated
 by a blank line.
