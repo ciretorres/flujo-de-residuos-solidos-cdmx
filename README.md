@@ -2,15 +2,15 @@
 
 ### Universidad Autónoma Metropolitana
 
-## Flujo de Residuos Sólidos Urbanos
+## Flujo de Residuos Sólidos Urbanos CDMX
 <img src="data/FlujoDeResiduosSolidosUrbanos.png">
 
-La visualiación explora la estructura del diagrama de Sankey con el propósito de presentar la gestión que tienen los desechos sólidos de cada delegación en la ciudad de México (CDMX), con base a la información recabada del Inventario de Residuos Sólidos (2015) que reporta la SEDEMA cada año. 
+La visualización explora la estructura del diagrama de Sankey con el propósito de presentar la gestión que tienen los desechos sólidos de cada delegación en la ciudad de México (CDMX) con base en la información recabada del Inventario de Residuos Sólidos (2015) que reporta la SEDEMA cada año. 
 
 ### Riall Sankey Diagram
 <img src="data/DiagramRiallSankey.png">
 
-Riall Sankey (1968) representó en diagrama la eficiencia de la energía en las máquinas de vapor. Sankey Diagrams are fow diagrams in which the widths of bands are scaled to the corresponding quantities of flow.
+Riall Sankey (1968) representa con el diagrama la eficiencia de la energía en las máquinas de vapor. Sankey Diagrams are fow diagrams in which the widths of bands are scaled to the corresponding quantities of flow.
 
 "Like Galileos telescope (1564-1642), Hooke's microscope (1635-1703), or Roentgen's x-rays (1845-1923), new information analysis tools are creating visualizations of never before seen structures. Jupiter's moon, plant cells, and the skeletons of living creatures were all revealed by previous technologies. Today, new network science concepts and analysis tools are making isolated groups, influencial participants, and community structures visible in ways never before posible. Ben Shneiderman"
 
@@ -41,16 +41,22 @@ Cada milimetro representa 10,000 personas. La marcha comenzó con 420,000 en la 
 
 ### Prototipo I
 <img src="data/PrototipoI.png">
+
 ### Rediseño I
 <img src="data/RedisenoI.jpg">
+
 ### Prototipo II
 <img src="data/PrototipoII.jpg">
+
 ### Rediseño II
 <img src="data/RedisenoII.jpg">
+
 ### Prototipo III
 <img src="data/PrototipoIII.png">
+
 ### Rediseño III
 <img src="data/RedisenoIII.jpg">
+
 ### Final
 <img src="data/FlujoMinardFinal.png">
 
