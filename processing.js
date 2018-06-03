@@ -15,7 +15,7 @@ function side_bar(){
     text("El flujo presenta la gestión que\n"
     +"tienen los desechos sólidos de\n"
     +"cada delegación de la ciudad\n"
-    +"de México, con base a la\n"
+    +"de México con base en la\n"
     +"información recabada en el\n"
     +"Inventario de Residuos Sólidos\n"
     +"del reporte de la SEDEMA (2015).\n\n"
