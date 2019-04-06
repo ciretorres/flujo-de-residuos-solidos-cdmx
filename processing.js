@@ -1,67 +1,66 @@
-function setup(){
-    if(displayWidth<1025){
-        displayWidth = displayWidth+300;
-    } else {}
-    createCanvas(displayWidth, 800);
-    background(204); // gray
-    textFont("Roboto", 28);
-    smooth();
-}
-function side_bar(){
-    rectMode(CORNER); fill(255); noStroke();
-    rect(1280*2-140,0,width,800*3);
-    rect(0,1500,1280*3,500);
-    textAlign(RIGHT); fill(0); 
-    text("El flujo presenta la gestión que\n"
-    +"tienen los desechos sólidos de\n"
-    +"cada delegación de la ciudad\n"
-    +"de México con base en la\n"
-    +"información recabada en el\n"
-    +"Inventario de Residuos Sólidos\n"
-    +"del reporte de la SEDEMA (2015).\n\n"
-    +"La forma del gráfico se inspiró\n"
-    +"a partir del sistema de flujo o mapa\n"
-    +"que propone Charles Minard en\n"
-    +"1869 para visualizar el movimiento,\n"
-    +"las pérdidas humanas y la\n"
-    +"temperatura ambiental durante la\n"
-    +"campaña de Napoleón hacia\n"
-    +"Rusia en 1812.\n\n"
-    +"La dirección del flujo revela que\n"
-    +"los residuos sólidos convergen\n"
-    +"en diferentes etapas del proceso\n"
-    +"antes de ser o no reciclados.\n\n"
-    +"En el sistema se representan los\n"
-    +"‘huecos de información’ como\n"
-    +"rutas o flujos en color negro\n"
-    +"y sin grosor para diferenciar las\n"
-    +"grandes relaciones que muestran\n"
-    +"las plantas de transferencia hacia\n"
-    +"los rellenos sanitarios de los que\n"
-    +"dispone la ciudad.\n\n"
-    +"El proyecto se encuentra en\n"
-    +"mantenimiento para procesar los\n"
-    +"datos que existen sobre la gestión\n"
-    +"de residuos sólidos urbanos.\n\n"    
-    +"Actualización: 1/06/2018", 1280*2+450, 100);
-    textAlign(LEFT);
-    text("Si te interesa colaborar mándame "
-    +"un whatsapp al 5547904238 o "
-    +"me puedes escribir un correo a "
-    +"erictorres.velasco@gmail.com "
-    +"o también puedes checar el código\n"
-    +"haciendo clic en el encabezado "
-    +"para comentarlo y comenzar :)\n\n"
-    +"Toda la información fue extraída de los siguientes enlaces: "
-    +"http://www.cms.sedema.cdmx.gob.mx/storage/app/media/IRS-2015-14-dic-2016.compressed.pdf y\n"
-    +"http://www.cdmx.gob.mx/storage/app/media/Guia_Estilos_Sitios_Web_CDMX_v.1.3.pdf", 100, 1600);
-    
-}
+// function setup(){
+//     if(displayWidth<1025){
+//         displayWidth = displayWidth+300;
+//     } else {}
+//     createCanvas(displayWidth, 800);
+//     background(204); // gray
+//     textFont("Roboto", 28);
+//     smooth();
+// }
+// function side_bar(){
+//     rectMode(CORNER); fill(255); noStroke();
+//     rect(1280*2-140,0,width,800*3);
+//     rect(0,1500,1280*3,500);
+//     textAlign(RIGHT); fill(0); 
+//     text("El flujo presenta la gestión que\n"
+//     +"tienen los desechos sólidos de\n"
+//     +"cada delegación de la ciudad\n"
+//     +"de México con base en la\n"
+//     +"información recabada en el\n"
+//     +"Inventario de Residuos Sólidos\n"
+//     +"del reporte de la SEDEMA (2015).\n\n"
+//     +"La forma del gráfico se inspiró\n"
+//     +"a partir del sistema de flujo o mapa\n"
+//     +"que propone Charles Minard en\n"
+//     +"1869 para visualizar el movimiento,\n"
+//     +"las pérdidas humanas y la\n"
+//     +"temperatura ambiental durante la\n"
+//     +"campaña de Napoleón hacia\n"
+//     +"Rusia en 1812.\n\n"
+//     +"La dirección del flujo revela que\n"
+//     +"los residuos sólidos convergen\n"
+//     +"en diferentes etapas del proceso\n"
+//     +"antes de ser o no reciclados.\n\n"
+//     +"En el sistema se representan los\n"
+//     +"‘huecos de información’ como\n"
+//     +"rutas o flujos en color negro\n"
+//     +"y sin grosor para diferenciar las\n"
+//     +"grandes relaciones que muestran\n"
+//     +"las plantas de transferencia hacia\n"
+//     +"los rellenos sanitarios de los que\n"
+//     +"dispone la ciudad.\n\n"
+//     +"El proyecto se encuentra en\n"
+//     +"mantenimiento para procesar los\n"
+//     +"datos que existen sobre la gestión\n"
+//     +"de residuos sólidos urbanos.\n\n"    
+//     +"Actualización: 1/06/2018", 1280*2+450, 100);
+//     textAlign(LEFT);
+//     text("Si te interesa colaborar mándame "
+//     +"un whatsapp al 5547904238 o "
+//     +"me puedes escribir un correo a "
+//     +"erictorres.velasco@gmail.com "
+//     +"o también puedes checar el código\n"
+//     +"haciendo clic en el encabezado "
+//     +"para comentarlo y comenzar :)\n\n"
+//     +"Toda la información fue extraída de los siguientes enlaces: "
+//     +"http://www.cms.sedema.cdmx.gob.mx/storage/app/media/IRS-2015-14-dic-2016.compressed.pdf y\n"
+//     +"http://www.cdmx.gob.mx/storage/app/media/Guia_Estilos_Sitios_Web_CDMX_v.1.3.pdf", 100, 1600);  
+// }
 function draw(){
     background(204); // gray
     strokeWeight(1); stroke(0);
-    scale(0.4);
-
+    //scale(0.4);
+    //---------------------------------------------------------- VALORES PARA INICIALIZAR
     // Delegaciones
     x1_delegaciones = 50, y1_delegaciones = 100, x2_delegaciones = 50, y2_delegaciones = 800*2;
     // line(x1_delegaciones, 0, x2_delegaciones, y2_delegaciones);
@@ -91,9 +90,10 @@ function draw(){
     x1_ceda = 250, y1_ceda = 950, x2_ceda = 250, y2_ceda = 800*2;
     // line(x1_ceda, 0, x2_ceda, y2_ceda);
     
+    //---------------------------------------------------------- DIBUJAR CURVAS DESDE LOS SITIOS DE TRANSFERENCIA
     stroke(0,0,0,140);
-
-    strokeWeight(6); // 01
+    //---------------------------------------------------------- SITIO 01
+    strokeWeight(6);
     draw_curve(x1_transferencias,y1_transferencias,700,y1_transferencias,700,y1_compactadora,x1_compactadora,y1_compactadora); 
     strokeWeight(1); stroke(237,65,151,153);
     draw_curve(x1_transferencias,y1_transferencias+3,700,y1_transferencias+3,700,y1_disposicion,x1_disposicion,y1_disposicion);  
@@ -103,8 +103,8 @@ function draw(){
     draw_curve(x1_transferencias,y1_transferencias+6,700,y1_transferencias+6,700,y1_seleccion,x1_seleccion,y1_seleccion);  
     draw_curve(x1_transferencias,y1_transferencias+7,700,y1_transferencias+7,700,y1_seleccion+210,x1_seleccion,y1_seleccion+210);
     stroke(0,0,0,140); 
-
-    strokeWeight(14); // 02
+    //---------------------------------------------------------- SITIO 02
+    strokeWeight(14);
     draw_curve(x1_transferencias,y1_transferencias+80-50,700,y1_transferencias+80-50,700,y1_composta,x1_composta,y1_composta);  
     strokeWeight(6);
     draw_curve(x1_transferencias,y1_transferencias+90-50,700,y1_transferencias+90-50,700,y1_compactadora+=3,x1_compactadora,y1_compactadora+=3); 
@@ -122,8 +122,8 @@ function draw(){
     strokeWeight(8);
     draw_curve(x1_transferencias,y1_transferencias+202-50,700,y1_transferencias+202-50,700,y1_seleccion+215,x1_seleccion,y1_seleccion+215); 
     stroke(0,0,0,140);
-    
-    strokeWeight(11); // 03
+    //---------------------------------------------------------- SITIO 03
+    strokeWeight(11);
     draw_curve(x1_transferencias,y1_transferencias+225-50,700,y1_transferencias+225-50,700,y1_composta+12,x1_composta,y1_composta+12);  
     strokeWeight(6);
     draw_curve(x1_transferencias,y1_transferencias+233-50,700,y1_transferencias+233-50,700,y1_compactadora+=3,x1_compactadora,y1_compactadora+=3); 
@@ -136,8 +136,8 @@ function draw(){
     strokeWeight(3);
     draw_curve(x1_transferencias,y1_transferencias+266-50,700,y1_transferencias+266-50,700,y1_seleccion+220,x1_seleccion,y1_seleccion+220); 
     stroke(0,0,0,140);
-
-    strokeWeight(29); // 04
+    //---------------------------------------------------------- SITIO 04
+    strokeWeight(29);
     draw_curve(x1_transferencias,y1_transferencias+295-50,700,y1_transferencias+295-50,700,y1_composta+32,x1_composta,y1_composta+32);  
     strokeWeight(6);
     draw_curve(x1_transferencias,y1_transferencias+312-50,700,y1_transferencias+312-50,700,y1_compactadora+=3,x1_compactadora,y1_compactadora+=3); 
@@ -152,8 +152,8 @@ function draw(){
     draw_curve(x1_transferencias,y1_transferencias+353-50,700,y1_transferencias+353-50,700,y1_seleccion+31,x1_seleccion,y1_seleccion+31);  
     draw_curve(x1_transferencias,y1_transferencias+354-50,700,y1_transferencias+354-50,700,y1_seleccion+221,x1_seleccion,y1_seleccion+221); 
     stroke(0,0,0,140);
-
-    strokeWeight(7); // 05
+    //---------------------------------------------------------- SITIO 05
+    strokeWeight(7);
     draw_curve(x1_transferencias,y1_transferencias+370-50,700,y1_transferencias+370-50,700,y1_composta+50,x1_composta,y1_composta+50);  
     strokeWeight(6);
     draw_curve(x1_transferencias,y1_transferencias+376-50,700,y1_transferencias+376-50,700,y1_compactadora+=3,x1_compactadora,y1_compactadora+=3); 
@@ -168,8 +168,8 @@ function draw(){
     strokeWeight(7);
     draw_curve(x1_transferencias,y1_transferencias+406-50,700,y1_transferencias+406-50,700,y1_seleccion+225,x1_seleccion,y1_seleccion+225); 
     stroke(0,0,0,140);
-
-    strokeWeight(2); // 06
+    //---------------------------------------------------------- SITIO 06
+    strokeWeight(2);
     draw_curve(x1_transferencias,y1_transferencias+420-50,700,y1_transferencias+420-50,700,y1_composta+54,x1_composta,y1_composta+54);  
     strokeWeight(6);
     draw_curve(x1_transferencias,y1_transferencias+424-50,700,y1_transferencias+424-50,700,y1_compactadora+=3,x1_compactadora,y1_compactadora+=3); 
@@ -183,8 +183,8 @@ function draw(){
     draw_curve(x1_transferencias,y1_transferencias+431-50,700,y1_transferencias+431-50,700,y1_seleccion+33,x1_seleccion,y1_seleccion+33);  
     draw_curve(x1_transferencias,y1_transferencias+432-50,700,y1_transferencias+432-50,700,y1_seleccion+228,x1_seleccion,y1_seleccion+228);  
     stroke(0,0,0,140);
-
-    strokeWeight(10); // 07
+    //---------------------------------------------------------- SITIO 07
+    strokeWeight(10);
     draw_curve(x1_transferencias,y1_transferencias+450-50,700,y1_transferencias+450-50,700,y1_composta+60,x1_composta,y1_composta+60);  
     strokeWeight(6);
     draw_curve(x1_transferencias,y1_transferencias+458-50,700,y1_transferencias+458-50,700,y1_compactadora+=3,x1_compactadora,y1_compactadora+=3); 
@@ -201,8 +201,8 @@ function draw(){
     strokeWeight(3);
     draw_curve(x1_transferencias,y1_transferencias+503-50,700,y1_transferencias+503-50,700,y1_seleccion+230,x1_seleccion,y1_seleccion+230); 
     stroke(0,0,0,140);
-    
-    strokeWeight(4); // 08
+    //---------------------------------------------------------- SITIO 08
+    strokeWeight(4);
     draw_curve(x1_transferencias,y1_transferencias+520-50,700,y1_transferencias+520-50,700,y1_composta+67,x1_composta,y1_composta+67);  
     strokeWeight(6);
     draw_curve(x1_transferencias,y1_transferencias+525-50,700,y1_transferencias+525-50,700,y1_compactadora+=3,x1_compactadora,y1_compactadora+=3); 
@@ -219,8 +219,8 @@ function draw(){
     strokeWeight(3);
     draw_curve(x1_transferencias,y1_transferencias+557-50,700,y1_transferencias+557-50,700,y1_seleccion+233,x1_seleccion,y1_seleccion+233); 
     stroke(0,0,0,140);
-
-    strokeWeight(19); // 09
+    //---------------------------------------------------------- SITIO 09
+    strokeWeight(19);
     draw_curve(x1_transferencias,y1_transferencias+575-45,700,y1_transferencias+575-45,700,y1_composta+78,x1_composta,y1_composta+78);  
     strokeWeight(6);
     draw_curve(x1_transferencias,y1_transferencias+587-45,700,y1_transferencias+587-45,700,y1_compactadora+=3,x1_compactadora,y1_compactadora+=3); 
@@ -237,8 +237,8 @@ function draw(){
     strokeWeight(4);
     draw_curve(x1_transferencias,y1_transferencias+701-45,700,y1_transferencias+701-45,700,y1_seleccion+236,x1_seleccion,y1_seleccion+236); 
     stroke(0,0,0,140);
-    
-    strokeWeight(5); // 10
+    //---------------------------------------------------------- SITIO 10
+    strokeWeight(5); 
     draw_curve(x1_transferencias,y1_transferencias+720-50,700,y1_transferencias+720-50,700,y1_composta+90,x1_composta,y1_composta+90);  
     strokeWeight(6);
     draw_curve(x1_transferencias,y1_transferencias+725-50,700,y1_transferencias+725-50,700,y1_compactadora+=3,x1_compactadora,y1_compactadora+=3); 
@@ -255,8 +255,8 @@ function draw(){
     strokeWeight(4);
     draw_curve(x1_transferencias,y1_transferencias+783-50,700,y1_transferencias+783-50,700,y1_seleccion+240,x1_seleccion,y1_seleccion+240); 
     stroke(0,0,0,140);
-
-    strokeWeight(11); // 11
+    //---------------------------------------------------------- SITIO 11
+    strokeWeight(11);
     draw_curve(x1_transferencias,y1_transferencias+800-50,700,y1_transferencias+800-50,700,y1_composta+98,x1_composta,y1_composta+98);  
     strokeWeight(6);
     draw_curve(x1_transferencias,y1_transferencias+808-50,700,y1_transferencias+808-50,700,y1_compactadora+=3,x1_compactadora,y1_compactadora+=3); 
@@ -268,8 +268,8 @@ function draw(){
     stroke(182,117,144,153);
     draw_curve(x1_transferencias,y1_transferencias+816-50,700,y1_transferencias+816-50,700,y1_seleccion+59,x1_seleccion,y1_seleccion+59);  
     stroke(0,0,0,140);
-
-    strokeWeight(10); // 12
+    //---------------------------------------------------------- SITIO 12
+    strokeWeight(10); 
     draw_curve(x1_transferencias,y1_transferencias+840-60,700,y1_transferencias+840-60,700,y1_composta+108,x1_composta,y1_composta+108);  
     strokeWeight(6);
     draw_curve(x1_transferencias,y1_transferencias+848-60,700,y1_transferencias+848-60,700,y1_compactadora+=3,x1_compactadora,y1_compactadora+=3); 
@@ -286,13 +286,14 @@ function draw(){
     strokeWeight(5);
     draw_curve(x1_transferencias,y1_transferencias+950-60,700,y1_transferencias+950-60,700,y1_seleccion+244,x1_seleccion,y1_seleccion+244);
     stroke(0,0,0,140);
-
+    //----------------------------------------------------------
     x = 100,y = 0,ancho = 20,alto = 190;
     rectMode(CENTER);
     fill(204); strokeWeight(0); // Apply stroke to see it!
     rect(x1_transferencias-30,y1_transferencias+450,ancho+35,alto+700);
     rect(x1_composta+30,y1_composta+400,ancho+35,alto+700);
 
+    //---------------------------------------------------------- DELEGACIONES A LOS SITIOS DE TRANSFERENCIA
     strokeWeight(1); // delegaciones - transferencia
     draw_curve(x1_delegaciones,y1_delegaciones,x1_delegaciones+200,y1_delegaciones,x1_delegaciones+300,y1_transferencias+2,x1_transferencias,y1_transferencias+2);
     draw_curve(x1_delegaciones,y1_delegaciones,x1_delegaciones+200,y1_delegaciones,x1_delegaciones+300,y1_transferencias+88,x1_transferencias,y1_transferencias+88);
@@ -321,12 +322,16 @@ function draw(){
     draw_curve(x1_delegaciones,y1_delegaciones+650,x1_delegaciones+200,y1_delegaciones+650,x1_delegaciones+300,y1_transferencias+700,x1_transferencias,y1_transferencias+700);
     draw_curve(x1_delegaciones,y1_delegaciones+700,x1_delegaciones+200,y1_delegaciones+700,x1_delegaciones+300,y1_transferencias+755,x1_transferencias,y1_transferencias+755);
     draw_curve(x1_delegaciones,y1_delegaciones+750,x1_delegaciones+200,y1_delegaciones+750,x1_delegaciones+300,y1_transferencias+833,x1_transferencias,y1_transferencias+833);
+    //----------------------------------------------------------
 
+    //---------------------------------------------------------- EDO. DE MÉXICO A LA PLANTA DE SELECCIÓN
     strokeWeight(111); stroke(182,117,144,153); // edo. de méxico – selección
     draw_curve(x1_edo,y1_edo+940-60,x1_edo+450,y1_edo+940-60,x1_edo+450,y1_seleccion+131,x1_seleccion,y1_seleccion+131);  
     strokeWeight(31);
     draw_curve(x1_edo,y1_edo+951,x1_edo+700,y1_edo+951,x1_edo+700,y1_seleccion+262,x1_seleccion,y1_seleccion+262); 
+    //----------------------------------------------------------
 
+    //---------------------------------------------------------- DGSU - A SITIO DE TRANSFERENCIA Y PLANTA DE SELECCIÓN
     strokeWeight(1); stroke(0,0,0,140); // dgsu – transferencia y selección
     draw_curve(x1_dgsu,y1_dgsu,x1_dgsu+230,y1_dgsu,x1_dgsu,y1_transferencias+2+1,x1_transferencias,y1_transferencias+2+1);
     draw_curve(x1_dgsu,y1_dgsu+2,x1_dgsu+230,y1_dgsu+2,x1_dgsu,y1_transferencias+88+1,x1_transferencias,y1_transferencias+88+1);
@@ -343,7 +348,9 @@ function draw(){
 
     draw_curve(x1_dgsu,y1_dgsu+13,x1_dgsu+400,y1_dgsu+13,x1_dgsu+700,y1_seleccion+76,x1_seleccion,y1_seleccion+76);  
     draw_curve(x1_dgsu,y1_dgsu+14,x1_dgsu+400,y1_dgsu+14,x1_dgsu+700,y1_seleccion+248,x1_seleccion,y1_seleccion+248); 
+    //----------------------------------------------------------
 
+    //---------------------------------------------------------- PARTICULAR A SITIO DE TRANSFERENCIA
     strokeWeight(1); // particular – transferencia
     draw_curve(x1_particular,y1_particular,x1_particular+230,y1_particular,x1_particular,y1_transferencias+2+2,x1_transferencias,y1_transferencias+2+2);
     draw_curve(x1_particular,y1_particular+2,x1_particular+230,y1_particular+2,x1_particular,y1_transferencias+88+2,x1_transferencias,y1_transferencias+88+2);
@@ -357,7 +364,9 @@ function draw(){
     draw_curve(x1_particular,y1_particular+10,x1_particular+230,y1_particular+10,x1_particular,y1_transferencias+700+2,x1_transferencias,y1_transferencias+700+2);
     draw_curve(x1_particular,y1_particular+11,x1_particular+230,y1_particular+11,x1_particular,y1_transferencias+755+2,x1_transferencias,y1_transferencias+755+2);
     draw_curve(x1_particular,y1_particular+12,x1_particular+230,y1_particular+12,x1_particular,y1_transferencias+833+2,x1_transferencias,y1_transferencias+833+2);
+    //----------------------------------------------------------
 
+    //---------------------------------------------------------- CEDA A SITIO DE TRANSFERENCIA
     strokeWeight(1); // ceda – transferencia
     draw_curve(x1_ceda,y1_ceda,x1_ceda+230,y1_ceda,x1_ceda,y1_transferencias+2+3,x1_transferencias,y1_transferencias+2+3);
     draw_curve(x1_ceda,y1_ceda+2,x1_ceda+230,y1_ceda+2,x1_ceda,y1_transferencias+88+3,x1_transferencias,y1_transferencias+88+3);
@@ -371,7 +380,9 @@ function draw(){
     draw_curve(x1_ceda,y1_ceda+10,x1_ceda+230,y1_ceda+10,x1_ceda,y1_transferencias+700+3,x1_transferencias,y1_transferencias+700+3);
     draw_curve(x1_ceda,y1_ceda+11,x1_ceda+230,y1_ceda+11,x1_ceda,y1_transferencias+755+3,x1_transferencias,y1_transferencias+755+3);
     draw_curve(x1_ceda,y1_ceda+12,x1_ceda+230,y1_ceda+12,x1_ceda,y1_transferencias+833+3,x1_transferencias,y1_transferencias+833+3);
+    //----------------------------------------------------------
 
+    //---------------------------------------------------------- RME A SITIO DE DISPOSICIÓN FINAL
     strokeWeight(1); // rme – disposicion final
     draw_curve(x1_rme,y1_rme+1,x1_rme+400,y1_rme+1,x1_rme+400,y1_disposicion+159,x1_disposicion,y1_disposicion+159);   
     draw_curve(x1_rme,y1_rme+2,x1_rme+400,y1_rme+2,x1_rme+400,y1_disposicion+395,x1_disposicion,y1_disposicion+395);    
@@ -379,34 +390,40 @@ function draw(){
     draw_curve(x1_rme,y1_rme+4,x1_rme+400,y1_rme+4,x1_rme+400,y1_disposicion+508,x1_disposicion,y1_disposicion+508);
     draw_curve(x1_rme,y1_rme+5,x1_rme+400,y1_rme+5,x1_rme+400,y1_disposicion+533,x1_disposicion,y1_disposicion+533);
     strokeWeight(1);      
-
+    //----------------------------------------------------------
     fill(204); strokeWeight(0); // Apply stroke to see it!
     rect(x1_edo-30,y1_edo+895,ancho+35,alto-45);
     rect(x1_seleccion+30,y1_seleccion+150,ancho+35,alto+100);
+    //----------------------------------------------------------
 
+    //---------------------------------------------------------- PLANTA DE SELECCIÓN A SITIO DE DISPOSICIÓN FINAL
     strokeWeight(1);  // selección – disposición final
     draw_curve(x1_seleccion,y1_seleccion+1+90,x1_seleccion+400,y1_seleccion+1+90,x1_seleccion+400,y1_disposicion+159+1,x1_disposicion,y1_disposicion+159+1);   
     draw_curve(x1_seleccion,y1_seleccion+2+90,x1_seleccion+400,y1_seleccion+2+90,x1_seleccion+400,y1_disposicion+395+1,x1_disposicion,y1_disposicion+395+1);    
     draw_curve(x1_seleccion,y1_seleccion+3+90,x1_seleccion+400,y1_seleccion+3+90,x1_seleccion+400,y1_disposicion+477+1,x1_disposicion,y1_disposicion+477+1);   
     draw_curve(x1_seleccion,y1_seleccion+4+90,x1_seleccion+400,y1_seleccion+4+90,x1_seleccion+400,y1_disposicion+508+1,x1_disposicion,y1_disposicion+508+1);
     draw_curve(x1_seleccion,y1_seleccion+5+90,x1_seleccion+400,y1_seleccion+5+90,x1_seleccion+400,y1_disposicion+533+1,x1_disposicion,y1_disposicion+533+1);  
-    // 02
+    //---------------------------------------------------------- DISPOSICIÓN FINAL 02
     draw_curve(x1_seleccion,y1_seleccion+1+240,x1_seleccion+400,y1_seleccion+1+240,x1_seleccion+400,y1_disposicion+159+2,x1_disposicion,y1_disposicion+159+2);   
     draw_curve(x1_seleccion,y1_seleccion+2+240,x1_seleccion+400,y1_seleccion+2+240,x1_seleccion+400,y1_disposicion+395+2,x1_disposicion,y1_disposicion+395+2);    
     draw_curve(x1_seleccion,y1_seleccion+3+240,x1_seleccion+400,y1_seleccion+3+240,x1_seleccion+400,y1_disposicion+477+2,x1_disposicion,y1_disposicion+477+2);   
     draw_curve(x1_seleccion,y1_seleccion+4+240,x1_seleccion+400,y1_seleccion+4+240,x1_seleccion+400,y1_disposicion+508+2,x1_disposicion,y1_disposicion+508+2);
     draw_curve(x1_seleccion,y1_seleccion+5+240,x1_seleccion+400,y1_seleccion+5+240,x1_seleccion+400,y1_disposicion+533+2,x1_disposicion,y1_disposicion+533+2);
+    //----------------------------------------------------------
 
+    //---------------------------------------------------------- PLANTA DE SELECCIÓN A RECUPERACIÓN DE SUBPRODUCTOS
     strokeWeight(8); // selección - recuperación de subproductos
     draw_curve(x1_seleccion,y1_seleccion+100,x1_seleccion+400,y1_seleccion+100,x1_seleccion+400,y1_recuperacion,x1_recuperacion,y1_recuperacion);  
     strokeWeight(9);  
     draw_curve(x1_seleccion,y1_seleccion+250,x1_seleccion+400,y1_seleccion+250,x1_seleccion+400,y1_recuperacion+8,x1_recuperacion,y1_recuperacion+8);  
     strokeWeight(1);  
-
-    // RECTANGLES & BUTTONS //
+    //----------------------------------------------------------
+    
+    //---------------------------------------------------------- CUADROS
     // rect(x,y,ancho,alto);
 
     fill(255); // botones
+    //---------------------------------------------------------- DELEGACIONES
     rect(x1_delegaciones,y1_delegaciones,ancho,alto-180);
     rect(x1_delegaciones,y1_delegaciones+=50,ancho,alto-180);
     rect(x1_delegaciones,y1_delegaciones+=50,ancho,alto-180);
@@ -423,41 +440,50 @@ function draw(){
     rect(x1_delegaciones,y1_delegaciones+=50,ancho,alto-180);
     rect(x1_delegaciones,y1_delegaciones+=50,ancho,alto-180);
     rect(x1_delegaciones,y1_delegaciones+=50,ancho,alto-180);
-
+    //---------------------------------------------------------- SITIOS DE TRANSFERENCIA
     rect(x1_transferencias,y1_transferencias+2,ancho,alto-175);
     rect(x1_transferencias,y1_transferencias+88,ancho,alto-53);
     rect(x1_transferencias,y1_transferencias+192,ancho,alto-135);
-    rect(x1_transferencias,y1_transferencias+267,ancho,alto-110);
-    rect(x1_transferencias,y1_transferencias+338,ancho,alto-145);
-    rect(x1_transferencias,y1_transferencias+375,ancho,alto-175);
-    rect(x1_transferencias,y1_transferencias+424,ancho,alto-129);
-    rect(x1_transferencias,y1_transferencias+486,ancho,alto-143);
-    rect(x1_transferencias,y1_transferencias+588,ancho,alto-53);
-    rect(x1_transferencias,y1_transferencias+700,ancho,alto-120);
-    rect(x1_transferencias,y1_transferencias+755,ancho,alto-165);
-    rect(x1_transferencias,y1_transferencias+833,ancho,alto-70);
-
+    rect(x1_transferencias,y1_transferencias+267,ancho,alto-110); 80
+    rect(x1_transferencias,y1_transferencias+338,ancho,alto-145); 45
+    rect(x1_transferencias,y1_transferencias+375,ancho,alto-175); 15
+    rect(x1_transferencias,y1_transferencias+424,ancho,alto-129); 61
+    rect(x1_transferencias,y1_transferencias+486,ancho,alto-143); 47
+    rect(x1_transferencias,y1_transferencias+588,ancho,alto-53); 137
+    rect(x1_transferencias,y1_transferencias+700,ancho,alto-120); 70
+    rect(x1_transferencias,y1_transferencias+755,ancho,alto-165); 25
+    rect(x1_transferencias,y1_transferencias+833,ancho,alto-70); 120
+    //---------------------------------------------------------- COMPOSTA
     rect(x1_composta,y1_composta+53,ancho,alto-67);
+    //---------------------------------------------------------- COMPACTADORA
     rect(x1_compactadora,y1_compactadora-34,ancho,alto-117);
+    //---------------------------------------------------------- SITIOS DE DISPOSICIÓN FINAL
     rect(x1_disposicion,y1_disposicion+80,ancho,alto-27);
     rect(x1_disposicion,y1_disposicion+288,ancho,alto+32);
     rect(x1_disposicion,y1_disposicion+445,ancho,alto-116);
     rect(x1_disposicion,y1_disposicion+500,ancho,alto-170);
     rect(x1_disposicion,y1_disposicion+532,ancho,alto-180);
+    //---------------------------------------------------------- RECUPERACIÓN DE SUBPRODUCTOS
     rect(x1_recuperacion,y1_recuperacion+4,ancho,alto-172);
-
+    //---------------------------------------------------------- EDO. DE MÉXICO
     rect(x1_edo,y1_edo+895,ancho,alto-45);
-
+    //---------------------------------------------------------- RME
     rect(x1_rme,y1_rme+3,ancho,alto-180);
+    //---------------------------------------------------------- PLANTAS DE SELECCIÓN
     rect(x1_seleccion,y1_seleccion+93,ancho,alto);
     rect(x1_seleccion,y1_seleccion+244,ancho,alto-120);
-
+    //---------------------------------------------------------- DGSY
     rect(x1_dgsu,y1_dgsu+7,ancho,alto-170);
+    //---------------------------------------------------------- RECOLECCIÓN PARTICULAR
     rect(x1_particular,y1_particular+7,ancho,alto-170);
+    //---------------------------------------------------------- CEDA
     rect(x1_ceda,y1_ceda+7,ancho,alto-170);
 
+    
+    //---------------------------------------------------------- INTERACCIÓN CON EL MOUSE
     //fill(0);
     //rect(20,100,20,10);
+    //---------------------------------------------------------- DELEGACIONES
     textAlign(CENTER);
     if(mouseX>x1_delegaciones-34 && mouseX<x1_delegaciones-23 && mouseY>40 && mouseY<47){
         strokeWeight(3); stroke(0);
@@ -575,7 +601,7 @@ function draw(){
         // Do nothing!
     }
     
-    // Transferencias
+    //---------------------------------------------------------- SITIOS DE TRANSFERENCIA
     if(mouseX>x1_transferencias-363 && mouseX<x1_transferencias-232 && mouseY>10 && mouseY<20){
         strokeWeight(3); stroke(0);
         rect(x1_transferencias,32,20,15);
@@ -664,7 +690,7 @@ function draw(){
         // Do nothing!
     }
 
-    // Composta, compactadora, disposición final y recuperación
+    //---------------------------------------------------------- COMPOSTA, COMPACTADORA, SITIOS DE DISPOSICIONAL FINAL Y RECUPERACIÓN
     if(mouseX>x1_composta-1431 && mouseX<x1_composta-1420 && mouseY>18 && mouseY<69){
         strokeWeight(3); stroke(0);
         rect(x1_composta,103,20,123);
@@ -725,7 +751,7 @@ function draw(){
         // Do nothing!
     }
 
-    // Selección y RME
+    //---------------------------------------------------------- PLANTAS DE SELECCIÓN Y RME
     if(mouseX>x1_rme-965 && mouseX<x1_rme-955 && mouseY>349 && mouseY<354){
         strokeWeight(3); stroke(0);
         rect(x1_rme,873,20,10);
@@ -751,7 +777,7 @@ function draw(){
         // Do nothing!
     }
 
-    // Recolección Edo. de México
+    //---------------------------------------------------------- EDO. DE MÉXICO
     if(mouseX>x1_edo-483 && mouseX<x1_edo-475 && mouseY>472 && mouseY<530){
         strokeWeight(3); stroke(0);
         rect(x1_edo,1245,20,145);
@@ -763,7 +789,7 @@ function draw(){
         // Do nothing!
     }
 
-    // Recolección DGSU, particular y CEDA
+    //---------------------------------------------------------- RECOLECCIÓN DGSU, PARTICULAR Y CEDA
     if(mouseX>x1_transferencias-455 && mouseX<x1_transferencias-445 && mouseY>422 && mouseY<432){
         strokeWeight(3); stroke(0);
         rect(x1_dgsu,1057,20,20);
@@ -790,10 +816,9 @@ function draw(){
     }
 
 
-    side_bar();
-
-
+    //side_bar();
 }
+
 function draw_curve(xp1,yp1,xc1,yc1,xc2,yc2,xp2,yp2){
     beginShape();
     noFill();

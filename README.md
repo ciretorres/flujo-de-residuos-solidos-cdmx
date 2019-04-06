@@ -1,3 +1,7 @@
+The flow map presents the system from the solid waste live journey from 2015, according to [Solid Waste's inventory, México City. 2015. SEDEMA](http://www.cms.sedema.cdmx.gob.mx/storage/app/media/IRS-2015-14-dic-2016.compressed.pdf)  
+
+How many solid waste flow through the stations, which process the waste and also to send to some others sites in the CDMX system. Because, every state in the country of México has its own system as the same as they generete it (The Solid Waste Flow).
+
 # Readme!
 
 ### Universidad Autónoma Metropolitana
