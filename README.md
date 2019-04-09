@@ -4,13 +4,14 @@
 
 <img src="./data/CapturaDePantalla2019-04-07_11.58.50a.m..png" width="900">
 
-The Interactive visual interface presents a flow diagram system from the Urban Solid Waste (USW) at Mexico City (CDMX), according to the [Solid Waste's inventory](http://www.cms.sedema.cdmx.gob.mx/storage/app/media/IRS-2015-14-dic-2016.compressed.pdf) published by Secretaría del Medio Ambiente (SEDEMA) in CDMX in 2016. The job is been made possible in collaboration with [Patricia Galán Lara](https://www.facebook.com/patricia.g.lara.75). 
+The Interactive visual interface presents the flow diagram system from the Urban Solid Waste in Mexico City (CDMX), according with [Solid Waste's inventory](http://www.cms.sedema.cdmx.gob.mx/storage/app/media/IRS-2015-14-dic-2016.compressed.pdf) published in 2016 by Secretaría del Medio Ambiente (SEDEMA). The job is been made possible in collaboration with [Patricia Galán Lara](https://www.facebook.com/patricia.g.lara.75).  
 
-How many solid waste flow through each station process regarding with the quantities published.  
+How many Urban Solid Waste flows through each process station according with the quantities published by SEDEMA?  
 
-As a reference, each pipeline represents the quantity as [strokeWeight](https://processing.org/reference/strokeWeight_.html) from the solid waste information available in a scale divided by ten (e.g. 1,038.23 ton/día, to obtain 103.82), to take only the integer value (for now), and taste how the tools, than i'm using, works with sufficiency.
+As a reference, the [strokeWeight](https://processing.org/reference/strokeWeight_.html) of each pipeline represents the quantity of solid waste, according with the information available. The data was scaled divide between ten (e.g. 1,038.23 ton/day, to obtain 103.82 and take only the integer value. For now). With this, 
+we can trial the tools, that i'm using, to measure how they work with sufficienctly.  
 
-If you are interested in work together send me a whatsapp 5547904238 or you can mail me at erictorres.velasco@gmail.com
+If you are interested in work together, send me a whatsapp 5547904238, or feel free to mail me at erictorres.velasco@gmail.com  
 
 ---
 
