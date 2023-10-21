@@ -3,17 +3,17 @@
   "version": "1.4.16",
   "main": "processing.js",
   "ignore": [
-		"bundle",
-		"lib",
-		"node_modules",
-		"src",
-		"test",
-		"test.js",
-		"test.html",
-		"build.js",
-		"Gruntfile.js",
-		"minify.js",
-		"package.json",
-		"server.js"
+    "bundle",
+    "lib",
+    "node_modules",
+    "src",
+    "test",
+    "test.js",
+    "test.html",
+    "build.js",
+    "Gruntfile.js",
+    "minify.js",
+    "package.json",
+    "server.js"
   ]
 }

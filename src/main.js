@@ -10,14 +10,11 @@ import { FlujoResiduosSolidosUrbanosCDMX } from './componentes'
 // }
 
 const plugin = {
-    install: function (Vue) {
-      Vue.use(FlujoResiduosSolidosUrbanosCDMX)
-    },
+  install: function (Vue) {
+    Vue.use(FlujoResiduosSolidosUrbanosCDMX)
+  },
 }
-  
 
-export {
-    FlujoResiduosSolidosUrbanosCDMX,
-}
+export { FlujoResiduosSolidosUrbanosCDMX }
 
 export default plugin

@@ -6,7 +6,7 @@
   "files": [
     "src",
     "README.md"
-  ],  
+  ],
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
@@ -51,5 +51,4 @@
     "url": "https://github.com/ciretorres/flujo-de-residuos-solidos-cdmx/issues"
   },
   "homepage": "https://github.com/ciretorres/flujo-de-residuos-solidos-cdmx#readme"
-
 }

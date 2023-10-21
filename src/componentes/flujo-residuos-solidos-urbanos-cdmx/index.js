@@ -2,7 +2,10 @@ import FlujoResiduosSolidosUrbanosCDMX from './FlujoResiduosSolidosUrbanosCDMX.v
 
 const plugin = {
   install: function (Vue) {
-    Vue.component('FlujoResiduosSolidosUrbanosCDMX', FlujoResiduosSolidosUrbanosCDMX)
+    Vue.component(
+      'FlujoResiduosSolidosUrbanosCDMX',
+      FlujoResiduosSolidosUrbanosCDMX
+    )
   },
 }
 

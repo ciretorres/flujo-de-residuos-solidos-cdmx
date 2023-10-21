@@ -1,5 +1,5 @@
 <template>
-    <div>
-        <FlujoResiduosSolidosUrbanosCDMX></FlujoResiduosSolidosUrbanosCDMX>
-    </div>
+  <div>
+    <FlujoResiduosSolidosUrbanosCDMX></FlujoResiduosSolidosUrbanosCDMX>
+  </div>
 </template>

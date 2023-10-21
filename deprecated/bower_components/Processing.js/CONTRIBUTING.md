@@ -8,13 +8,13 @@ The fundamental rule for Processing.js is: **Processing.js should allow Processi
 
 Any contributions to Processing.js are evaluated in terms of getting the library as close to "parity" with Processing as possible.
 
-Parity means that if it works in Processing, it should work in Processing.js too, *provided the limitations of JavaScript, compared to java, allow for that*.
+Parity means that if it works in Processing, it should work in Processing.js too, _provided the limitations of JavaScript, compared to java, allow for that_.
 
-However, very importantly "parity" does **not** mean that Processing.js's code needs to do exactly the same thing for code that does *not* work in Processing, so code that causes errors to be thrown in Processing might actually "do something" in Processing.js, just not the right thing at all.
+However, very importantly "parity" does **not** mean that Processing.js's code needs to do exactly the same thing for code that does _not_ work in Processing, so code that causes errors to be thrown in Processing might actually "do something" in Processing.js, just not the right thing at all.
 
 Processing.js is not a "general purpose graphics library" like other JavaScript libraries, it is specifically meant to make Processing source code run on the web, and so if you run across bugs because you're using Processing.js as a pure JS library, then please first make sure that the code you wrote works in regular Processing. If it doesn't, then you'll first have to rewrite your code to work there, before concluding there is a bug in Processing.js
 
-## How can I contribute?    
+## How can I contribute?
 
 There are a few categories of contribution that help improve Processing.js:
 
@@ -36,7 +36,7 @@ After that, people can comment on your pull request to improve it so that it wil
 Even if you don't know how to write JavaScript all that well, if you run into some code that you know works in Processing, but does not work in Processing.js, having a test with that code is super useful!
 
 - reduce your code to ideally fewer than 10 lines of code that still reproduces the bad behaviour you see
-- find a test for the part of the code in Processing.js that breaks for your 
+- find a test for the part of the code in Processing.js that breaks for your
 - add your code to that test and submit a pull request for it!
 
 ### Writing or improving documentation
@@ -68,11 +68,11 @@ It is tempting to just list comments and critique, such as a bullet list of thin
 
 ### If someone tells you they feel uncomfortable with things you do, listen
 
-It's easy to think that the way you communicate is fine, and that when someone says they are uncomfortable with it, then that's their problem. That is, however, not acceptable in this project. Respect other contributors, and behave in a way that does not make them feel uncomfortable. If someone points out that the way you communicate is curt and even rude, ask them what they mean and how they think you could improve your communication. Don't tell them off for being too sensitive, and also don't just go "ok" and then try to figure out how to fix it on your own: ask people to help you improve when they point out there is room for improvement. This is true for code, but it's just as true for behaviour. 
+It's easy to think that the way you communicate is fine, and that when someone says they are uncomfortable with it, then that's their problem. That is, however, not acceptable in this project. Respect other contributors, and behave in a way that does not make them feel uncomfortable. If someone points out that the way you communicate is curt and even rude, ask them what they mean and how they think you could improve your communication. Don't tell them off for being too sensitive, and also don't just go "ok" and then try to figure out how to fix it on your own: ask people to help you improve when they point out there is room for improvement. This is true for code, but it's just as true for behaviour.
 
 ### And if someone makes you feel uncomfortable, tell them
 
-The reserve of the previous point is also true: if someone is behaving in a way that makes you uncomfortable, tell them that. And then also tell them why that is and what you think they can do to overcome that. Don't wait for them to acknowledge you before telling them how you would like to be treated instead. Working in a group is not just about getting good code, tests, and documentation written, but also about making sure that everyone in the group can work together without animosity or resentment. You can always walk out on a project whenever you want, so it's worth first trying to address problems before giving up on someone. You might be surprised how much they listen. 
+The reserve of the previous point is also true: if someone is behaving in a way that makes you uncomfortable, tell them that. And then also tell them why that is and what you think they can do to overcome that. Don't wait for them to acknowledge you before telling them how you would like to be treated instead. Working in a group is not just about getting good code, tests, and documentation written, but also about making sure that everyone in the group can work together without animosity or resentment. You can always walk out on a project whenever you want, so it's worth first trying to address problems before giving up on someone. You might be surprised how much they listen.
 
 ### Don't "derail" conversations with side issues
 
@@ -80,7 +80,7 @@ Each issue is for, not surprisingly, one issue. If while discussing an issue you
 
 If you are discussion an issue and you find yourself talking about things that are only tangentially related to that issue, again: please file a new issue instead, or if the tangent isn't all that important, simply stop talking about it can get the issue back on track.
 
-While having discussions is natural, open source development is not about having discussions, it's about having discussions that lead to actions that can be taken to improve the open source project. If you want to have a discussion that you think needs to be had: **file an issue for it**. Filing an issue like "discuss what parity means" or "should Processing.js be more informative if it's given broken code" is a perfectly legitimate course of action, and then a meaningful, on-topc discussion can be had there.    
+While having discussions is natural, open source development is not about having discussions, it's about having discussions that lead to actions that can be taken to improve the open source project. If you want to have a discussion that you think needs to be had: **file an issue for it**. Filing an issue like "discuss what parity means" or "should Processing.js be more informative if it's given broken code" is a perfectly legitimate course of action, and then a meaningful, on-topc discussion can be had there.
 
 #### "derailing" comments may be deleted, and fully derailed issues may get closed
 
@@ -95,7 +95,6 @@ Code of conduct may vary from place to place, so if you want to contribute to Pr
 If you're using the IRC channel (#processingjs on irc.mozilla.org) and you want to discuss any of the contribution steps, be aware that IRC is asynchronous: people are in different timezones and many use "bouncers" which allow their IRC connection to stay open even when they are not behind the computer right now. If you want to ask a question, ask your question and then wait for someone to look in to answer it. Don't ask "is anyone here" or say "I have a question" and then wait for people to respond: people will look into the channel and have no idea when you asked that, so unless there is a real question or comment they can meaningfully respond to, they will just look away again and you will probably never get a response when the channel is quiet.
 
 Also, reporting bugs in IRC is useful, but always also file an issue, so that when people leave IRC, that information can still be found somewhere.
-
 
 ## What happens with my contributions? Will I get credit?
 

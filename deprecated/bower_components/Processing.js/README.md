@@ -2,7 +2,7 @@
 
 For the project website, visit http://processingjs.org
 
-This is the compilation repository for Processing.js, used in building the `processing.js` library from a series of Node.js flavoured commonjs modules, rather than existing as one large file as was the case in all versions up to and including  1.4.1 (released august 2012) .
+This is the compilation repository for Processing.js, used in building the `processing.js` library from a series of Node.js flavoured commonjs modules, rather than existing as one large file as was the case in all versions up to and including 1.4.1 (released august 2012) .
 
 **note:** this is not the repository for Processing, the language and IDE. Processing itself is hosted over at https://github.com/processing/processing. This is also not where to file bugs or ask questions about the "JS mode" that can be used with Processing, that project is hosted over at https://github.com/fjenett/javascript-mode-processing
 
@@ -10,7 +10,7 @@ This is the compilation repository for Processing.js, used in building the `proc
 
 Processing.js adheres to [semver](http://semver.org) style versioning, with the current version being 1.6.0 (released July 9th, 2016)
 
-#  This project is currently in need of developers
+# This project is currently in need of developers
 
 There is currently no one working on, or maintaining, this codebase on a regular basis, so if you think you'd like to contribute to Processing.js, to bring it back in line with Processing's current API, and take advantage of the various APIs that have become available in browsers since Processing.js slowed down, we'd love to hear from you!
 
@@ -41,29 +41,28 @@ If step 1 gives you a "grunt: command not found" or similar error, run `npm inst
 
 The test script also accepts the following optional arguments:
 
-* `--test=testfile.pde` runs one specific test
-* `--nobuild` does not build Pjs if all tests pass
-* `--failonerror` terminates the run if any error occurs.
-* `--noref` will not start a server process and a browser for doing ref testing.
-* `--noautoref` will start a server and a browser for ref testing, but doesn't auto-start the tests.
+- `--test=testfile.pde` runs one specific test
+- `--nobuild` does not build Pjs if all tests pass
+- `--failonerror` terminates the run if any error occurs.
+- `--noref` will not start a server process and a browser for doing ref testing.
+- `--noautoref` will start a server and a browser for ref testing, but doesn't auto-start the tests.
 
 ### Manual operations
 
 You can also perform the post-unit-test steps manually:
 
-* Build processing.js: `$> browserify build.js -o processing.js`
-* Minify processing.js: `$> node minify`
-* Run test server: `$> node server`
-
+- Build processing.js: `$> browserify build.js -o processing.js`
+- Minify processing.js: `$> node minify`
+- Run test server: `$> node server`
 
 ### While the browser tests run
 
 With the test server is running, the following urls are good to know:
 
-* [http://localhost:3000](http://localhost:3000) - vanilla example page
-* [http://localhost:3000/ref](http://localhost:3000/ref) - reference testing page
-* [http://localhost:3000/perf](http://localhost:3000/perf) - performance testing page
-* [http://localhost:3000/processing-helper.html](http://localhost:3000/processing-helper.html) - utility page for converting/running Processing code
+- [http://localhost:3000](http://localhost:3000) - vanilla example page
+- [http://localhost:3000/ref](http://localhost:3000/ref) - reference testing page
+- [http://localhost:3000/perf](http://localhost:3000/perf) - performance testing page
+- [http://localhost:3000/processing-helper.html](http://localhost:3000/processing-helper.html) - utility page for converting/running Processing code
 
 ### Contributing to Processing.js
 
