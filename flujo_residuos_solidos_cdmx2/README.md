@@ -1,5 +1,21 @@
 # Readme!
 
+Este es el flujo de residuos sólidos urbanos de la ciudad de México.
+
+Lo primero más alarmante de este flujo es la cantidad de toneladas de residuos sólidos que llegan directamente a los sitios de disposición final. Es decir, es demasiada en comparación a la cantidad que llega a la selección para las plantas de composta y compactadora.
+
+Por lo que existe en su mayor parte una incertidumbre sobre el origen de estos residuos y su clasificación.
+
+Inlcuso hay recolecciones ambigüas por parte de organismos externos o de terceros que envían sus residuos a las de plantas selección en su mayoría.
+
+Lo segundo más alarmante de este flujo es la ausencia de información (falta de información o incertidumbre), acerca de los residuos que llegan a los sitios de transferencia desde la recolección en las delegaciones (después alcaldías, ahora demarcación territorial).
+
+Lo tercero es la mínima cantidad que se recupera del total de residuos sólidos que se generan al día.
+
+Esta representación del inventario visualiza lo ineficaz que es el sistema de gestión de residos sólidos solo en la ciudad de México. Aún estamos muy lejos de hacer algo bien.
+
+
+
 ### Universidad Autónoma Metropolitana
 
 ## Flujo de Residuos Sólidos Urbanos CDMX

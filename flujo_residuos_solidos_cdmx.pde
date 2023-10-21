@@ -60,7 +60,7 @@ void draw(){
   
   plantaComposta();  
   
-  //plantaCompactadora(); 
+  plantaCompactadora(); 
   
   plantasSeleccion();
   
@@ -423,31 +423,31 @@ void plantaComposta(){
 
 void plantaCompactadora(){
   //------------------------------------------------------------------ Sitios de Transferencia a Planta Compactadora
-  //strokeWeight(4.45); // El 6 representa la cantidad de basura que manda 
-  ////1
-  //flow(x_sitio_trans+20, y_sitio_trans+5, x_sitio_trans+200, y_sitio_trans+5, x_sitio_trans+300, y_planta_compact+4, x_planta_compact, y_planta_compact+4, planta_compact); 
-  ////2
-  //flow(x_sitio_trans+20, y_sitio_trans+114, x_sitio_trans+200, y_sitio_trans+114, x_sitio_trans+300, y_planta_compact+8, x_planta_compact, y_planta_compact+8, planta_compact);
-  ////3
-  //flow(x_sitio_trans+20, y_sitio_trans+206, x_sitio_trans+200, y_sitio_trans+206, x_sitio_trans+300, y_planta_compact+12, x_planta_compact, y_planta_compact+12, planta_compact);
-  ////4
-  //flow(x_sitio_trans+20, y_sitio_trans+301, x_sitio_trans+200, y_sitio_trans+301, x_sitio_trans+300, y_planta_compact+16, x_planta_compact, y_planta_compact+16, planta_compact);
-  ////5
-  //flow(x_sitio_trans+20, y_sitio_trans+352, x_sitio_trans+200, y_sitio_trans+352, x_sitio_trans+300, y_planta_compact+20, x_planta_compact, y_planta_compact+20, planta_compact);
-  ////6
-  //flow(x_sitio_trans+20, y_sitio_trans+387, x_sitio_trans+200, y_sitio_trans+387, x_sitio_trans+300, y_planta_compact+24, x_planta_compact, y_planta_compact+24, planta_compact);
-  ////7
-  //flow(x_sitio_trans+20, y_sitio_trans+454, x_sitio_trans+200, y_sitio_trans+454, x_sitio_trans+300, y_planta_compact+29, x_planta_compact, y_planta_compact+29, planta_compact);
-  ////8
-  //flow(x_sitio_trans+20, y_sitio_trans+499, x_sitio_trans+200, y_sitio_trans+499, x_sitio_trans+300, y_planta_compact+33, x_planta_compact, y_planta_compact+33, planta_compact);
-  ////9
-  //flow(x_sitio_trans+20, y_sitio_trans+651, x_sitio_trans+200, y_sitio_trans+651, x_sitio_trans+300, y_planta_compact+38, x_planta_compact, y_planta_compact+38, planta_compact);
-  ////10
-  //flow(x_sitio_trans+20, y_sitio_trans+729, x_sitio_trans+200, y_sitio_trans+729, x_sitio_trans+300, y_planta_compact+42, x_planta_compact, y_planta_compact+42, planta_compact);
-  ////11
-  //flow(x_sitio_trans+20, y_sitio_trans+774, x_sitio_trans+200, y_sitio_trans+774, x_sitio_trans+300, y_planta_compact+46, x_planta_compact, y_planta_compact+46, planta_compact);
-  ////12
-  //flow(x_sitio_trans+20, y_sitio_trans+885, x_sitio_trans+200, y_sitio_trans+885, x_sitio_trans+300, y_planta_compact+50, x_planta_compact, y_planta_compact+50, planta_compact);
+  strokeWeight(4.45); // El 6 representa la cantidad de basura que manda 
+  //1
+  flow(x_sitio_trans+20, y_sitio_trans+5, x_sitio_trans+200, y_sitio_trans+5, x_sitio_trans+300, y_planta_compact+4, x_planta_compact, y_planta_compact+4, planta_compact); 
+  //2
+  flow(x_sitio_trans+20, y_sitio_trans+114, x_sitio_trans+200, y_sitio_trans+114, x_sitio_trans+300, y_planta_compact+8, x_planta_compact, y_planta_compact+8, planta_compact);
+  //3
+  flow(x_sitio_trans+20, y_sitio_trans+206, x_sitio_trans+200, y_sitio_trans+206, x_sitio_trans+300, y_planta_compact+12, x_planta_compact, y_planta_compact+12, planta_compact);
+  //4
+  flow(x_sitio_trans+20, y_sitio_trans+301, x_sitio_trans+200, y_sitio_trans+301, x_sitio_trans+300, y_planta_compact+16, x_planta_compact, y_planta_compact+16, planta_compact);
+  //5
+  flow(x_sitio_trans+20, y_sitio_trans+352, x_sitio_trans+200, y_sitio_trans+352, x_sitio_trans+300, y_planta_compact+20, x_planta_compact, y_planta_compact+20, planta_compact);
+  //6
+  flow(x_sitio_trans+20, y_sitio_trans+387, x_sitio_trans+200, y_sitio_trans+387, x_sitio_trans+300, y_planta_compact+24, x_planta_compact, y_planta_compact+24, planta_compact);
+  //7
+  flow(x_sitio_trans+20, y_sitio_trans+454, x_sitio_trans+200, y_sitio_trans+454, x_sitio_trans+300, y_planta_compact+29, x_planta_compact, y_planta_compact+29, planta_compact);
+  //8
+  flow(x_sitio_trans+20, y_sitio_trans+499, x_sitio_trans+200, y_sitio_trans+499, x_sitio_trans+300, y_planta_compact+33, x_planta_compact, y_planta_compact+33, planta_compact);
+  //9
+  flow(x_sitio_trans+20, y_sitio_trans+651, x_sitio_trans+200, y_sitio_trans+651, x_sitio_trans+300, y_planta_compact+38, x_planta_compact, y_planta_compact+38, planta_compact);
+  //10
+  flow(x_sitio_trans+20, y_sitio_trans+729, x_sitio_trans+200, y_sitio_trans+729, x_sitio_trans+300, y_planta_compact+42, x_planta_compact, y_planta_compact+42, planta_compact);
+  //11
+  flow(x_sitio_trans+20, y_sitio_trans+774, x_sitio_trans+200, y_sitio_trans+774, x_sitio_trans+300, y_planta_compact+46, x_planta_compact, y_planta_compact+46, planta_compact);
+  //12
+  flow(x_sitio_trans+20, y_sitio_trans+885, x_sitio_trans+200, y_sitio_trans+885, x_sitio_trans+300, y_planta_compact+50, x_planta_compact, y_planta_compact+50, planta_compact);
 } // plantaCompactadora
 
 void plantasSeleccion(){
@@ -455,95 +455,115 @@ void plantasSeleccion(){
   //------------------------------------------------------------------ Sitios de Transferencia a Plantas de Selección
   //--------------------------------- San Juan Aragón
   
-  // 01 Miguel Hidalgo: NO HAY DATOS!
-  // 02 Álvaro Obregón: 295.15
+  // 16 Miguel Hidalgo: NO HAY DATOS!
+  // 17 Álvaro Obregón: 295.15
    strokeWeight(29.5); 
   flow(x_sitio_trans+20, y_sitio_trans+125, x_sitio_trans+200, y_sitio_trans+125, x_sitio_trans+300, 
   y_plantaselec_sja+15, x_plantaselec_sja, y_plantaselec_sja+15, sitio_seleccion);  
-  // 03 Tlalpan: 7.05
+  strokeWeight(8.1); // 81.13 
+  flow(x_sitio_trans+20, y_sitio_trans+144, x_sitio_trans+200, y_sitio_trans+144, x_sitio_trans+300, 
+  y_plantaselec_stacat+5, x_plantaselec_stacat, y_plantaselec_stacat+5, sitio_seleccion);  
+
+  // 18 Tlalpan: 7.05
   strokeWeight(0.7);
   flow(x_sitio_trans+20, y_sitio_trans+189, x_sitio_trans+200, y_sitio_trans+189, x_sitio_trans+300, 
   y_plantaselec_sja+30, x_plantaselec_sja, y_plantaselec_sja+30, sitio_seleccion);  
-  // 04 Coyoacán: 122.37
+  strokeWeight(3.4); // 34.9 
+  flow(x_sitio_trans+20, y_sitio_trans+191, x_sitio_trans+200, y_sitio_trans+191, x_sitio_trans+300, 
+  y_plantaselec_stacat+11, x_plantaselec_stacat, y_plantaselec_stacat+11, sitio_seleccion);  
+
+  // 19 Coyoacán: 122.37
   strokeWeight(12.2);
   flow(x_sitio_trans+20, y_sitio_trans+296, x_sitio_trans+200, y_sitio_trans+296, x_sitio_trans+300, 
   y_plantaselec_sja+36, x_plantaselec_sja, y_plantaselec_sja+36, sitio_seleccion);  
-  // 05 Xochimilco: 4.2
+  strokeWeight(7.6); // 76.67 
+  flow(x_sitio_trans+20, y_sitio_trans+305, x_sitio_trans+200, y_sitio_trans+305, x_sitio_trans+300, 
+  y_plantaselec_stacat+16, x_plantaselec_stacat, y_plantaselec_stacat+16, sitio_seleccion);  
+
+  // 20 Xochimilco: 4.2
   strokeWeight(0.4);
   flow(x_sitio_trans+20, y_sitio_trans+349, x_sitio_trans+200, y_sitio_trans+349, x_sitio_trans+300, 
   y_plantaselec_sja+40, x_plantaselec_sja, y_plantaselec_sja+40, sitio_seleccion);  
-  // 06 Milpa Alta: 0.03 
-  strokeWeight(0.003);
-  flow(x_sitio_trans+200, y_sitio_trans+372, x_sitio_trans+200, y_sitio_trans+372, x_sitio_trans+300, 
-  y_plantaselec_sja+42, x_plantaselec_sja, y_plantaselec_sja+42, sitio_seleccion);  
-  // 07 Venustiano Carranza: 20.24
-  strokeWeight(2);
-  flow(x_sitio_trans+20, y_sitio_trans+433, x_sitio_trans+200, y_sitio_trans+433, x_sitio_trans+300, 
-  y_plantaselec_sja+43, x_plantaselec_sja, y_plantaselec_sja+43, sitio_seleccion);  
-  // 08 Benito Juárez: 72.9
-  strokeWeight(7.2);
-  flow(x_sitio_trans+20, y_sitio_trans+476, x_sitio_trans+200, y_sitio_trans+476, x_sitio_trans+300, 
-  y_plantaselec_sja+48, x_plantaselec_sja, y_plantaselec_sja+48, sitio_seleccion);  
-  // 09 Iztapalapa: 343.63
-  strokeWeight(34.3);
-  flow(x_sitio_trans+20, y_sitio_trans+632, x_sitio_trans+200, y_sitio_trans+632, x_sitio_trans+300, 
-  y_plantaselec_sja+69, x_plantaselec_sja, y_plantaselec_sja+69, sitio_seleccion);  
-  // 10 Cuauhtémoc: 90.34
-  strokeWeight(9); 
-  flow(x_sitio_trans+20, y_sitio_trans+723, x_sitio_trans+200, y_sitio_trans+723, x_sitio_trans+300, 
-  y_plantaselec_sja+91, x_plantaselec_sja, y_plantaselec_sja+91, sitio_seleccion);  
-  // 11 Gustavo A. Madero: 6.51
-  strokeWeight(0.6);
-  flow(x_sitio_trans+20, y_sitio_trans+763, x_sitio_trans+200, y_sitio_trans+763, x_sitio_trans+300, 
-  y_plantaselec_sja+96, x_plantaselec_sja, y_plantaselec_sja+96, sitio_seleccion);
-  // 12 Azcapotzalco: 168.56 
-  strokeWeight(16.8); 
-  flow(x_sitio_trans+20, y_sitio_trans+863, x_sitio_trans+200, y_sitio_trans+863, x_sitio_trans+300, 
-  y_plantaselec_sja+104, x_plantaselec_sja, y_plantaselec_sja+104, sitio_seleccion);
-  
-  //--------------------------------- Santa Catarina
-  // 01 Miguel Hidalgo: NO HAY DATOS!
-  // 02 Álvaro Obregón: 81.13 
-  strokeWeight(8.1); 
-  flow(x_sitio_trans+20, y_sitio_trans+144, x_sitio_trans+200, y_sitio_trans+144, x_sitio_trans+300, 
-  y_plantaselec_stacat+5, x_plantaselec_stacat, y_plantaselec_stacat+5, sitio_seleccion);  
-  // 03 Tlalpan: 34.9 
-  strokeWeight(3.4);
-  flow(x_sitio_trans+20, y_sitio_trans+191, x_sitio_trans+200, y_sitio_trans+191, x_sitio_trans+300, 
-  y_plantaselec_stacat+11, x_plantaselec_stacat, y_plantaselec_stacat+11, sitio_seleccion);  
-  // 04 Coyoacán: 76.67 
-  strokeWeight(7.6);
-  flow(x_sitio_trans+20, y_sitio_trans+305, x_sitio_trans+200, y_sitio_trans+305, x_sitio_trans+300, 
-  y_plantaselec_stacat+16, x_plantaselec_stacat, y_plantaselec_stacat+16, sitio_seleccion);  
-  // 05 Xochimilco: 73.19
   strokeWeight(7.3);
   flow(x_sitio_trans+20, y_sitio_trans+353, x_sitio_trans+200, y_sitio_trans+353, x_sitio_trans+300, 
   y_plantaselec_stacat+23, x_plantaselec_stacat, y_plantaselec_stacat+23, sitio_seleccion);  
-  // 06 Milpa Alta: 10.42  
-  strokeWeight(1);
+
+  // 21 Milpa Alta: 0.03 
+  strokeWeight(0.003);
+  flow(x_sitio_trans+200, y_sitio_trans+372, x_sitio_trans+200, y_sitio_trans+372, x_sitio_trans+300, 
+  y_plantaselec_sja+42, x_plantaselec_sja, y_plantaselec_sja+42, sitio_seleccion);  
+  strokeWeight(1); // 10.42  
   flow(x_sitio_trans+20, y_sitio_trans+372, x_sitio_trans+200, y_sitio_trans+372, x_sitio_trans+300, 
   y_plantaselec_stacat+27, x_plantaselec_stacat, y_plantaselec_stacat+27, sitio_seleccion);  
-  // 07 Venustiano Carranza: 38.23
-  strokeWeight(3.8);
+
+  // 22 Venustiano Carranza: 20.24
+  strokeWeight(2);
+  flow(x_sitio_trans+20, y_sitio_trans+433, x_sitio_trans+200, y_sitio_trans+433, x_sitio_trans+300, 
+  y_plantaselec_sja+43, x_plantaselec_sja, y_plantaselec_sja+43, sitio_seleccion);  
+  strokeWeight(3.8); // 38.23
   flow(x_sitio_trans+20, y_sitio_trans+436, x_sitio_trans+200, y_sitio_trans+436, x_sitio_trans+300, 
   y_plantaselec_stacat+29, x_plantaselec_stacat, y_plantaselec_stacat+29, sitio_seleccion);  
-  // 08 Benito Juárez: 30.99
-  strokeWeight(3.1);
+
+  // 23 Benito Juárez: 72.9
+  strokeWeight(7.2);
+  flow(x_sitio_trans+20, y_sitio_trans+476, x_sitio_trans+200, y_sitio_trans+476, x_sitio_trans+300, 
+  y_plantaselec_sja+48, x_plantaselec_sja, y_plantaselec_sja+48, sitio_seleccion);  
+  strokeWeight(3.1); // 30.99
   flow(x_sitio_trans+20, y_sitio_trans+480, x_sitio_trans+200, y_sitio_trans+480, x_sitio_trans+300, 
   y_plantaselec_stacat+32, x_plantaselec_stacat, y_plantaselec_stacat+32, sitio_seleccion);  
-  // 09 Iztapalapa: 46.59 
-  strokeWeight(4.6);
+
+  // 24 Iztapalapa: 343.63
+  strokeWeight(34.3);
+  flow(x_sitio_trans+20, y_sitio_trans+632, x_sitio_trans+200, y_sitio_trans+632, x_sitio_trans+300, 
+  y_plantaselec_sja+69, x_plantaselec_sja, y_plantaselec_sja+69, sitio_seleccion);  
+  strokeWeight(4.6); // 46.59 
   flow(x_sitio_trans+20, y_sitio_trans+652, x_sitio_trans+200, y_sitio_trans+652, x_sitio_trans+300, 
   y_plantaselec_stacat+35, x_plantaselec_stacat, y_plantaselec_stacat+35, sitio_seleccion);  
-  // 10 Cuauhtémoc: 49.34 
-  strokeWeight(4.9); 
+
+  // 25 Cuauhtémoc: 90.34
+  strokeWeight(9); 
+  flow(x_sitio_trans+20, y_sitio_trans+723, x_sitio_trans+200, y_sitio_trans+723, x_sitio_trans+300, 
+  y_plantaselec_sja+91, x_plantaselec_sja, y_plantaselec_sja+91, sitio_seleccion);  
+  strokeWeight(4.9); // 49.34  
   flow(x_sitio_trans+20, y_sitio_trans+730, x_sitio_trans+200, y_sitio_trans+730, x_sitio_trans+300, 
   y_plantaselec_stacat+39, x_plantaselec_stacat, y_plantaselec_stacat+39, sitio_seleccion);  
-  // 11 Gustavo A. Madero: NO MANDA!
-  // 12 Azcapotzalco: 49.35
-  strokeWeight(4.9); 
+
+  // 26 Gustavo A. Madero: 6.51
+  strokeWeight(0.6);
+  flow(x_sitio_trans+20, y_sitio_trans+763, x_sitio_trans+200, y_sitio_trans+763, x_sitio_trans+300, 
+  y_plantaselec_sja+96, x_plantaselec_sja, y_plantaselec_sja+96, sitio_seleccion);
+  
+  // 27 Azcapotzalco: 168.56 
+  strokeWeight(16.8); 
+  flow(x_sitio_trans+20, y_sitio_trans+863, x_sitio_trans+200, y_sitio_trans+863, x_sitio_trans+300, 
+  y_plantaselec_sja+104, x_plantaselec_sja, y_plantaselec_sja+104, sitio_seleccion);
+  strokeWeight(4.9); // 49.35
   flow(x_sitio_trans+20, y_sitio_trans+874, x_sitio_trans+200, y_sitio_trans+874, x_sitio_trans+300, 
-  y_plantaselec_stacat+43, x_plantaselec_stacat, y_plantaselec_stacat+43, sitio_seleccion);  
+  y_plantaselec_stacat+43, x_plantaselec_stacat, y_plantaselec_stacat+43, sitio_seleccion);    
+  
+  //--------------------------------- Santa Catarina
+  // 01 Miguel Hidalgo: NO HAY DATOS!
+  // 02 Álvaro Obregón: 
+  
+  // 03 Tlalpan: 
+  
+  // 04 Coyoacán: 
+  
+  // 05 Xochimilco: 
+  
+  // 06 Milpa Alta: 
+  
+  // 07 Venustiano Carranza: 
+  
+  // 08 Benito Juárez: 
+  
+  // 09 Iztapalapa: 
+  
+  // 10 Cuauhtémoc: 
+  
+  // 11 Gustavo A. Madero: NO MANDA!
+  // 12 Azcapotzalco: 
+  
 } // end plantasSeleccion
 
 void sitiosDisposicionFinal(){
@@ -551,8 +571,8 @@ void sitiosDisposicionFinal(){
   //------------------------------------------------------------------ Sitios de Transferencia a Sitios de Disposición Final
   //------------------------------------------------------------------ 
   
-  // 01 Miguel Hidalgo: NO HAY DATOS!  
-  // 02 Álvaro Obregón: Milagro, Cañanada, Cuautitlán. TOTAL: 781.63
+  // 16 Miguel Hidalgo: NO HAY DATOS!  
+  // 17 Álvaro Obregón: Milagro, Cañanada, Cuautitlán. TOTAL: 781.63
   strokeWeight(19); // 199.61
   flow(x_sitio_trans+20, y_sitio_trans+30, x_sitio_trans+200, y_sitio_trans+30, x_sitio_trans+300, 
   y_sitio_dispo_final+11, x_sitio_dispo_final, y_sitio_dispo_final+11, sitio_disp_final);
@@ -563,7 +583,7 @@ void sitiosDisposicionFinal(){
   flow(x_sitio_trans+20, y_sitio_trans+82, x_sitio_trans+200, y_sitio_trans+82, x_sitio_trans+300, 
   y_sitio_dispo_final+740, x_sitio_dispo_final, y_sitio_dispo_final+740, sitio_disp_final); 
   
-  // 03 Tlalpan: Milagro, Cañada. TOTAL: 187.38
+  // 18 Tlalpan: Milagro, Cañada. TOTAL: 187.38
   strokeWeight(6.6); // 65.15 ton/día a Milagro
   flow(x_sitio_trans+20, y_sitio_trans+164, x_sitio_trans+200, y_sitio_trans+164, x_sitio_trans+300, 
   y_sitio_dispo_final+23, x_sitio_dispo_final, y_sitio_dispo_final+23, sitio_disp_final);  
@@ -571,7 +591,7 @@ void sitiosDisposicionFinal(){
   flow(x_sitio_trans+20, y_sitio_trans+173, x_sitio_trans+200, y_sitio_trans+173, x_sitio_trans+300,
   y_sitio_dispo_final+448, x_sitio_dispo_final, y_sitio_dispo_final+448, sitio_disp_final); 
   
-  // 04 Coyoacán: Milagro, Cañada, Chicoloapan, Cuautla. TOTAL: 574.61
+  // 19 Coyoacán: Milagro, Cañada, Chicoloapan, Cuautla. TOTAL: 574.61
   strokeWeight(22.6); // 226.13 a Milagro
   flow(x_sitio_trans+20, y_sitio_trans+216, x_sitio_trans+200, y_sitio_trans+216, x_sitio_trans+300, 
   y_sitio_dispo_final+37, x_sitio_dispo_final, y_sitio_dispo_final+37, sitio_disp_final);    
@@ -585,7 +605,7 @@ void sitiosDisposicionFinal(){
   flow(x_sitio_trans+20, y_sitio_trans+260, x_sitio_trans+200, y_sitio_trans+260, x_sitio_trans+300, 
   y_sitio_dispo_final+890, x_sitio_dispo_final, y_sitio_dispo_final+890, sitio_disp_final); 
   
-  // 05 Xochimilco: Milagro, Cañada, Cuautitlán. TOTAL: 229.73
+  // 20 Xochimilco: Milagro, Cañada, Cuautitlán. TOTAL: 229.73
   strokeWeight(8.8); // 88.41
   flow(x_sitio_trans+20, y_sitio_trans+325, x_sitio_trans+200, y_sitio_trans+325, x_sitio_trans+300, 
   y_sitio_dispo_final+52, x_sitio_dispo_final, y_sitio_dispo_final+52, sitio_disp_final);  
@@ -596,7 +616,7 @@ void sitiosDisposicionFinal(){
   flow(x_sitio_trans+20, y_sitio_trans+342, x_sitio_trans+200, y_sitio_trans+342, x_sitio_trans+300, 
   y_sitio_dispo_final+750, x_sitio_dispo_final, y_sitio_dispo_final+750, sitio_disp_final); 
   
-  // 06 Milpa Alta: Milagro, Cañada, Cuautitlán. TOTAL: 28.95
+  // 21 Milpa Alta: Milagro, Cañada, Cuautitlán. TOTAL: 28.95
   strokeWeight(0.6); // 6.45
   flow(x_sitio_trans+20, y_sitio_trans+369, x_sitio_trans+200, y_sitio_trans+369, x_sitio_trans+300, 
   y_sitio_dispo_final+57, x_sitio_dispo_final, y_sitio_dispo_final+57, sitio_disp_final);  
@@ -607,7 +627,7 @@ void sitiosDisposicionFinal(){
   flow(x_sitio_trans+20, y_sitio_trans+373, x_sitio_trans+200, y_sitio_trans+373, x_sitio_trans+300, 
   y_sitio_dispo_final+751, x_sitio_dispo_final, y_sitio_dispo_final+751, sitio_disp_final); 
   
-  // 07 Venustiano Carranza: Milagro, Cañada, Chicoloapan. TOTAL: 385.10
+  // 22 Venustiano Carranza: Milagro, Cañada, Chicoloapan. TOTAL: 385.10
   strokeWeight(35.3); // 353.14
   flow(x_sitio_trans+20, y_sitio_trans+402, x_sitio_trans+200, y_sitio_trans+402, x_sitio_trans+300, 
   y_sitio_dispo_final+74, x_sitio_dispo_final, y_sitio_dispo_final+74, sitio_disp_final);  
@@ -618,7 +638,7 @@ void sitiosDisposicionFinal(){
   flow(x_sitio_trans+20, y_sitio_trans+422, x_sitio_trans+200, y_sitio_trans+422, x_sitio_trans+300, 
   y_sitio_dispo_final+853, x_sitio_dispo_final, y_sitio_dispo_final+853, sitio_disp_final);
   
-  // 08 Benito Juárez: Milagro, Cañada, Cuautitlán, Chicoloapan. TOTAL: 220.61
+  // 23 Benito Juárez: Milagro, Cañada, Cuautitlán, Chicoloapan. TOTAL: 220.61
   strokeWeight(6.7); // 67.07
   flow(x_sitio_trans+20, y_sitio_trans+453, x_sitio_trans+200, y_sitio_trans+453, x_sitio_trans+300, 
   y_sitio_dispo_final+95, x_sitio_dispo_final, y_sitio_dispo_final+95, sitio_disp_final);  
@@ -632,7 +652,7 @@ void sitiosDisposicionFinal(){
   flow(x_sitio_trans+20, y_sitio_trans+469, x_sitio_trans+200, y_sitio_trans+469, x_sitio_trans+300, 
   y_sitio_dispo_final+854, x_sitio_dispo_final, y_sitio_dispo_final+854, sitio_disp_final);
   
-  // 09 Iztapalapa: Milagro, Cañada, Cuautitlán, Chicoloapan. TOTAL: 1,044.68
+  // 24 Iztapalapa: Milagro, Cañada, Cuautitlán, Chicoloapan. TOTAL: 1,044.68
   strokeWeight(41.9); // 419.03
   flow(x_sitio_trans+20, y_sitio_trans+516, x_sitio_trans+200, y_sitio_trans+516, x_sitio_trans+300, 
   y_sitio_dispo_final+119, x_sitio_dispo_final, y_sitio_dispo_final+119, sitio_disp_final);  
@@ -646,7 +666,7 @@ void sitiosDisposicionFinal(){
   flow(x_sitio_trans+20, y_sitio_trans+595, x_sitio_trans+200, y_sitio_trans+595, x_sitio_trans+300, 
   y_sitio_dispo_final+856, x_sitio_dispo_final, y_sitio_dispo_final+856, sitio_disp_final);
   
-  // 10 Cuauhtémoc: Milagro, Cañada, Cuautitlán, Chicoloapan. TOTAL: 497.55
+  // 25 Cuauhtémoc: Milagro, Cañada, Cuautitlán, Chicoloapan. TOTAL: 497.55
   strokeWeight(15); // 151.94
   flow(x_sitio_trans+20, y_sitio_trans+675, x_sitio_trans+200, y_sitio_trans+675, x_sitio_trans+300, 
   y_sitio_dispo_final+147, x_sitio_dispo_final, y_sitio_dispo_final+147, sitio_disp_final);  
@@ -660,7 +680,7 @@ void sitiosDisposicionFinal(){
   flow(x_sitio_trans+20, y_sitio_trans+713, x_sitio_trans+200, y_sitio_trans+713, x_sitio_trans+300, 
   y_sitio_dispo_final+858, x_sitio_dispo_final, y_sitio_dispo_final+858, sitio_disp_final);
   
-  // 11 Gustavo A. Madero: Milagro, Cañada, Cuautitlán, Chicoloapan. TOTAL: 30.04
+  // 26 Gustavo A. Madero: Milagro, Cañada, Cuautitlán, Chicoloapan. TOTAL: 30.04
   strokeWeight(0.6); // 6.75
   flow(x_sitio_trans+20, y_sitio_trans+747, x_sitio_trans+200, y_sitio_trans+747, x_sitio_trans+300, 
   y_sitio_dispo_final+155, x_sitio_dispo_final, y_sitio_dispo_final+155, sitio_disp_final);  
@@ -674,7 +694,7 @@ void sitiosDisposicionFinal(){
   flow(x_sitio_trans+20, y_sitio_trans+751, x_sitio_trans+200, y_sitio_trans+751, x_sitio_trans+300, 
   y_sitio_dispo_final+859, x_sitio_dispo_final, y_sitio_dispo_final+859, sitio_disp_final);
   
-  // 12 Azcapotzalco: Milagro, Cañada, Cuautitlán, Chicoloapan. TOTAL: 726.83
+  // 27 Azcapotzalco: Milagro, Cañada, Cuautitlán, Chicoloapan. TOTAL: 726.83
   strokeWeight(27); // 272.24
   flow(x_sitio_trans+20, y_sitio_trans+788, x_sitio_trans+200, y_sitio_trans+788, x_sitio_trans+300, 
   y_sitio_dispo_final+168, x_sitio_dispo_final, y_sitio_dispo_final+168, sitio_disp_final);  
