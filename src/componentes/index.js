@@ -1,0 +1,1 @@
+export { default as FlujoResiduosSolidosUrbanosCDMX } from './flujo-residuos-solidos-urbanos-cdmx'

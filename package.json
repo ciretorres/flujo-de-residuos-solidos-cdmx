@@ -1,0 +1,34 @@
+{
+  "name": "flujo-residuos-solidos-urbanos-cdmx",
+  "version": "1.6.4",
+  "description": "Diagrama de flujo (tipo Sankey) sobre la gestión de los Residuos Sólidos Urbanos en la Ciudad de México",
+  "main": "./src/index.js",
+  "files": [
+    "src",
+    "README.md"
+  ],  
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "format": "prettier . --write",
+    "format-lint": "npm run format && npm run lint",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "preview": "vite preview",
+    "reinstall": "rm -rf node_modules && rm package-lock.json && npm cache clean -f && npm cache verify && npm i",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.22",
+    "vitest": "^0.34.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ciretorres/flujo-de-residuos-solidos-cdmx"
+  },
+  "bugs": {
+    "url": "https://github.com/ciretorres/flujo-de-residuos-solidos-cdmx/issues"
+  },
+  "homepage": "https://github.com/ciretorres/flujo-de-residuos-solidos-cdmx#readme"
+
+}
