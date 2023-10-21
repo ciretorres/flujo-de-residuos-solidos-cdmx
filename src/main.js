@@ -19,3 +19,5 @@ const plugin = {
 export {
     FlujoResiduosSolidosUrbanosCDMX,
 }
+
+export default plugin
