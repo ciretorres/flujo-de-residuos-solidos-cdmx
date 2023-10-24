@@ -20,6 +20,8 @@ As a reference, the [strokeWeight](https://processing.org/reference/strokeWeight
 we can trial the tools, that i'm using, to measure how they work with sufficienctly.
 
 If you are interested in work together, send me a whatsapp 5547904238, or feel free to mail me at erictorres.velasco@gmail.com
+Don't forget to check the code here.
+Last update: **07/04/2019**
 
 ## Diseño
 
@@ -181,6 +183,10 @@ Finally, the result, with a few problems with the knowledge about the tool, was 
 ## Conclusiones
 
 ### Referencias
+
+Programa de Gestión Integral de los Residuos Sólidos para la Ciudad de México
+Inventario de Residuos Sólidos de la Ciudad de México (2015)
+Guía de estilo básica para portales web de la Administración pública de la Ciudad de México.
 
 - CDMX
 
