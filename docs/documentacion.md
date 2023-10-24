@@ -2,7 +2,13 @@
 outline: deep
 ---
 
-# Interactive visual interface from Urban Solid Waste in CDMX
+<script setup>
+import documentacion from "./.vitepress/components/documentacion.vue";
+</script>
+
+<documentacion />
+
+# Documentación: interactive visual interface from Urban Solid Waste in CDMX
 
 ## Introducción
 

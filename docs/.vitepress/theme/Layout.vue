@@ -3,9 +3,6 @@ import LayoutVitePress from 'vitepress/dist/client/theme-default/Layout.vue'
 import { onMounted, ref } from 'vue'
 
 const alerta = ref(true)
-// let base_uri = document
-//   .querySelector('html')
-//   .baseURI.includes('/markdown-examples.html')
 
 onMounted(() => {
   document.addEventListener('keyup', function (e) {
@@ -13,35 +10,76 @@ onMounted(() => {
       alerta.value = false
     }
   })
-  // const buton = document.querySelector('a.VPLink.link.VPNavBarMenuLink')
-  // // console.log('base_uri', base_uri)
-  // // console.log('aside', aside)
-  // // console.log('buton', buton)
-  // buton.addEventListener(
-  //   'click',
-  //   function () {
-  //     // console.log(this) // Expected Value: 'Data'
-  //     let aside = document.querySelector('div.aside')
-  //     base_uri = document
-  //       .querySelector('html')
-  //       .baseURI.includes('/markdown-examples.html')
 
-  //     let container = document.querySelector('div.container')
-  //     // console.log('container', container)
+  let base_uri = document
+    .querySelector('html')
+    .baseURI.includes('/documentacion.html')
 
-  //     if (base_uri) {
-  //       // alerta.value = false
-  //     } else {
-  //       aside.style.display = 'none'
-  //       // container.style.maxWidth = 'none'
-  //       // console.log('aquí')
-  //     }
-  //   }
-  //   // .bind('hay')
-  // )
-  // if (base_uri) {
-  //   alerta.value = false
-  // }
+  let layout = document.querySelector('div.Layout')
+  let aside = document.querySelector('div.aside')
+  // let dropdown = document.querySelector('div.VPDocOutlineDropdown')
+
+  if (base_uri) {
+    layout.classList.remove('inicio')
+    layout.classList.add('documentacion')
+    aside.style.display = 'block'
+    // dropdown.style.display = 'block'
+  } else {
+    layout.classList.add('inicio')
+    aside.style.display = 'none'
+    // dropdown.style.display = 'none'
+  }
+
+  const buton = document.querySelector('nav.VPNavBarMenu.menu')
+  const boton_inicio = buton.childNodes[3]
+  const boton_docu = buton.childNodes[6]
+
+  boton_docu.addEventListener('click', function () {
+    console.log('boton docu')
+    layout.classList.remove('inicio')
+    layout.classList.add('documentacion')
+    aside.style.display = 'block'
+    // dropdown.style.display = 'block'
+  })
+
+  boton_inicio.addEventListener(
+    'click',
+    function () {
+      console.log('boton inicio')
+      layout.classList.remove('documentacion')
+      layout.classList.add('inicio')
+      aside.style.display = 'none'
+      // dropdown.style.display = 'none'
+
+      // console.log(this) // Expected Value: 'Data'
+      // let layout = document.querySelector('div.Layout')
+      // layout.classList.remove('documentacion')
+      // if (layout.classList.contains('documentacion')) {
+      //   layout.classList.add('inicio')
+      // }
+      // let aside = document.querySelector('div.aside')
+      // if (layout.classList.contains('inicio')) {
+      //   aside.style.display = 'none'
+      // }
+      // let aside = document.querySelector('div.aside')
+      // base_uri = document
+      //   .querySelector('html')
+      //   .baseURI.includes('/markdown-examples.html')
+      // let container = document.querySelector('div.container')
+      // // console.log('container', container)
+      // if (base_uri) {
+      //   // alerta.value = false
+      // } else {
+      //   aside.style.display = 'none'
+      //   // container.style.maxWidth = 'none'
+      //   // console.log('aquí')
+      // }
+    }
+    //   // .bind('hay')
+  )
+  if (layout.classList.contains('documentacion')) {
+    alerta.value = false
+  }
 })
 </script>
 
