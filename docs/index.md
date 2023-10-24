@@ -1,3 +1,7 @@
+---
+sectionName: inicio
+---
+
 <script setup>
 import basico from "./.vitepress/components/basico.vue";
 </script>
@@ -8,8 +12,6 @@ import basico from "./.vitepress/components/basico.vue";
 
 <basico />
 
----
-
 ## Acronyms_and_abbreviations
 
 DGSU: Dirección General de Servicios Urbanos  
@@ -17,8 +19,6 @@ CEDA: Central de Abastos
 RME: Residuos de Manejo Especial  
 CDMX: Ciudad de México  
 RSU: Residuos Sólidos Urbanos
-
----
 
 ## Código
 

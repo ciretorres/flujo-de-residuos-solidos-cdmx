@@ -8,16 +8,18 @@ import 'vitepress/dist/client/theme-default/styles/utils.css'
 import 'vitepress/dist/client/theme-default/styles/vars.css'
 
 // https://vitepress.dev/guide/custom-theme
-// import Theme from 'vitepress/theme'
+// import DefaultTheme from 'vitepress/theme'
 // import { h } from 'vue'
+
 import Layout from './Layout.vue'
 import './style.css'
 
+/** @type {import('vitepress').Theme} */
 export default {
   Layout,
-  // extends: Theme,
+  // extends: DefaultTheme,
   // Layout: () => {
-  //   return h(Theme.Layout, null, {
+  //   return h(DefaultTheme.Layout, null, {
   //     // https://vitepress.dev/guide/extending-default-theme#layout-slots
   //   })
   // },

@@ -22,7 +22,7 @@ onMounted(() => {
   if (base_uri) {
     layout.classList.remove('inicio')
     layout.classList.add('documentacion')
-    aside.style.display = 'block'
+    // aside.style.display = 'block'
     // dropdown.style.display = 'block'
   } else {
     layout.classList.add('inicio')
@@ -49,7 +49,6 @@ onMounted(() => {
       layout.classList.remove('documentacion')
       layout.classList.add('inicio')
       aside.style.display = 'none'
-      // dropdown.style.display = 'none'
 
       // console.log(this) // Expected Value: 'Data'
       // let layout = document.querySelector('div.Layout')
@@ -145,16 +144,11 @@ onMounted(() => {
   z-index: 91;
   padding: 46px 64px 32px;
   @media screen and (max-width: 768px) {
-    height: auto%;
+    height: auto;
     padding: 32px 64px;
     background: #272843;
   }
 }
-/* @media screen and (min-width: 768px) {
-  .alerta-info {
-    height: 100%;
-  }
-} */
 .alerta-info button {
   border: 1px solid #fff;
   border-radius: 20px;
@@ -162,6 +156,7 @@ onMounted(() => {
 }
 .alerta-info:hover button {
   font-weight: bold;
+  border: 2px solid #fff;
 }
 html.mac
   body
@@ -171,7 +166,53 @@ html.mac
   div.VPDoc.has-aside
   div.container
   div.aside {
-  /* display: none; */
+  display: none;
+}
+html.mac
+  body
+  div#app
+  div.Layout.documentacion
+  div#VPContent.VPContent
+  div.VPDoc.has-aside
+  div.container
+  div.aside {
+  display: block;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+html.mac
+  body
+  div#app
+  div.Layout.inicio
+  div#VPContent.VPContent
+  div.VPDoc.has-aside
+  div.container
+  div.content
+  div.content-container
+  div.VPDocOutlineDropdown {
+  display: none;
+}
+html.mac
+  body
+  div#app
+  div.Layout
+  div#VPContent.VPContent
+  div.VPDoc.has-aside
+  div.container
+  div.content {
+  max-width: 992px;
+  padding: 0;
+}
+html.mac
+  body
+  div#app
+  div.Layout.documentacion
+  div#VPContent.VPContent
+  div.VPDoc.has-aside
+  div.container
+  div.content {
+  padding-left: 16px;
 }
 html.mac
   body
@@ -182,29 +223,6 @@ html.mac
   div.container
   div.content
   div.content-container {
-  /* max-width: 992px; */
-}
-html.mac
-  body
-  div#app
-  div.Layout
-  div#VPContent.VPContent
-  div.VPDoc.has-aside
-  div.container
-  div.content {
-  /* max-width: 992px;
-  padding: 0; */
-}
-html.mac
-  body
-  div#app
-  div.Layout
-  div#VPContent.VPContent
-  div.VPDoc.has-aside
-  div.container
-  div.content
-  div.content-container
-  div.VPDocOutlineDropdown {
-  /* display: none; */
+  max-width: 992px;
 }
 </style>

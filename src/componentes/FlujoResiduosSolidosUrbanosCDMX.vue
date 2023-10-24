@@ -447,35 +447,4 @@ watch(datos, () => {
 .node-text-rect {
   fill: var(--vp-c-text-1);
 }
-html.mac
-  body
-  div#app
-  div.Layout
-  div#VPContent.VPContent.has-sidebar
-  div.VPDoc.has-sidebar.has-aside
-  div.container
-  div.aside {
-  /* display: none; */
-}
-html.mac
-  body
-  div#app
-  div.Layout
-  div#VPContent.VPContent.has-sidebar
-  div.VPDoc.has-sidebar.has-aside
-  div.container
-  div.content
-  div.content-container {
-  /* max-width: none; */
-}
-html.mac
-  body
-  div#app
-  div.Layout
-  div#VPContent.VPContent
-  div.VPDoc.has-aside
-  div.container
-  div.aside {
-  display: block;
-}
 </style>
