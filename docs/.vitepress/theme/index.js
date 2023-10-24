@@ -7,14 +7,22 @@ import 'vitepress/dist/client/theme-default/styles/components/vp-sponsor.css'
 import 'vitepress/dist/client/theme-default/styles/utils.css'
 import 'vitepress/dist/client/theme-default/styles/vars.css'
 
-import './style/style.css'
-
 // https://vitepress.dev/guide/custom-theme
+// import Theme from 'vitepress/theme'
+// import { h } from 'vue'
 import Layout from './Layout.vue'
+import './style.css'
 
 export default {
   Layout,
+  // extends: Theme,
+  // Layout: () => {
+  //   return h(Theme.Layout, null, {
+  //     // https://vitepress.dev/guide/extending-default-theme#layout-slots
+  //   })
+  // },
   async enhanceApp({ app, router, siteData }) {
+    // ...
     if (!import.meta.env.SSR) {
       const FlujoResiduosSolidosUrbanosCDMX = await import(
         './../../../src/index.js'

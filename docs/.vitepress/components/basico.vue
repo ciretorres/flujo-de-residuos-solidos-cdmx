@@ -5,7 +5,6 @@ const datos = flujo_residuos_solidos_urbanos_cdmx
 
 <template>
   <div>
-    <h1>Flujo de Residuos Sólidos Urbanos de la CDMX</h1>
     <FlujoResiduosSolidosUrbanosCDMX :datos="datos" />
   </div>
 </template>

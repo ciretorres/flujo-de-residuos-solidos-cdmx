@@ -1,40 +1,28 @@
----
-# https://vitepress.dev/reference/default-theme-home-page
-# layout: layout
-# layout: home
-# home: true
-sectionName: Inicio
-# hero:
-#   name: 'My Awesome Project'
-#   text: 'A VitePress Site'
-#   tagline: My great project tagline
-#   actions:
-#     - theme: brand
-#       text: Markdown Examples
-#       link: /markdown-examples
-#     - theme: alt
-#       text: API Examples
-#       link: /api-examples
-# features:
-#   - title: Feature A
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-# - title: Feature B
-#   details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-# - title: Feature C
-#   details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
----
-
 <script setup>
 import basico from "./.vitepress/components/basico.vue";
 </script>
 
-<!-- # Documentación -->
+# Flujo de Residuos Solidos Urbanos de la CDMX
+
+## Arriba
 
 <basico />
 
-<!-- <<< @/.vitepress/components/basico.vue{2} -->
+---
+
+## Acronyms_and_abbreviations
+
+DGSU: Dirección General de Servicios Urbanos  
+CEDA: Central de Abastos  
+RME: Residuos de Manejo Especial  
+CDMX: Ciudad de México  
+RSU: Residuos Sólidos Urbanos
+
+---
 
 ## Código
+
+::: details Click me to view the code
 
 ```vue
 <script setup>
@@ -305,7 +293,11 @@ watch(datos, () => {
   creandoSankey()
 })
 </script>
+```
 
+## html
+
+```vue
 <template>
   <div
     :id="sankey_id"
@@ -317,31 +309,8 @@ watch(datos, () => {
     </div>
   </div>
 </template>
-
-<style lang="scss">
-.node-text-rect {
-  fill: var(--vp-c-text-1);
-}
-html.mac
-  body
-  div#app
-  div.Layout
-  div#VPContent.VPContent.has-sidebar
-  div.VPDoc.has-sidebar.has-aside
-  div.container
-  div.aside {
-  display: none;
-}
-html.mac
-  body
-  div#app
-  div.Layout
-  div#VPContent.VPContent.has-sidebar
-  div.VPDoc.has-sidebar.has-aside
-  div.container
-  div.content
-  div.content-container {
-  max-width: none;
-}
-</style>
 ```
+
+:::
+
+[Go top](#arriba)

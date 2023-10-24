@@ -1,11 +1,3 @@
-<script setup>
-import documentacion from "./.vitepress/components/documentacion.vue";
-</script>
-
-<!-- # Documentación -->
-
-<documentacion />
-
 # Markdown Extension Examples
 
 This page demonstrates some of the built-in markdown extensions provided by VitePress.

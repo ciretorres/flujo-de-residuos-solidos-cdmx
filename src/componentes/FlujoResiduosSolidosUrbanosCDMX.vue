@@ -455,7 +455,7 @@ html.mac
   div.VPDoc.has-sidebar.has-aside
   div.container
   div.aside {
-  display: none;
+  /* display: none; */
 }
 html.mac
   body
@@ -466,7 +466,7 @@ html.mac
   div.container
   div.content
   div.content-container {
-  max-width: none;
+  /* max-width: none; */
 }
 html.mac
   body
@@ -476,6 +476,6 @@ html.mac
   div.VPDoc.has-aside
   div.container
   div.aside {
-  display: none;
+  display: block;
 }
 </style>
