@@ -22,12 +22,9 @@ onMounted(() => {
   if (base_uri) {
     layout.classList.remove('inicio')
     layout.classList.add('documentacion')
-    // aside.style.display = 'block'
-    // dropdown.style.display = 'block'
   } else {
     layout.classList.add('inicio')
     aside.style.display = 'none'
-    // dropdown.style.display = 'none'
   }
 
   const buton = document.querySelector('nav.VPNavBarMenu.menu')
@@ -35,44 +32,18 @@ onMounted(() => {
   const boton_docu = buton.childNodes[6]
 
   boton_docu.addEventListener('click', function () {
-    console.log('boton docu')
     layout.classList.remove('inicio')
     layout.classList.add('documentacion')
     aside.style.display = 'block'
-    // dropdown.style.display = 'block'
   })
 
   boton_inicio.addEventListener(
     'click',
     function () {
-      console.log('boton inicio')
+      // console.log(this) // Expected Value: 'Data'
       layout.classList.remove('documentacion')
       layout.classList.add('inicio')
       aside.style.display = 'none'
-
-      // console.log(this) // Expected Value: 'Data'
-      // let layout = document.querySelector('div.Layout')
-      // layout.classList.remove('documentacion')
-      // if (layout.classList.contains('documentacion')) {
-      //   layout.classList.add('inicio')
-      // }
-      // let aside = document.querySelector('div.aside')
-      // if (layout.classList.contains('inicio')) {
-      //   aside.style.display = 'none'
-      // }
-      // let aside = document.querySelector('div.aside')
-      // base_uri = document
-      //   .querySelector('html')
-      //   .baseURI.includes('/markdown-examples.html')
-      // let container = document.querySelector('div.container')
-      // // console.log('container', container)
-      // if (base_uri) {
-      //   // alerta.value = false
-      // } else {
-      //   aside.style.display = 'none'
-      //   // container.style.maxWidth = 'none'
-      //   // console.log('aquí')
-      // }
     }
     //   // .bind('hay')
   )
@@ -83,7 +54,6 @@ onMounted(() => {
 </script>
 
 <template>
-  <!-- <h1>Layout</h1> -->
   <div
     v-if="alerta"
     class="alerta-info"
