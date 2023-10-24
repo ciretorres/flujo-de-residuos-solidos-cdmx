@@ -436,7 +436,6 @@ watch(datos, () => {
     :id="sankey_id"
     class="sankey-component"
   >
-    <h2>Sankey's Diagram</h2>
     <div class="tooltip"></div>
     <div>
       <svg ref="svgRef"></svg>
@@ -468,5 +467,15 @@ html.mac
   div.content
   div.content-container {
   max-width: none;
+}
+html.mac
+  body
+  div#app
+  div.Layout
+  div#VPContent.VPContent
+  div.VPDoc.has-aside
+  div.container
+  div.aside {
+  display: none;
 }
 </style>

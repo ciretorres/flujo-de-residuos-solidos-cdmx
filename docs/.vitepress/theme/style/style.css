@@ -1,0 +1,14 @@
+body {
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg);
+  padding: 32px;
+}
+
+/* html.dark.mac body div#app div.layout div div div h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit !important;
+} */

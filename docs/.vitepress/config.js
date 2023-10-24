@@ -8,8 +8,8 @@ const pkg = require('../../package.json')
 function nav() {
   return [
     { text: 'Home', link: '/' },
-    // { text: 'Examples', link: '/markdown-examples' },
-    { text: 'Documentación', link: '/documentacion' },
+    { text: 'Documentación', link: '/markdown-examples' },
+    // { text: 'Documentación', link: '/documentacion' },
   ]
 }
 function sidebar() {
@@ -56,7 +56,7 @@ export default {
     //     ],
     //   },
     // ],
-    sidebar: sidebar(),
+    // sidebar: sidebar(),
 
     socialLinks: [
       {
