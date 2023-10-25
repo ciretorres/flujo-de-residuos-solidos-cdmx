@@ -13,11 +13,10 @@ onMounted(() => {
 
   let base_uri = document
     .querySelector('html')
-    .baseURI.includes('/documentacion.html')
+    .baseURI.includes('/documentacion/')
 
   let layout = document.querySelector('div.Layout')
   let aside = document.querySelector('div.aside')
-  // let dropdown = document.querySelector('div.VPDocOutlineDropdown')
 
   if (base_uri) {
     layout.classList.remove('inicio')

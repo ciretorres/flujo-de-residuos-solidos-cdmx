@@ -3,7 +3,7 @@ outline: deep
 ---
 
 <script setup>
-import documentacion from "./.vitepress/components/documentacion.vue";
+import documentacion from "../.vitepress/components/documentacion.vue";
 </script>
 
 <documentacion />
@@ -41,7 +41,7 @@ Last update: **07/04/2019**
 
 ### Presentación
 
-<img src="./.vitepress/public/data/CapturaDePantalla2019-04-07_11.58.50a.m..png" width="900">
+<img src="../.vitepress/public/data/CapturaDePantalla2019-04-07_11.58.50a.m..png" width="900">
 
 The Interactive visual interface presents the flow diagram system from the Urban Solid Waste in Mexico City (CDMX), according with [Solid Waste's inventory](http://www.cms.sedema.cdmx.gob.mx/storage/app/media/IRS-2015-14-dic-2016.compressed.pdf) published in 2016 by Secretaría del Medio Ambiente (SEDEMA). The job is been made possible in collaboration with [Patricia Galán Lara](https://www.facebook.com/patricia.g.lara.75).
 
@@ -54,7 +54,7 @@ If you are interested in work together, send me a whatsapp 5547904238, or feel f
 
 ### Quantity_representation
 
-<img src="./.vitepress/public/data/maq.png" width="900">
+<img src="../.vitepress/public/data/maq.png" width="900">
 
 [Go top](#Summary)
 
@@ -62,7 +62,7 @@ If you are interested in work together, send me a whatsapp 5547904238, or feel f
 
 ### Interaction
 
-<img src="./.vitepress/public/data/maq1.png" width="900">
+<img src="../.vitepress/public/data/maq1.png" width="900">
 
 [Go top](#Summary)
 
@@ -70,7 +70,7 @@ If you are interested in work together, send me a whatsapp 5547904238, or feel f
 
 ### Movement
 
-<img src="./.vitepress/public/data/maq2.png" width="900">
+<img src="../.vitepress/public/data/maq2.png" width="900">
 
 [Go top](#Summary)
 
@@ -86,13 +86,13 @@ We decided to represent the visualization with a spatio-temporal structure (Meir
 
 Thus, the flow visual reconstruction came in with the solid waste properties (e.g. location). The quantity is transferred to different management points and the values that acquires in each context are essentials.
 
-<img src="./.vitepress/public/data/RedisenoI.jpg">
+<img src="../.vitepress/public/data/RedisenoI.jpg">
 
 #### Charles Minard
 
 In 1869, Charles Minard designed a flow map which displays the Napoleon's March to and from Russia, 1812-1813, and combines statistical data techniques with a timeline, and spatio-temporal information about the French army, the **line width represents the number of soldiers marching** to and from Russia, with **each millimeter standing for 10,000 men**. The march starts with 420,000 men in the Polish–Russian border (center left, beige line), reaches Moscow with 100,000 (top right), and ends with 10,000 men (black line). **The line graph at the bottom represents the temperatures** faced by the army on the way back to Poland, which are associated with the line standing for the return trip.
 
-<img src="./.vitepress/public/data/MapCharlesMinard.png" width="900">
+<img src="../.vitepress/public/data/MapCharlesMinard.png" width="900">
 
 "Connections between temperatures and the march offer new levels of information: the relationships between deaths and low temperatures (probably also aggravated by fatigue). For example, 22,000 men died crossing the River Berezina due to the extreme low temperatures (–20oC [–4oF])".
 
@@ -104,23 +104,23 @@ With the information recollected, we needed to figure out how to visualize it. B
 
 #### Prototype I:
 
-<img src="./.vitepress/public/data/PrototipoI.png">
+<img src="../.vitepress/public/data/PrototipoI.png">
 
 #### Prototype II:
 
-<img src="./.vitepress/public/data/PrototipoII.jpg">
+<img src="../.vitepress/public/data/PrototipoII.jpg">
 
 After that, we noticed that there where some unknown quantities didn't mention in the inventory. Thats why, we decided to descomposed the system and started taking the measure for every site which process the solid waste.
 
 #### Prototype III:
 
-<img src="./.vitepress/public/data/PrototipoIII.png">
+<img src="../.vitepress/public/data/PrototipoIII.png">
 
 Ending, with a few changes in representation and color style. We could finally comprehended something bigger and more complex, that motived me to take it to the next level of prototyping and started to understanding its logic structure from the semantic point of view.
 
 #### Prototype IV:
 
-<img src="./.vitepress/public/data/MasterResiduosSolidos.png">
+<img src="../.vitepress/public/data/MasterResiduosSolidos.png">
 
 That reasoning, set me on working with another techonology to design a represent this kinds of aspects to keep speculating about the physical form that could be naturally understand through some interactive helping tools.  
 The image above was used to be presented in an exhibition at Universidad Autónoma Metropolitana (UAM), campus [Cuajimalpa](http://cua.uam.mx/). With a serie of others works designed by the team, that integrated the comprehension of the whole system. In this visualization, each municipality was referred to its imagotype for the print version.
@@ -135,7 +135,7 @@ The image above was used to be presented in an exhibition at Universidad Autóno
 
 In 1968, Riall Sankey proposed a diagram as a visual representation tool for talking about thermal effiency in the vapor machines. In Sankey's diagrams **the widths of bands are scaled to the corresponding quantities of the vapor flow**.
 
-<img src="./.vitepress/public/data/DiagramRiallSankey.png">
+<img src="../.vitepress/public/data/DiagramRiallSankey.png">
 
 Flows in Sankey diagrams act much more like 'rivers' (as opposed to threads) in which you lose memory of the previous steps. This can be useful in thoses cases in which the user is more interested in relating different data dimensions next to each other more than centering the visualization partition arround a leading dimension.
 
@@ -145,13 +145,13 @@ Flows in Sankey diagrams act much more like 'rivers' (as opposed to threads) in 
 
 Fineo Density is visualization technique of continuous flow of data based on Sankey diagram structure, to represent relations between multidimensional categorical data. Fineo has a network structure, where nodes are individual categories grouped under a dimension, with the flow lines representing connections. Connections are grouped at every level, thus providing the width between pairs of axes.
 
-<img src="./.vitepress/public/data/FineoDensityDesign.jpg">
+<img src="../.vitepress/public/data/FineoDensityDesign.jpg">
 
 With this inspiration in mind, I decided to code the diagram flow structure with the information available used previously, to find how much urban solid waste is transferred from every process site and relate as a category. So first, I had to make some adjustments in adobe illustrator to the graphic visualization prototype to respect every width of the lines.
 
 ##### Adjustments to graphic prototype:
 
-<img src="./.vitepress/public/data/FlujoMinardFinal.png">
+<img src="../.vitepress/public/data/FlujoMinardFinal.png">
 
 It is relevant to mention, that the color for the lines was used acoording to the [Basic style guide for the Public Administration web sites of Mexico City](http://www.cdmx.gob.mx/storage/app/media/Guia_Estilos_Sitios_Web_CDMX_v.1.3.pdf). Thas why the pink is the main color, after the purple that distinguish the selection plants from the final dispotition sites.  
 With this categorization process, we could finally viewed the gaps that the information presented by SEDEMA has. Without mention, how many urban solid waste quantity ends every day at the final disposition sites.
@@ -160,7 +160,7 @@ Finally, the result, with a few problems with the knowledge about the tool, was 
 
 ##### Processing prototype:
 
-<img src="./.vitepress/public/data/FlujoDeResiduosSolidosUrbanos.png">
+<img src="../.vitepress/public/data/FlujoDeResiduosSolidosUrbanos.png">
 
 [Go top](#Summary)
 

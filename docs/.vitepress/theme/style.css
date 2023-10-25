@@ -4,15 +4,6 @@ body {
   padding: 32px;
 }
 
-/* html.dark.mac body div#app div.layout div div div h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit !important;
-} */
-
 /**
  * Customize default theme styling by overriding CSS variables:
  * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css

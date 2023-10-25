@@ -8,9 +8,10 @@ const pkg = require('../../package.json')
 function nav() {
   return [
     { text: 'Inicio', link: '/' },
-    { text: 'Documentación', link: '/documentacion' },
-    { text: 'My Awesome Project', link: '/my-awesome-project' },
-    { text: 'Markdown Examples', link: '/markdown-examples' },
+    { text: 'Documentación', link: '/documentacion/' },
+    // { text: 'My Awesome Project', link: '/my-awesome-project' },
+    // { text: 'Markdown Examples', link: '/markdown-examples' },
+    // { text: 'Runtime API Examples', link: '/api-examples' },
     { text: 'v' + pkg.version, link: pkg.repository.url },
   ]
 }
@@ -27,7 +28,7 @@ function sidebar() {
 }
 
 // https://vitepress.dev/reference/site-config
-// export default defineConfig({
+// export default defineConfig({})
 export default {
   lang: 'es-mx',
   title: 'Flujo de RSU de la CDMX',
@@ -43,21 +44,7 @@ export default {
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    // nav: [
-    //   { text: 'Home', link: '/' },
-    //   { text: 'Examples', link: '/markdown-examples' },
-    // ],
     nav: nav(),
-
-    // sidebar: [
-    //   {
-    //     text: 'Examples',
-    //     items: [
-    //       { text: 'Markdown Examples', link: '/markdown-examples' },
-    //       { text: 'Runtime API Examples', link: '/api-examples' },
-    //     ],
-    //   },
-    // ],
     // sidebar: sidebar(),
 
     // socialLinks: [
