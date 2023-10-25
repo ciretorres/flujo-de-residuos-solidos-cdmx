@@ -1,8 +1,4 @@
-// import 'ol/ol.css'
-// import 'sisdai-css'
-
-// import { FlujoResiduosSolidosUrbanosCDMX } from './componentes/flujo-residuos-solidos-urbanos-cdmx'
-import FlujoResiduosSolidosUrbanosCDMX from './componentes/FlujoResiduosSolidosUrbanosCDMX.vue'
+import { FlujoResiduosSolidosUrbanosCDMX } from './componentes'
 
 export default {
   install: Vue => {
@@ -12,13 +8,5 @@ export default {
     )
   },
 }
-
-// const plugin = {
-//   install: function (Vue) {
-//     Vue.use(FlujoResiduosSolidosUrbanosCDMX)
-//   },
-// }
-
-// export default plugin
 
 export { FlujoResiduosSolidosUrbanosCDMX }

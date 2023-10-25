@@ -146,7 +146,7 @@ html.mac
   div.container
   div.aside {
   display: block;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 959px) {
     display: none;
   }
 }

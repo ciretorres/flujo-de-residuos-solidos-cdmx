@@ -1,7 +1,12 @@
-// export { default as FlujoResiduosSolidosUrbanosCDMX } from './flujo-residuos-solidos-urbanos-cdmx'
+import { FlujoResiduosSolidosUrbanosCDMX } from './flujo-residuos-solidos-urbanos-cdmx'
 
-// // import FlujoResiduosSolidosUrbanosCDMX from './flujo-residuos-solidos-urbanos-cdmx'
+export default {
+  install: Vue => {
+    Vue.component(
+      'FlujoResiduosSolidosUrbanosCDMX',
+      FlujoResiduosSolidosUrbanosCDMX
+    )
+  },
+}
 
-// // export {
-// //   FlujoResiduosSolidosUrbanosCDMX,
-// // }
+export { FlujoResiduosSolidosUrbanosCDMX }

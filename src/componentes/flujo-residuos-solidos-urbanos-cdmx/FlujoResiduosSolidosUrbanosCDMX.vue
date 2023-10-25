@@ -7,7 +7,7 @@ import { onMounted, onUnmounted, ref, toRefs, watch } from 'vue'
 const props = defineProps({
   sankey_id: {
     type: String,
-    default: () => 'sankey',
+    default: () => 'sankey2',
   },
   datos: {
     type: Object,
