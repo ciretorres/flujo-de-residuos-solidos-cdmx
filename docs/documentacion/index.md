@@ -48,13 +48,13 @@ Initially, the project began with the purpose to explore with visual design and 
 
 ### Presentación
 
-This is the versión 0.0.1
+This is the versión 0.0.1 in 2018.
 
-<img src="../.vitepress/public/data/FlujoDeResiduosSolidosUrbanos.png" width="900">
+<img src="../.vitepress/public/data/Screen Shot 2023-10-31 at 16.49.47.png" width="900">
 
-This is the versión 0.0.2
+This is the versión 0.0.2 in 2019.
 
-<img src="../.vitepress/public/data/CapturaDePantalla2019-04-07_11.58.50a.m..png" width="900">
+<img src="../.vitepress/public/data/Screen Shot 2023-10-31 at 16.51.09.png" width="900">
 
 The visualization in this project intented to represent the management from the Urban Solid Waste of each municipality to the final destination site in México City, with respect to the previous research in collaboration with the team Master degree Information Design and proffesor [Nora Morales](http://noramorales.academia.edu/) who guided us into the process.
 
@@ -166,7 +166,9 @@ Finally, the result, with a few problems with the knowledge about the tool, was 
 
 ## Referencias
 
-[Programa de Gestión Integral de los Residuos Sólidos para la Ciudad de México Inventario de Residuos Sólidos de la Ciudad de México (2015)](http://www.cms.sedema.cdmx.gob.mx/storage/app/media/IRS-2015-14-dic-2016.compressed.pdf)
+[Programa de Gestión Integral de los Residuos Sólidos para la Ciudad de México Inventario de Residuos Sólidos de la Ciudad de México (2015)](https://www.sedema.cdmx.gob.mx/programas/programa/residuos-%20%20%20%20%20%20%20%20%20%20%20%20%20%20solidos?fbclid=IwAR0KfyUlkjbDuTNzDUCjQT0wtPlCT6b7TuXLRbaKbR3dHC0eisK33lvuUBg)
+
+[Inventario de Residuos Sólidos de la Ciudad de México (2015) ](http://www.cms.sedema.cdmx.gob.mx/storage/app/media/IRS-2015-14-dic-2016.compressed.pdf)
 
 [Guía de estilo básica para portales web de la Administración pública de la Ciudad de México.](https://www.cdmx.gob.mx/storage/app/media/Guia_Estilos_Sitios_Web_CDMX_v.1.3.pdf)
 
