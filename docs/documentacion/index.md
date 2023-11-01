@@ -8,7 +8,7 @@ import documentacion from "../.vitepress/components/documentacion.vue";
 
 <documentacion />
 
-# Documentación: interactive visual interface from Urban Solid Waste in CDMX
+# Documentación: interactive interface of the Urban Solid Wastes system in Mexico City (CDMX)
 
 ## Introducción
 
