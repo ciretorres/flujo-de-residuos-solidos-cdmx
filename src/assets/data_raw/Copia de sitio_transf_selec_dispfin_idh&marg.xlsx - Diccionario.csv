@@ -1,0 +1,157 @@
+id_entidad,Nombre de la entidad federativa
+des_entidad,
+id_municipio,
+folio,
+des_municipio,
+gen2008,Indica la generación por delegación para el año señalado
+rec_delegacional_barrido_2008,Indica la recolección de los servicios delegacionales para el año señalado
+sitio_trans_2008,Indica la cantidad que llegó a transferencia en el año señalado
+sitio_trans_rec_delegacional_2008,Indica la cantidad que llegó al sitio de transferencia y que procede de la recolección delegacional en el año señalado
+sitio_seleccion_2008,Indica la can tidad que entró al sitio de selección. 
+sitio_disp_final_2008,Indica la cantidad que llegó al sitio de disposición final 
+gen2009,Indica la generación por delegación para el año señalado
+rec_delegacional_barrido_2009,Indica la recolección de los servicios delegacionales para el año señalado
+sitio_trans_2009,Indica la cantidad que llegó a transferencia en el año señalado
+sitio_trans_rec_delegacional_2009,Indica la cantidad que llegó al sitio de transferencia y que procede de la recolección delegacional en el año señalado
+sitio_seleccion_2009,Indica la can tidad que entró al sitio de selección. 
+sitio_disp_final_2009,Indica la cantidad que llegó al sitio de disposición final 
+gen_2010,Indica la generación por delegación para el año señalado
+rec_delegacional_barrido_2010,Indica la recolección de los servicios delegacionales para el año señalado
+sitio_trans_2010,Indica la cantidad que llegó a transferencia en el año señalado
+sitio_trans_rec_delegacional_2010,Indica la cantidad que llegó al sitio de transferencia y que procede de la recolección delegacional en el año señalado
+sitio_seleccion_2010,Indica la can tidad que entró al sitio de selección. 
+sitio_disp_final_2010,Indica la cantidad que llegó al sitio de disposición final 
+gen_2011,Indica la generación por delegación para el año señalado
+rec_delegacional_barrido_2011,Indica la recolección de los servicios delegacionales para el año señalado
+sitio_trans_2011,Indica la cantidad que llegó a transferencia en el año señalado
+sitio_trans_rec_delegacional_2011,Indica la cantidad que llegó al sitio de transferencia y que procede de la recolección delegacional en el año señalado
+sitio_seleccion_2011,Indica la can tidad que entró al sitio de selección. 
+sitio_disp_final_2011,Indica la cantidad que llegó al sitio de disposición final 
+gen_2012,Indica la generación por delegación para el año señalado
+rec_delegacional_barrido_2012,Indica la recolección de los servicios delegacionales para el año señalado
+sitio_trans_2012,Indica la cantidad que llegó a transferencia en el año señalado
+sitio_trans_rec_delegacional_2012,Indica la cantidad que llegó al sitio de transferencia y que procede de la recolección delegacional en el año señalado
+sitio_seleccion_2012,Indica la can tidad que entró al sitio de selección. 
+sitio_disp_final_2012,Indica la cantidad que llegó al sitio de disposición final 
+gen_2013,Indica la generación por delegación para el año señalado
+rec_delegacional_barrido_2013,Indica la recolección de los servicios delegacionales para el año señalado
+sitio_trans_2013,Indica la cantidad que llegó a transferencia en el año señalado
+sitio_trans_rec_delegacional_2013,Indica la cantidad que llegó al sitio de transferencia y que procede de la recolección delegacional en el año señalado
+sitio_seleccion_2013,Indica la can tidad que entró al sitio de selección. 
+sitio_disp_final_2013,Indica la cantidad que llegó al sitio de disposición final 
+gen_2014,Indica la generación por delegación para el año señalado
+rec_delegacional_barrido_2014,Indica la recolección de los servicios delegacionales para el año señalado
+sitio_trans_2014,Indica la cantidad que llegó a transferencia en el año señalado
+sitio_trans_rec_delegacional_2014,Indica la cantidad que llegó al sitio de transferencia y que procede de la recolección delegacional en el año señalado
+sitio_seleccion_2014,Indica la can tidad que entró al sitio de selección. 
+sitio_disp_final_2014,Indica la cantidad que llegó al sitio de disposición final 
+gen_2015,Indica la generación por delegación para el año señalado
+rec_delegacional_barrido_gam_2015,Indica la recolección de los servicios delegacionales para el año señalado
+sitio_trans_2015,Indica la cantidad que llegó a transferencia en el año señalado
+sitio_trans_rec_delegacional_2015,Indica la cantidad que llegó al sitio de transferencia y que procede de la recolección delegacional en el año señalado
+sitio_seleccion_2015,Indica la can tidad que entró al sitio de selección. 
+sitio_disp_final_2015,Indica la cantidad que llegó al sitio de disposición final 
+gen_2016,Indica la generación por delegación para el año señalado
+rec_delegacional_barrido_gam_2016,Indica la recolección de los servicios delegacionales para el año señalado
+sitio_trans_2016,Indica la cantidad que llegó a transferencia en el año señalado
+sitio_trans_rec_delegacional_2016,Indica la cantidad que llegó al sitio de transferencia y que procede de la recolección delegacional en el año señalado
+sitio_seleccion_2016,Indica la can tidad que entró al sitio de selección. 
+sitio_disp_final_2016,Indica la cantidad que llegó al sitio de disposición final 
+idh_2000,ïndice de desarrollo humano municipal en el año señalado.
+idh_2000_nominal,"Grado de desarrollo humano. La clasificación del IDH se determina utilizando valores del IDH con siete decimales. Los valores pueden ser: A:Alto, M:Medio y B:Bajo. En al año señalado. "
+tmi_2000,e refiere al número de defunciones de menores de un año de edad por cada mil nacimientos ocurridos en el año señalado.
+talfa_2000,Se refiere a la población alfabeta de 15 y más años entre la población de 15 y más años de edad. En ell año señalado.
+tae_2000,Se refiere a la población de 6 y 24 años que asiste a la escuela entre la población de 6 y 24 años de edad. En el año señalado.
+ipca_2000,"Ingreso per cápita anual, ajustado a cuentas nacionales (dólares PPC). En el año señalado."
+isal_2000,"Índice componente del IDH, calculado a partir de la tasa de mortalidad infantil. En el año señalado."
+ieduc_2000,"Índice componente del IDH, calculado a partir de la tasa de alfabetización y la tasa de asistencia escolar. En el año señalado."
+iing_2000,"Índice componente del IDH, calculado a partir del ingreso per cápita anual. En el año señalado."
+idh_2005,ïndice de desarrollo humano municipal en el año señalado.
+idh_2005_nominal,"Grado de desarrollo humano. La clasificación del IDH se determina utilizando valores del IDH con siete decimales. Los valores pueden ser: A:Alto, M:Medio y B:Bajo. En al año señalado. "
+tmi_2005,e refiere al número de defunciones de menores de un año de edad por cada mil nacimientos ocurridos en el año señalado.
+talfa_2005,Se refiere a la población alfabeta de 15 y más años entre la población de 15 y más años de edad. En ell año señalado.
+tae_2005,Se refiere a la población de 6 y 24 años que asiste a la escuela entre la población de 6 y 24 años de edad. En el año señalado.
+ipca_2005,"Ingreso per cápita anual, ajustado a cuentas nacionales (dólares PPC). En el año señalado."
+isal_2005,"Índice componente del IDH, calculado a partir de la tasa de mortalidad infantil. En el año señalado."
+ieduc_2005 ,"Índice componente del IDH, calculado a partir de la tasa de alfabetización y la tasa de asistencia escolar. En el año señalado."
+iing_2005,"Índice componente del IDH, calculado a partir del ingreso per cápita anual. En el año señalado."
+idh_2010,îndice de desarrollo humano 2010
+ihd_2010_nominal,Grado de desarrollo humano 2010. 
+ind_salud_2010,Índice de salud en el año señalado (nueva metodología)
+ind_educ_2010,indice de educación en el año señalado (nueva metodología)
+ind_ing_2010,Ìndice de ingreso en el año señalado (nueva metodología)
+indice_marginacion_2000,Índice de marginación para el año señalado 
+grado_marginación_2000,"Grado de marginación. Se clasifica como: Muy Alto, Alto, Medio, Bajo y Muy Bajo. Para el año señalado"
+porc_15ymas_analfabeta_2000,Porcentaje de población analfabeta de 15 años y más. Resultado del estudio del año señalado. 
+porc_15ymas_sinprim_2000,Porcentaje de población de 15 años y más sin primaria completa. Resultado del estudio del año señalado. 
+porc_ocu_viv_sindres_2000,Porcentaje de ocupantes en viviendas sin drenaje ni servicio sanitario exclusivo. Resultado del estudio del año señalado.  
+porc_ocu_viv_sinel_2000,Porcentaje de ocupantes en viviendas sin energía eléctrica. Resultado del estudio del año señalado.
+porc_ocu_viv_sinagua_2000,Porcentaje de ocupantes en viviendas sin agua entubada. Resultado del estudio del año señalado.
+porc_ocu_viv_hacin_2000,Porcentaje de ocupantes en viviendas con algún nivel de hacinamiento. Resultado del estudio del año señalado.  
+porc_ocu_viv_pisotierra_2000,Porcentaje de ocupantes en viviendas con piso de tierra: Resultado del estudio del año señalado.
+porc_loc_menor5k_2000,Porcentaje de población en localidades con menos de 5000 habitantes. Resultado del estudio del año señalado. 
+porc_pocu_2sm_2000,Porcentaje de población ocupada con ingreso de hasta 2 salarios mínimos. Resultado del estudio del año señalado.
+indice_marginacion_2005,Índice de marginación para el año señalado 
+grado_marginación_2005,"Grado de marginación. Se clasifica como: Muy Alto, Alto, Medio, Bajo y Muy Bajo. Para el año señalado"
+porc_15ymas_sinprim_2005,Porcentaje de población analfabeta de 15 años y más. Resultado del estudio del año señalado. 
+porc_ocu_viv_sindres_2005,Porcentaje de población de 15 años y más sin primaria completa. Resultado del estudio del año señalado. 
+porc_ocu_viv_sinel_2005,Porcentaje de ocupantes en viviendas sin drenaje ni servicio sanitario exclusivo. Resultado del estudio del año señalado.  
+porc_ocu_viv_sinagua_2005,Porcentaje de ocupantes en viviendas sin energía eléctrica. Resultado del estudio del año señalado.
+porc_ocu_viv_hacin_2005,Porcentaje de ocupantes en viviendas sin agua entubada. Resultado del estudio del año señalado.
+porc_ocu_viv_pisotierra_2005,Porcentaje de ocupantes en viviendas con algún nivel de hacinamiento. Resultado del estudio del año señalado.  
+porc_loc_menor5k_2005,Porcentaje de ocupantes en viviendas con piso de tierra: Resultado del estudio del año señalado.
+porc_pocu_2sm_2005,Porcentaje de población en localidades con menos de 5000 habitantes. Resultado del estudio del año señalado. 
+porc_15ymas_analfabeta_2005,Porcentaje de población ocupada con ingreso de hasta 2 salarios mínimos. Resultado del estudio del año señalado.
+indice_marginacion_2010,Índice de marginación para el año señalado 
+grado_marginación_2010,"Grado de marginación. Se clasifica como: Muy Alto, Alto, Medio, Bajo y Muy Bajo. Para el año señalado"
+porc_15ymas_analfabeta_2010,Porcentaje de población analfabeta de 15 años y más. Resultado del estudio del año señalado. 
+porc_15ymas_sinprim_2010,Porcentaje de población de 15 años y más sin primaria completa. Resultado del estudio del año señalado. 
+porc_ocu_viv_sindres_2010,Porcentaje de ocupantes en viviendas sin drenaje ni servicio sanitario exclusivo. Resultado del estudio del año señalado.  
+porc_ocu_viv_sinel_2010,Porcentaje de ocupantes en viviendas sin energía eléctrica. Resultado del estudio del año señalado.
+porc_ocu_viv_sinagua_2010,Porcentaje de ocupantes en viviendas sin agua entubada. Resultado del estudio del año señalado.
+porc_ocu_viv_hacin_2010,Porcentaje de ocupantes en viviendas con algún nivel de hacinamiento. Resultado del estudio del año señalado.  
+porc_ocu_viv_pisotierra_2010,Porcentaje de ocupantes en viviendas con piso de tierra: Resultado del estudio del año señalado.
+porc_loc_menor5k_2010,Porcentaje de población en localidades con menos de 5000 habitantes. Resultado del estudio del año señalado. 
+porc_pocu_2sm_2010,Porcentaje de población ocupada con ingreso de hasta 2 salarios mínimos. Resultado del estudio del año señalado.
+indice_marginacion_2015,Índice de marginación para el año señalado 
+grado_marginación_2015,"Grado de marginación. Se clasifica como: Muy Alto, Alto, Medio, Bajo y Muy Bajo. Para el año señalado"
+porc_15ymas_analfabeta_2015,Porcentaje de población analfabeta de 15 años y más. Resultado del estudio del año señalado. 
+porc_15ymas_sinprim_2015,Porcentaje de población de 15 años y más sin primaria completa. Resultado del estudio del año señalado. 
+porc_ocu_viv_sindres_2015,Porcentaje de ocupantes en viviendas sin drenaje ni servicio sanitario exclusivo. Resultado del estudio del año señalado.  
+porc_ocu_viv_sinel_2015,Porcentaje de ocupantes en viviendas sin energía eléctrica. Resultado del estudio del año señalado.
+porc_ocu_viv_sinagua_2015,Porcentaje de ocupantes en viviendas sin agua entubada. Resultado del estudio del año señalado.
+porc_ocu_viv_hacin_2015,Porcentaje de ocupantes en viviendas con algún nivel de hacinamiento. Resultado del estudio del año señalado.  
+porc_ocu_viv_pisotierra_2015,Porcentaje de ocupantes en viviendas con piso de tierra: Resultado del estudio del año señalado.
+porc_loc_menor5k_2015,Porcentaje de población en localidades con menos de 5000 habitantes. Resultado del estudio del año señalado. 
+porc_pocu_2sm,Porcentaje de población ocupada con ingreso de hasta 2 salarios mínimos. Resultado del estudio del año señalado.
+sitio_transferencia_azcapo,Sitio de transferencia Azcapotzalco
+sio_transferencia_cuauhtémoc,Sitio de transferencia Cuauhtémoc
+sitio_transferencia_miguelh,Sitio de transferencia Miguel Hidalgo (parece que desapareció)
+sitio_transferncia_benito,Sitio de transferencia Benito Juárez
+sitio_transferencia_alvaro,Sitio de transferencia Álvaro Obregón
+sitio_transferencia_tlalpan,Sitio de transferencia Tlalpan
+sito_transferencia_gam,Sitio de transferencia Gustavo A. Madero
+sitio_transferencia_venus,Sitio de transferencia Venustiano Carranza
+sitio_tranferencia_iztapa,Sitio de transferencia Iztapalapa 
+sitio_transferencia_coyo,Sitio de transferencia Coyoacán 
+sitio_transferencia_xochi,Sitio de transferencia Xochimilco 
+sitio_transferencia_milpa,Sitio de transferencia Milpa Alta
+sitio_transferencia_centralabasto,Sitio de transferencia Central de Abasto 
+plantaselec_sja_faseI,Planta San Juan de Aragón (Fase I)
+plantaselec_sja_faseII,Planta San Juan de Aragón (Fase II)
+plantaselec_sja_patio,Planta San Juan de Aragón (patio)
+plantaselec_stacat,Planta Selección Santa Catarina
+plantacomposta_bordoponiente,"Bordo Poniente. Composta. (casi todo se va aquí. Primer lugar: 462,304 ton/año)"
+plantacomposta_alvaro,Álvaro Obregón
+plantacomposta_cuaji,"Cuajimalpa (tercer lugar a donde se van los residuos: 4,354 ton/año)"
+plantacomposta_iztapa,Iztapalapa
+plantacomposta_milpa,Milpa Alta
+plantacomposta_xochi,"Xochimilco (segundo lugar a donde van los residuos: 13,244 ton/año))"
+plantacomposta_sja,San Juan de Aragón
+sitiodispfinal_cañada,Sitio de disposición final Cañada
+sitiodispfinal_cuautla,Sitio de disposición final Cuautla
+sitiodispfinal_cuauti,Sitio de disposición fina Cuautitlán
+sitiodispfinal_milagro,Sitio de disposición final Milagro 
+sitiodispfinal_tepoz,Sitio de disposición final Tepoztlán
+sitiodispfinal_chicolo,Sitio de disposición final Chicoloapan
+rec_rme,Recolección de Residuos de Manejo Especial RME
