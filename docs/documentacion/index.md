@@ -168,6 +168,10 @@ Finally, the result, with a few problems with the knowledge about the tool, was 
 
 ## Conclusiones
 
+The management of Urban Solid Waste is a complex system, because there are variants between the information provided by public and private institutions, regulations, social dinamics and sensory data for decision making that involves efficiency, management and indicators production, and quantity consumption.
+
+The question that we asked ourselves is, where are going as a society in this country? Considering the culture of recyling and the excersive of policies that are follow into the straight.
+
 ## Referencias
 
 [Programa de Gestión Integral de los Residuos Sólidos para la Ciudad de México Inventario de Residuos Sólidos de la Ciudad de México (2015)](https://www.sedema.cdmx.gob.mx/programas/programa/residuos-%20%20%20%20%20%20%20%20%20%20%20%20%20%20solidos?fbclid=IwAR0KfyUlkjbDuTNzDUCjQT0wtPlCT6b7TuXLRbaKbR3dHC0eisK33lvuUBg)
@@ -190,21 +194,21 @@ Finally, the result, with a few problems with the knowledge about the tool, was 
 
 [Meirelles, Isabelle. 2013. Design for information\_ an introduction to the histories, theories, and best practices behind effective visualizations. USA: Rockport Publishers.](../.vitepress/public/bibliografi/libro.pdf)
 
-[ReporteSEDEMA_Residuos.pdf](../.vitepress/public/bibliografia/ReporteSEDEMA_Residuos.pdf)
+[SEDEMA-inventario-residuos-solidos-cdmx-2015.pdf](../.vitepress/public/bibliografia/SEDEMA-inventario-residuos-solidos-cdmx-2015.pdf)
 
-[Guia_Estilos_Sitios_Web_CDMX_v.1.3.pdf](../.vitepress/public/bibliografia/Guia_Estilos_Sitios_Web_CDMX_v.1.3.pdf)
+[Guia-estilo-basica-portales-web-adminis-publica-cdmx-v.1.3.pdf](../.vitepress/public/bibliografia/Guia-estilo-basica-portales-web-adminis-publica-cdmx-v.1.3.pdf)
 
-[pgirs.pdf](../.vitepress/public/bibliografia/pgirs.pdf)
+[SEDEMA-programa-gestion-integral-residuos-solidos-2016-2020.pdf](../.vitepress/public/bibliografia/SEDEMA-programa-gestion-integral-residuos-solidos-2016-2020.pdf)
 
 [PGIRS_Gaceta.pdf](../.vitepress/public/bibliografia/PGIRS_Gaceta.pdf)
 
-[Norma_AMBT_2013.pdf](../.vitepress/public/bibliografia/Norma_AMBT_2013.pdf)
+[Norma-ambiental-cdmx-2013.pdf](../.vitepress/public/bibliografia/Norma-ambiental-cdmx-2013.pdf)
 
-[flujo_residuos_DF.pdf](../.vitepress/public/bibliografia/flujo_residuos_DF.pdf)
+[Diagnostico-actual-flujo-residuos-solidos-urbanos-genera-cdmx.pdf](../.vitepress/public/bibliografia/Diagnostico-actual-flujo-residuos-solidos-urbanos-genera-cdmx.pdf)
 
 [ESTACIONES_DE_TRANSFERENCIA.pdf](../.vitepress/public/bibliografia/ESTACIONES_DE_TRANSFERENCIA.pdf)
 
-[directorio_residuos.pdf](../.vitepress/public/bibliografia/directorio_residuos.pdf)
+[SEMARNAT-directorio-centros-acopio-materiales-provenientes-residuos-solidos-mexico-2010.pdf](../.vitepress/public/bibliografia/SEMARNAT-directorio-centros-acopio-materiales-provenientes-residuos-solidos-mexico-2010.pdf)
 
 [Go top](#Summary)
 
