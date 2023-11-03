@@ -14,7 +14,7 @@ import documentacion from "../.vitepress/components/documentacion.vue";
 
 The Interactive visual interface presents the flow diagram system from the Urban Solid Waste in Mexico City (CDMX), according with [Solid Waste's inventory](http://www.cms.sedema.cdmx.gob.mx/storage/app/media/IRS-2015-14-dic-2016.compressed.pdf) published in 2016 by Secretaría del Medio Ambiente (SEDEMA).
 
-The job is been made possible in collaboration with [Patricia Galán Lara](https://www.facebook.com/patricia.g.lara.75).
+The job is been made possible in collaboration with the Design team at the ["Problemas del diseño de información: cuantitiva"](../.vitepress/public/bibliografia/OP-problemas-disenio-informacion-cuantitativa.pdf) seminar with proffesor [Nora Morales](http://noramorales.academia.edu/), for the Master in Information Design at Universidad Autónoma Metropolitana - campus [Cuajimalpa](http://cua.uam.mx/) in 2017 and [Patricia Galán Lara](https://www.facebook.com/patricia.g.lara.75).
 
 <img src="../.vitepress/public/img/_capturas/Screen Shot 2023-10-31 at 13.08.11.png" width="900">
 
@@ -28,7 +28,7 @@ With this, we can trial the tools, that i'm using, to measure how they work with
 If you are interested in work together or colaborate, send me a whatsapp 5547904238, or feel free to mail me at erictorres.velasco@gmail.com
 
 Don't forget to check the code [here](https://github.com/ciretorres/flujo-de-residuos-solidos-cdmx/).
-Last update: **10/2023**
+Last update: **11/2023**
 
 ## Summary
 
@@ -60,7 +60,9 @@ This is the versión 0.0.3 in 2019.
 
 <img src="../.vitepress/public/img/_capturas/Screen Shot 2023-10-31 at 16.51.09.png" width="900">
 
-The visualization in this project intented to represent the management from the Urban Solid Waste of each municipality to the final destination site in México City, with respect to the previous research in collaboration with the team Master degree Information Design and proffesor [Nora Morales](http://noramorales.academia.edu/) who guided us into the process.
+The visualization in this project intented to represent the management from the Urban Solid Waste of each municipality to the final destination site in México City.
+
+All this with respect to the previous research in collaboration with the team Master degree in Information Design and proffesor [Nora Morales](http://noramorales.academia.edu/) who guided us into the process.
 
 [Go top](#Summary)
 
@@ -72,11 +74,16 @@ This are like blueprints made from the quantity information we had, the interact
 | ------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- |
 | <img src="../.vitepress/public/img/_ref/maq.png" width="900"> | <img src="../.vitepress/public/img/_ref/maq1.png" width="900"> | <img src="../.vitepress/public/img/_ref/maq2.png" width="900"> |
 
-We decided to represent the visualization with a spatio-temporal structure (Meirelles, 2013), because of the type of dimention that the information naturally has been used. Traditionally, we use maps for modelling the rational relation space, and for taking action about the geography.
+We decided to represent the visualization with a spatio-temporal structure (Meirelles, 2013), because of the type of dimention that the information naturally has been used.
 
-Thus, the flow visual reconstruction came in with the solid waste properties (e.g. location). The quantity is transferred to different management points and the values that acquires in each context are essentials.
+Commonly, we use maps for modelling the rational relation space, and for taking action about the geography. Thus, this visual flow reconstruction came in with the solid waste properties (e.g. location). The quantity is transferred to different management points and the values that acquires in each context are essentials.
 
 <img src="../.vitepress/public/img/RedisenoI.jpg">
+
+|                                                             |                                                                      |                                                                      |                                                                      |
+| ----------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| <img src="../.vitepress/public/img/_capturas/IMG_7625.jpg"> | <img src="../.vitepress/public/img/_capturas/IMG_7626.jpg">          | <img src="../.vitepress/public/img/_capturas/IMG_7627.jpg">          | <img src="../.vitepress/public/img/_capturas/IMG_7628.jpg">          |
+| <img src="../.vitepress/public/img/_capturas/IMG_7629.jpg"> | <img src="../.vitepress/public/img/_capturas/P_20171018_155556.jpg"> | <img src="../.vitepress/public/img/_capturas/P_20171018_155737.jpg"> | <img src="../.vitepress/public/img/_capturas/P_20171018_160221.jpg"> |
 
 [Go top](#Summary)
 
