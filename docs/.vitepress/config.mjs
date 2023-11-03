@@ -43,6 +43,11 @@ export default {
     ],
   ],
   themeConfig: {
+    // https://vitepress.dev/reference/default-theme-search
+    search: {
+      provider: 'local',
+    },
+
     // https://vitepress.dev/reference/default-theme-config
     nav: nav(),
     // sidebar: sidebar(),
