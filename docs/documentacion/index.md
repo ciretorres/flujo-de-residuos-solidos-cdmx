@@ -16,7 +16,7 @@ The Interactive visual interface presents the flow diagram system from the Urban
 
 The job is been made possible in collaboration with [Patricia Galán Lara](https://www.facebook.com/patricia.g.lara.75).
 
-<img src="../.vitepress/public/data/Screen Shot 2023-10-31 at 13.08.11.png" width="900">
+<img src="../.vitepress/public/img/_capturas/Screen Shot 2023-10-31 at 13.08.11.png" width="900">
 
 How many Urban Solid Waste flows through each process station according with the quantities published by SEDEMA?
 
@@ -50,15 +50,15 @@ Initially, the project began with the purpose to explore with visual design and 
 
 This is the versión 0.0.1-beta.1 in the early 2018.
 
-<img src="../.vitepress/public/data/Screen Shot 2023-10-31 at 18.30.14.png" width="900">
+<img src="../.vitepress/public/img/_capturas/Screen Shot 2023-10-31 at 18.30.14.png" width="900">
 
 This is the versión 0.0.2 in 2018.
 
-<img src="../.vitepress/public/data/Screen Shot 2023-10-31 at 18.30.58.png" width="900">
+<img src="../.vitepress/public/img/_capturas/Screen Shot 2023-10-31 at 18.30.58.png" width="900">
 
 This is the versión 0.0.3 in 2019.
 
-<img src="../.vitepress/public/data/Screen Shot 2023-10-31 at 16.51.09.png" width="900">
+<img src="../.vitepress/public/img/_capturas/Screen Shot 2023-10-31 at 16.51.09.png" width="900">
 
 The visualization in this project intented to represent the management from the Urban Solid Waste of each municipality to the final destination site in México City, with respect to the previous research in collaboration with the team Master degree Information Design and proffesor [Nora Morales](http://noramorales.academia.edu/) who guided us into the process.
 
@@ -68,15 +68,15 @@ The visualization in this project intented to represent the management from the 
 
 This are like blueprints made from the quantity information we had, the interaction and movement we made:
 
-|                                                           |                                                            |                                                            |
-| --------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------- |
-| <img src="../.vitepress/public/data/maq.png" width="900"> | <img src="../.vitepress/public/data/maq1.png" width="900"> | <img src="../.vitepress/public/data/maq2.png" width="900"> |
+|                                                               |                                                                |                                                                |
+| ------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- |
+| <img src="../.vitepress/public/img/_ref/maq.png" width="900"> | <img src="../.vitepress/public/img/_ref/maq1.png" width="900"> | <img src="../.vitepress/public/img/_ref/maq2.png" width="900"> |
 
 We decided to represent the visualization with a spatio-temporal structure (Meirelles, 2013), because of the type of dimention that the information naturally has been used. Traditionally, we use maps for modelling the rational relation space, and for taking action about the geography.
 
 Thus, the flow visual reconstruction came in with the solid waste properties (e.g. location). The quantity is transferred to different management points and the values that acquires in each context are essentials.
 
-<img src="../.vitepress/public/data/RedisenoI.jpg">
+<img src="../.vitepress/public/img/RedisenoI.jpg">
 
 [Go top](#Summary)
 
@@ -86,7 +86,7 @@ In 1869, Charles Minard designed a flow map which displays the Napoleon's March 
 
 The march starts with 420,000 men in the Polish–Russian border (center left, beige line), reaches Moscow with 100,000 (top right), and ends with 10,000 men (black line). **The line graph at the bottom represents the temperatures** faced by the army on the way back to Poland, which are associated with the line standing for the return trip.
 
-<img src="../.vitepress/public/data/MapCharlesMinard.png" width="900">
+<img src="../.vitepress/public/img/_ref/MapCharlesMinard.png" width="900">
 
 "Connections between temperatures and the march offer new levels of information: the relationships between deaths and low temperatures (probably also aggravated by fatigue). For example, 22,000 men died crossing the River Berezina due to the extreme low temperatures (–20°C [–4°F])".
 
@@ -98,23 +98,23 @@ With the information recollected, we needed to figure out how to visualize it. B
 
 #### Prototype I:
 
-<img src="../.vitepress/public/data/PrototipoI.png">
+<img src="../.vitepress/public/img/PrototipoI.png">
 
 #### Prototype II:
 
-<img src="../.vitepress/public/data/PrototipoII.jpg">
+<img src="../.vitepress/public/img/PrototipoII.jpg">
 
 After that, we noticed that there where some unknown quantities didn't mention in the inventory. Thats why, we decided to descomposed the system and started taking the measure for every site which process the solid waste.
 
 #### Prototype III:
 
-<img src="../.vitepress/public/data/PrototipoIII.png">
+<img src="../.vitepress/public/img/PrototipoIII.png">
 
 Ending, with a few changes in representation and color style. We could finally comprehended something bigger and more complex, that motived me to take it to the next level of prototyping and started to understanding its logic structure from the semantic point of view.
 
 #### Prototype IV:
 
-<img src="../.vitepress/public/data/MasterResiduosSolidos.png">
+<img src="../.vitepress/public/img/MasterResiduosSolidos.png">
 
 That reasoning, set me on working with another techonology to design a represent this kinds of aspects to keep speculating about the physical form that could be naturally understand through some interactive helping tools. The image above was used to be presented in an exhibition at Universidad Autónoma Metropolitana (UAM), campus [Cuajimalpa](http://cua.uam.mx/).
 
@@ -128,7 +128,7 @@ With a serie of others works designed by the team, that integrated the comprehen
 
 In 1968, Riall Sankey proposed a diagram as a visual representation tool for talking about thermal effiency in the vapor machines. In Sankey's diagrams **the widths of bands are scaled to the corresponding quantities of the vapor flow**.
 
-<img src="../.vitepress/public/data/DiagramRiallSankey.png">
+<img src="../.vitepress/public/img/_ref/DiagramRiallSankey.png">
 
 Flows in Sankey diagrams act much more like 'rivers' (as opposed to threads) in which you lose memory of the previous steps. This can be useful in thoses cases in which the user is more interested in relating different data dimensions next to each other more than centering the visualization partition arround a leading dimension.
 
@@ -138,13 +138,13 @@ Flows in Sankey diagrams act much more like 'rivers' (as opposed to threads) in 
 
 Fineo Density is visualization technique of continuous flow of data based on Sankey diagram structure, to represent relations between multidimensional categorical data. Fineo has a network structure, where nodes are individual categories grouped under a dimension, with the flow lines representing connections. Connections are grouped at every level, thus providing the width between pairs of axes.
 
-<img src="../.vitepress/public/data/FineoDensityDesign.jpg">
+<img src="../.vitepress/public/img/_ref/FineoDensityDesign.jpg">
 
 With this inspiration in mind, I decided to code the diagram flow structure with the information available used previously, to find how much urban solid waste is transferred from every process site and relate as a category. So first, I had to make some adjustments in adobe illustrator to the graphic visualization prototype to respect every width of the lines.
 
 #### Adjustments to graphic prototype of all the links
 
-<img src="../.vitepress/public/data/FlujoMinardFinal.png">
+<img src="../.vitepress/public/img//FlujoMinardFinal.png">
 
 It is relevant to mention, that the color for the lines was used acoording to the [Basic style guide for the Public Administration web sites of Mexico City](http://www.cdmx.gob.mx/storage/app/media/Guia_Estilos_Sitios_Web_CDMX_v.1.3.pdf). That's why the pink is the main color, after the purple that distinguish the selection plants from the final dispotition sites.
 
