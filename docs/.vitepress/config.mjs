@@ -31,7 +31,7 @@ function sidebar() {
 // export default defineConfig({})
 export default {
   lang: 'es-mx',
-  title: 'Flujo de RSU de la CDMX',
+  title: 'Flujo de Residuos Sólidos Urbanos de la CDMX',
   description: pkg.description,
   head: [
     [

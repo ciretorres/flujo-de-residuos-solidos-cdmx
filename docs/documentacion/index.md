@@ -1,5 +1,6 @@
 ---
 outline: deep
+# vitepressPublic: ../.vitepress/public
 ---
 
 <script setup>
@@ -14,9 +15,9 @@ import documentacion from "../.vitepress/components/documentacion.vue";
 
 The Interactive visual interface presents the flow diagram system from the Urban Solid Waste in Mexico City (CDMX), according with [Solid Waste's inventory](http://www.cms.sedema.cdmx.gob.mx/storage/app/media/IRS-2015-14-dic-2016.compressed.pdf) published in 2016 by Secretaría del Medio Ambiente (SEDEMA).
 
-The job is been made possible in collaboration with [Patricia Galán Lara](https://www.facebook.com/patricia.g.lara.75).
+The job is been made possible in collaboration with the Design team at the ["Problemas del diseño de información: cuantitiva"](../.vitepress/public/bibliografia/OP-problemas-disenio-informacion-cuantitativa.pdf) seminar with proffesor [Nora Morales](http://noramorales.academia.edu/), for the Master in Information Design at Universidad Autónoma Metropolitana - campus [Cuajimalpa](http://cua.uam.mx/) in 2017 and [Patricia Galán Lara](https://www.facebook.com/patricia.g.lara.75).
 
-<img src="../.vitepress/public/data/Screen Shot 2023-10-31 at 13.08.11.png" width="900">
+<img loading="lazy" src="../.vitepress/public/img/_capturas/Screen Shot 2023-10-31 at 13.08.11.png" width="900" alt="">
 
 How many Urban Solid Waste flows through each process station according with the quantities published by SEDEMA?
 
@@ -28,7 +29,7 @@ With this, we can trial the tools, that i'm using, to measure how they work with
 If you are interested in work together or colaborate, send me a whatsapp 5547904238, or feel free to mail me at erictorres.velasco@gmail.com
 
 Don't forget to check the code [here](https://github.com/ciretorres/flujo-de-residuos-solidos-cdmx/).
-Last update: **10/2023**
+Last update: **11/2023**
 
 ## Summary
 
@@ -50,17 +51,19 @@ Initially, the project began with the purpose to explore with visual design and 
 
 This is the versión 0.0.1-beta.1 in the early 2018.
 
-<img src="../.vitepress/public/data/Screen Shot 2023-10-31 at 18.30.14.png" width="900">
+<img loading="lazy" src="../.vitepress/public/img/_capturas/Screen Shot 2023-10-31 at 18.30.14.png" width="900" alt="">
 
 This is the versión 0.0.2 in 2018.
 
-<img src="../.vitepress/public/data/Screen Shot 2023-10-31 at 18.30.58.png" width="900">
+<img loading="lazy" src="../.vitepress/public/img/_capturas/Screen Shot 2023-10-31 at 18.30.58.png" width="900" alt="">
 
 This is the versión 0.0.3 in 2019.
 
-<img src="../.vitepress/public/data/Screen Shot 2023-10-31 at 16.51.09.png" width="900">
+<img loading="lazy" src="../.vitepress/public/img/_capturas/Screen Shot 2023-10-31 at 16.51.09.pn" width="900" alt="">
 
-The visualization in this project intented to represent the management from the Urban Solid Waste of each municipality to the final destination site in México City, with respect to the previous research in collaboration with the team Master degree Information Design and proffesor [Nora Morales](http://noramorales.academia.edu/) who guided us into the process.
+The visualization in this project intented to represent the management from the Urban Solid Waste of each municipality to the final destination site in México City.
+
+All this with respect to the previous research in collaboration with the team Master degree in Information Design and proffesor [Nora Morales](http://noramorales.academia.edu/) who guided us into the process.
 
 [Go top](#Summary)
 
@@ -68,25 +71,34 @@ The visualization in this project intented to represent the management from the 
 
 This are like blueprints made from the quantity information we had, the interaction and movement we made:
 
-|                                                           |                                                            |                                                            |
-| --------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------- |
-| <img src="../.vitepress/public/data/maq.png" width="900"> | <img src="../.vitepress/public/data/maq1.png" width="900"> | <img src="../.vitepress/public/data/maq2.png" width="900"> |
+|                                                                                     |                                                                                      |                                                                                      |
+| ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| <img loading="lazy" src="../.vitepress/public/img/_ref/maq.png" width="900" alt=""> | <img loading="lazy" src="../.vitepress/public/img/_ref/maq1.png" width="900" alt=""> | <img loading="lazy" src="../.vitepress/public/img/_ref/maq2.png" width="900" alt=""> |
 
-We decided to represent the visualization with a spatio-temporal structure (Meirelles, 2013), because of the type of dimention that the information naturally has been used. Traditionally, we use maps for modelling the rational relation space, and for taking action about the geography.
+We decided to represent the visualization with a spatio-temporal structure (Meirelles, 2013), because of the type of dimention that the information naturally has been used.
 
-Thus, the flow visual reconstruction came in with the solid waste properties (e.g. location). The quantity is transferred to different management points and the values that acquires in each context are essentials.
+Commonly, we use maps for modelling the rational relation space, and for taking action about the geography. Thus, this visual flow reconstruction came in with the solid waste properties (e.g. location). The quantity is transferred to different management points and the values that acquires in each context are essentials.
 
-<img src="../.vitepress/public/data/RedisenoI.jpg">
+<img loading="lazy" src="../.vitepress/public/img/RedisenoI.jpg" alt="">
+
+|                                                                                   |                                                                                            |                                                                                            |                                                                                            |
+| --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7625.jpg" alt=""> | <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7626.jpg" alt="">          | <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7627.jpg" alt="">          | <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7628.jpg" alt="">>         |
+| <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7629.jpg" alt=""> | <img loading="lazy" src="../.vitepress/public/img/_capturas/P_20171018_155556.jpg" alt=""> | <img loading="lazy" src="../.vitepress/public/img/_capturas/P_20171018_155737.jpg" alt=""> | <img loading="lazy" src="../.vitepress/public/img/_capturas/P_20171018_160221.jpg" alt=""> |
 
 [Go top](#Summary)
 
 ### Exploration
 
-In 1869, Charles Minard designed a flow map which displays the Napoleon's March to and from Russia, 1812-1813, and combines statistical data techniques with a timeline, and spatio-temporal information about the French army, the **line width represents the number of soldiers marching** to and from Russia, with **each millimeter standing for 10,000 men**.
+In 1869, Charles Minard designed a flow map which displays the Napoleon's March to and from Russia, 1812-1813. This flow map combines statistical data techniques with a timeline, and spatio-temporal information about the French army.
 
-The march starts with 420,000 men in the Polish–Russian border (center left, beige line), reaches Moscow with 100,000 (top right), and ends with 10,000 men (black line). **The line graph at the bottom represents the temperatures** faced by the army on the way back to Poland, which are associated with the line standing for the return trip.
+In the flow the **width of the line represents the number of soldiers marching** to and from Russia, with **each millimeter standing for 10,000 men**.
 
-<img src="../.vitepress/public/data/MapCharlesMinard.png" width="900">
+The march starts with 420,000 men in the Polish–Russian border (center left, beige line), reaches Moscow with 100,000 (top right), and ends with 10,000 men (black line).
+
+**The line graph at the bottom represents the temperatures** faced by the army on the way back to Poland, which are associated with the line standing for the return trip.
+
+<img loading="lazy" src="../.vitepress/public/img/_ref/MapCharlesMinard.png" width="900" alt="">
 
 "Connections between temperatures and the march offer new levels of information: the relationships between deaths and low temperatures (probably also aggravated by fatigue). For example, 22,000 men died crossing the River Berezina due to the extreme low temperatures (–20°C [–4°F])".
 
@@ -98,23 +110,23 @@ With the information recollected, we needed to figure out how to visualize it. B
 
 #### Prototype I:
 
-<img src="../.vitepress/public/data/PrototipoI.png">
+<img loading="lazy" src="../.vitepress/public/img/PrototipoI.png" alt="">
 
 #### Prototype II:
 
-<img src="../.vitepress/public/data/PrototipoII.jpg">
+<img loading="lazy" src="../.vitepress/public/img/PrototipoII.jpg" alt="">
 
 After that, we noticed that there where some unknown quantities didn't mention in the inventory. Thats why, we decided to descomposed the system and started taking the measure for every site which process the solid waste.
 
 #### Prototype III:
 
-<img src="../.vitepress/public/data/PrototipoIII.png">
+<img loading="lazy" src="../.vitepress/public/img/PrototipoIII.png" alt="">
 
 Ending, with a few changes in representation and color style. We could finally comprehended something bigger and more complex, that motived me to take it to the next level of prototyping and started to understanding its logic structure from the semantic point of view.
 
 #### Prototype IV:
 
-<img src="../.vitepress/public/data/MasterResiduosSolidos.png">
+<img loading="lazy" src="../.vitepress/public/img/MasterResiduosSolidos.png" alt="">
 
 That reasoning, set me on working with another techonology to design a represent this kinds of aspects to keep speculating about the physical form that could be naturally understand through some interactive helping tools. The image above was used to be presented in an exhibition at Universidad Autónoma Metropolitana (UAM), campus [Cuajimalpa](http://cua.uam.mx/).
 
@@ -128,7 +140,7 @@ With a serie of others works designed by the team, that integrated the comprehen
 
 In 1968, Riall Sankey proposed a diagram as a visual representation tool for talking about thermal effiency in the vapor machines. In Sankey's diagrams **the widths of bands are scaled to the corresponding quantities of the vapor flow**.
 
-<img src="../.vitepress/public/data/DiagramRiallSankey.png">
+<img loading="lazy" src="../.vitepress/public/img/_ref/DiagramRiallSankey.png" alt="">
 
 Flows in Sankey diagrams act much more like 'rivers' (as opposed to threads) in which you lose memory of the previous steps. This can be useful in thoses cases in which the user is more interested in relating different data dimensions next to each other more than centering the visualization partition arround a leading dimension.
 
@@ -138,13 +150,13 @@ Flows in Sankey diagrams act much more like 'rivers' (as opposed to threads) in 
 
 Fineo Density is visualization technique of continuous flow of data based on Sankey diagram structure, to represent relations between multidimensional categorical data. Fineo has a network structure, where nodes are individual categories grouped under a dimension, with the flow lines representing connections. Connections are grouped at every level, thus providing the width between pairs of axes.
 
-<img src="../.vitepress/public/data/FineoDensityDesign.jpg">
+<img loading="lazy" src="../.vitepress/public/img/_ref/FineoDensityDesign.jpg" alt="">
 
 With this inspiration in mind, I decided to code the diagram flow structure with the information available used previously, to find how much urban solid waste is transferred from every process site and relate as a category. So first, I had to make some adjustments in adobe illustrator to the graphic visualization prototype to respect every width of the lines.
 
 #### Adjustments to graphic prototype of all the links
 
-<img src="../.vitepress/public/data/FlujoMinardFinal.png">
+<img loading="lazy" src="../.vitepress/public/img//FlujoMinardFinal.png" alt="">
 
 It is relevant to mention, that the color for the lines was used acoording to the [Basic style guide for the Public Administration web sites of Mexico City](http://www.cdmx.gob.mx/storage/app/media/Guia_Estilos_Sitios_Web_CDMX_v.1.3.pdf). That's why the pink is the main color, after the purple that distinguish the selection plants from the final dispotition sites.
 
@@ -168,6 +180,10 @@ Finally, the result, with a few problems with the knowledge about the tool, was 
 
 ## Conclusiones
 
+The management of Urban Solid Waste is a complex system, because there are variants between the information provided by public and private institutions, regulations, social dinamics and sensory data for decision making that involves efficiency, management and indicators production, and quantity consumption.
+
+The question that we asked ourselves is, where are going as a society in this country? Considering the culture of recyling and the excersive of policies that are follow into the straight.
+
 ## Referencias
 
 [Programa de Gestión Integral de los Residuos Sólidos para la Ciudad de México Inventario de Residuos Sólidos de la Ciudad de México (2015)](https://www.sedema.cdmx.gob.mx/programas/programa/residuos-%20%20%20%20%20%20%20%20%20%20%20%20%20%20solidos?fbclid=IwAR0KfyUlkjbDuTNzDUCjQT0wtPlCT6b7TuXLRbaKbR3dHC0eisK33lvuUBg)
@@ -190,21 +206,21 @@ Finally, the result, with a few problems with the knowledge about the tool, was 
 
 [Meirelles, Isabelle. 2013. Design for information\_ an introduction to the histories, theories, and best practices behind effective visualizations. USA: Rockport Publishers.](../.vitepress/public/bibliografi/libro.pdf)
 
-[ReporteSEDEMA_Residuos.pdf](../.vitepress/public/bibliografia/ReporteSEDEMA_Residuos.pdf)
+[SEDEMA-inventario-residuos-solidos-cdmx-2015.pdf](../.vitepress/public/bibliografia/SEDEMA-inventario-residuos-solidos-cdmx-2015.pdf)
 
-[Guia_Estilos_Sitios_Web_CDMX_v.1.3.pdf](../.vitepress/public/bibliografia/Guia_Estilos_Sitios_Web_CDMX_v.1.3.pdf)
+[Guia-estilo-basica-portales-web-adminis-publica-cdmx-v.1.3.pdf](../.vitepress/public/bibliografia/Guia-estilo-basica-portales-web-adminis-publica-cdmx-v.1.3.pdf)
 
-[pgirs.pdf](../.vitepress/public/bibliografia/pgirs.pdf)
+[SEDEMA-programa-gestion-integral-residuos-solidos-2016-2020.pdf](../.vitepress/public/bibliografia/SEDEMA-programa-gestion-integral-residuos-solidos-2016-2020.pdf)
 
 [PGIRS_Gaceta.pdf](../.vitepress/public/bibliografia/PGIRS_Gaceta.pdf)
 
-[Norma_AMBT_2013.pdf](../.vitepress/public/bibliografia/Norma_AMBT_2013.pdf)
+[Norma-ambiental-cdmx-2013.pdf](../.vitepress/public/bibliografia/Norma-ambiental-cdmx-2013.pdf)
 
-[flujo_residuos_DF.pdf](../.vitepress/public/bibliografia/flujo_residuos_DF.pdf)
+[Diagnostico-actual-flujo-residuos-solidos-urbanos-genera-cdmx.pdf](../.vitepress/public/bibliografia/Diagnostico-actual-flujo-residuos-solidos-urbanos-genera-cdmx.pdf)
 
 [ESTACIONES_DE_TRANSFERENCIA.pdf](../.vitepress/public/bibliografia/ESTACIONES_DE_TRANSFERENCIA.pdf)
 
-[directorio_residuos.pdf](../.vitepress/public/bibliografia/directorio_residuos.pdf)
+[SEMARNAT-directorio-centros-acopio-materiales-provenientes-residuos-solidos-mexico-2010.pdf](../.vitepress/public/bibliografia/SEMARNAT-directorio-centros-acopio-materiales-provenientes-residuos-solidos-mexico-2010.pdf)
 
 [Go top](#Summary)
 
