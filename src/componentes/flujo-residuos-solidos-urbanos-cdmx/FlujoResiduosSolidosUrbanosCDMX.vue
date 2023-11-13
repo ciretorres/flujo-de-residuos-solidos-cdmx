@@ -118,7 +118,7 @@ function creandoSankey() {
     .style('font-family', 'Arial')
     .style('font-size', '10pt')
     .style('font-weight', 'bold')
-    .style('max-width', '200px')
+    .style('max-width', '400px')
     .style('padding', '5px')
     .style('background-color', '#FFF')
     .text('Tooltip')
