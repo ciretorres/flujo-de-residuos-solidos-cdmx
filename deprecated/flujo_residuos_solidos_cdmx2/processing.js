@@ -131,18 +131,61 @@ function draw() {
   // line(x1_ceda, 0, x2_ceda, y2_ceda);
 
   stroke(0, 0, 0, 140);
+  // strokeWeight(6); // 01
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias,
+  //   700,
+  //   y1_transferencias,
+  //   700,
+  //   y1_compactadora,
+  //   x1_compactadora,
+  //   y1_compactadora,
+  // );
+  // strokeWeight(14); // 02
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 80 - 50,
+  //   700,
+  //   y1_transferencias + 80 - 50,
+  //   700,
+  //   y1_composta,
+  //   x1_composta,
+  //   y1_composta,
+  // );
+  // strokeWeight(11); // 03
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 225 - 50,
+  //   700,
+  //   y1_transferencias + 225 - 50,
+  //   700,
+  //   y1_composta + 12,
+  //   x1_composta,
+  //   y1_composta + 12,
+  // );
+  // strokeWeight(6);
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 90 - 50,
+  //   700,
+  //   y1_transferencias + 90 - 50,
+  //   700,
+  //   (y1_compactadora += 3),
+  //   x1_compactadora,
+  //   (y1_compactadora += 3),
+  // );
 
-  strokeWeight(6); // 01
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias,
-    700,
-    y1_transferencias,
-    700,
-    y1_compactadora,
-    x1_compactadora,
-    y1_compactadora,
-  );
+
+
+
+
+
+
+
+
+
+
   strokeWeight(1);
   stroke(237, 65, 151, 153);
   draw_curve(
@@ -198,28 +241,8 @@ function draw() {
   );
   stroke(0, 0, 0, 140);
 
-  strokeWeight(14); // 02
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 80 - 50,
-    700,
-    y1_transferencias + 80 - 50,
-    700,
-    y1_composta,
-    x1_composta,
-    y1_composta,
-  );
-  strokeWeight(6);
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 90 - 50,
-    700,
-    y1_transferencias + 90 - 50,
-    700,
-    (y1_compactadora += 3),
-    x1_compactadora,
-    (y1_compactadora += 3),
-  );
+  
+  
   strokeWeight(19);
   stroke(237, 65, 151, 153);
   draw_curve(
@@ -300,28 +323,18 @@ function draw() {
   );
   stroke(0, 0, 0, 140);
 
-  strokeWeight(11); // 03
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 225 - 50,
-    700,
-    y1_transferencias + 225 - 50,
-    700,
-    y1_composta + 12,
-    x1_composta,
-    y1_composta + 12,
-  );
-  strokeWeight(6);
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 233 - 50,
-    700,
-    y1_transferencias + 233 - 50,
-    700,
-    (y1_compactadora += 3),
-    x1_compactadora,
-    (y1_compactadora += 3),
-  );
+  
+  // strokeWeight(6);
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 233 - 50,
+  //   700,
+  //   y1_transferencias + 233 - 50,
+  //   700,
+  //   (y1_compactadora += 3),
+  //   x1_compactadora,
+  //   (y1_compactadora += 3),
+  // );
   strokeWeight(6);
   stroke(237, 65, 151, 153);
   draw_curve(
@@ -370,28 +383,28 @@ function draw() {
   );
   stroke(0, 0, 0, 140);
 
-  strokeWeight(29); // 04
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 295 - 50,
-    700,
-    y1_transferencias + 295 - 50,
-    700,
-    y1_composta + 32,
-    x1_composta,
-    y1_composta + 32,
-  );
-  strokeWeight(6);
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 312 - 50,
-    700,
-    y1_transferencias + 312 - 50,
-    700,
-    (y1_compactadora += 3),
-    x1_compactadora,
-    (y1_compactadora += 3),
-  );
+  // strokeWeight(29); // 04
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 295 - 50,
+  //   700,
+  //   y1_transferencias + 295 - 50,
+  //   700,
+  //   y1_composta + 32,
+  //   x1_composta,
+  //   y1_composta + 32,
+  // );
+  // strokeWeight(6);
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 312 - 50,
+  //   700,
+  //   y1_transferencias + 312 - 50,
+  //   700,
+  //   (y1_compactadora += 3),
+  //   x1_compactadora,
+  //   (y1_compactadora += 3),
+  // );
   strokeWeight(3);
   stroke(237, 65, 151, 153);
   draw_curve(
@@ -459,28 +472,28 @@ function draw() {
   );
   stroke(0, 0, 0, 140);
 
-  strokeWeight(7); // 05
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 370 - 50,
-    700,
-    y1_transferencias + 370 - 50,
-    700,
-    y1_composta + 50,
-    x1_composta,
-    y1_composta + 50,
-  );
-  strokeWeight(6);
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 376 - 50,
-    700,
-    y1_transferencias + 376 - 50,
-    700,
-    (y1_compactadora += 3),
-    x1_compactadora,
-    (y1_compactadora += 3),
-  );
+  // strokeWeight(7); // 05
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 370 - 50,
+  //   700,
+  //   y1_transferencias + 370 - 50,
+  //   700,
+  //   y1_composta + 50,
+  //   x1_composta,
+  //   y1_composta + 50,
+  // );
+  // strokeWeight(6);
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 376 - 50,
+  //   700,
+  //   y1_transferencias + 376 - 50,
+  //   700,
+  //   (y1_compactadora += 3),
+  //   x1_compactadora,
+  //   (y1_compactadora += 3),
+  // );
   strokeWeight(8);
   stroke(237, 65, 151, 153);
   draw_curve(
@@ -539,28 +552,28 @@ function draw() {
   );
   stroke(0, 0, 0, 140);
 
-  strokeWeight(2); // 06
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 420 - 50,
-    700,
-    y1_transferencias + 420 - 50,
-    700,
-    y1_composta + 54,
-    x1_composta,
-    y1_composta + 54,
-  );
-  strokeWeight(6);
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 424 - 50,
-    700,
-    y1_transferencias + 424 - 50,
-    700,
-    (y1_compactadora += 3),
-    x1_compactadora,
-    (y1_compactadora += 3),
-  );
+  // strokeWeight(2); // 06
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 420 - 50,
+  //   700,
+  //   y1_transferencias + 420 - 50,
+  //   700,
+  //   y1_composta + 54,
+  //   x1_composta,
+  //   y1_composta + 54,
+  // );
+  // strokeWeight(6);
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 424 - 50,
+  //   700,
+  //   y1_transferencias + 424 - 50,
+  //   700,
+  //   (y1_compactadora += 3),
+  //   x1_compactadora,
+  //   (y1_compactadora += 3),
+  // );
   strokeWeight(1);
   stroke(237, 65, 151, 153);
   draw_curve(
@@ -618,28 +631,28 @@ function draw() {
   );
   stroke(0, 0, 0, 140);
 
-  strokeWeight(10); // 07
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 450 - 50,
-    700,
-    y1_transferencias + 450 - 50,
-    700,
-    y1_composta + 60,
-    x1_composta,
-    y1_composta + 60,
-  );
-  strokeWeight(6);
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 458 - 50,
-    700,
-    y1_transferencias + 458 - 50,
-    700,
-    (y1_compactadora += 3),
-    x1_compactadora,
-    (y1_compactadora += 3),
-  );
+  // strokeWeight(10); // 07
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 450 - 50,
+  //   700,
+  //   y1_transferencias + 450 - 50,
+  //   700,
+  //   y1_composta + 60,
+  //   x1_composta,
+  //   y1_composta + 60,
+  // );
+  // strokeWeight(6);
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 458 - 50,
+  //   700,
+  //   y1_transferencias + 458 - 50,
+  //   700,
+  //   (y1_compactadora += 3),
+  //   x1_compactadora,
+  //   (y1_compactadora += 3),
+  // );
   strokeWeight(35);
   stroke(237, 65, 151, 153);
   draw_curve(
@@ -710,28 +723,28 @@ function draw() {
   );
   stroke(0, 0, 0, 140);
 
-  strokeWeight(4); // 08
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 520 - 50,
-    700,
-    y1_transferencias + 520 - 50,
-    700,
-    y1_composta + 67,
-    x1_composta,
-    y1_composta + 67,
-  );
-  strokeWeight(6);
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 525 - 50,
-    700,
-    y1_transferencias + 525 - 50,
-    700,
-    (y1_compactadora += 3),
-    x1_compactadora,
-    (y1_compactadora += 3),
-  );
+  // strokeWeight(4); // 08
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 520 - 50,
+  //   700,
+  //   y1_transferencias + 520 - 50,
+  //   700,
+  //   y1_composta + 67,
+  //   x1_composta,
+  //   y1_composta + 67,
+  // );
+  // strokeWeight(6);
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 525 - 50,
+  //   700,
+  //   y1_transferencias + 525 - 50,
+  //   700,
+  //   (y1_compactadora += 3),
+  //   x1_compactadora,
+  //   (y1_compactadora += 3),
+  // );
   strokeWeight(6);
   stroke(237, 65, 151, 153);
   draw_curve(
@@ -802,28 +815,28 @@ function draw() {
   );
   stroke(0, 0, 0, 140);
 
-  strokeWeight(19); // 09
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 575 - 45,
-    700,
-    y1_transferencias + 575 - 45,
-    700,
-    y1_composta + 78,
-    x1_composta,
-    y1_composta + 78,
-  );
-  strokeWeight(6);
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 587 - 45,
-    700,
-    y1_transferencias + 587 - 45,
-    700,
-    (y1_compactadora += 3),
-    x1_compactadora,
-    (y1_compactadora += 3),
-  );
+  // strokeWeight(19); // 09
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 575 - 45,
+  //   700,
+  //   y1_transferencias + 575 - 45,
+  //   700,
+  //   y1_composta + 78,
+  //   x1_composta,
+  //   y1_composta + 78,
+  // );
+  // strokeWeight(6);
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 587 - 45,
+  //   700,
+  //   y1_transferencias + 587 - 45,
+  //   700,
+  //   (y1_compactadora += 3),
+  //   x1_compactadora,
+  //   (y1_compactadora += 3),
+  // );
   strokeWeight(41);
   stroke(237, 65, 151, 153);
   draw_curve(
@@ -894,28 +907,28 @@ function draw() {
   );
   stroke(0, 0, 0, 140);
 
-  strokeWeight(5); // 10
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 720 - 50,
-    700,
-    y1_transferencias + 720 - 50,
-    700,
-    y1_composta + 90,
-    x1_composta,
-    y1_composta + 90,
-  );
-  strokeWeight(6);
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 725 - 50,
-    700,
-    y1_transferencias + 725 - 50,
-    700,
-    (y1_compactadora += 3),
-    x1_compactadora,
-    (y1_compactadora += 3),
-  );
+  // strokeWeight(5); // 10
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 720 - 50,
+  //   700,
+  //   y1_transferencias + 720 - 50,
+  //   700,
+  //   y1_composta + 90,
+  //   x1_composta,
+  //   y1_composta + 90,
+  // );
+  // strokeWeight(6);
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 725 - 50,
+  //   700,
+  //   y1_transferencias + 725 - 50,
+  //   700,
+  //   (y1_compactadora += 3),
+  //   x1_compactadora,
+  //   (y1_compactadora += 3),
+  // );
   strokeWeight(15);
   stroke(237, 65, 151, 153);
   draw_curve(
@@ -986,69 +999,69 @@ function draw() {
   );
   stroke(0, 0, 0, 140);
 
-  strokeWeight(11); // 11
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 800 - 50,
-    700,
-    y1_transferencias + 800 - 50,
-    700,
-    y1_composta + 98,
-    x1_composta,
-    y1_composta + 98,
-  );
-  strokeWeight(6);
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 808 - 50,
-    700,
-    y1_transferencias + 808 - 50,
-    700,
-    (y1_compactadora += 3),
-    x1_compactadora,
-    (y1_compactadora += 3),
-  );
+  // strokeWeight(11); // 11
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 800 - 50,
+  //   700,
+  //   y1_transferencias + 800 - 50,
+  //   700,
+  //   y1_composta + 98,
+  //   x1_composta,
+  //   y1_composta + 98,
+  // );
+  // strokeWeight(6);
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 808 - 50,
+  //   700,
+  //   y1_transferencias + 808 - 50,
+  //   700,
+  //   (y1_compactadora += 3),
+  //   x1_compactadora,
+  //   (y1_compactadora += 3),
+  // );
   strokeWeight(1);
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 812 - 50,
-    700,
-    y1_transferencias + 812 - 50,
-    700,
-    y1_disposicion + 131,
-    x1_disposicion,
-    y1_disposicion + 131,
-  );
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 813 - 50,
-    700,
-    y1_transferencias + 813 - 50,
-    700,
-    y1_disposicion + 376,
-    x1_disposicion,
-    y1_disposicion + 376,
-  );
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 814 - 50,
-    700,
-    y1_transferencias + 814 - 50,
-    700,
-    y1_disposicion + 441,
-    x1_disposicion,
-    y1_disposicion + 441,
-  );
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 815 - 50,
-    700,
-    y1_transferencias + 815 - 50,
-    700,
-    y1_disposicion + 506,
-    x1_disposicion,
-    y1_disposicion + 506,
-  );
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 812 - 50,
+  //   700,
+  //   y1_transferencias + 812 - 50,
+  //   700,
+  //   y1_disposicion + 131,
+  //   x1_disposicion,
+  //   y1_disposicion + 131,
+  // );
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 813 - 50,
+  //   700,
+  //   y1_transferencias + 813 - 50,
+  //   700,
+  //   y1_disposicion + 376,
+  //   x1_disposicion,
+  //   y1_disposicion + 376,
+  // );
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 814 - 50,
+  //   700,
+  //   y1_transferencias + 814 - 50,
+  //   700,
+  //   y1_disposicion + 441,
+  //   x1_disposicion,
+  //   y1_disposicion + 441,
+  // );
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 815 - 50,
+  //   700,
+  //   y1_transferencias + 815 - 50,
+  //   700,
+  //   y1_disposicion + 506,
+  //   x1_disposicion,
+  //   y1_disposicion + 506,
+  // );
   stroke(182, 117, 144, 153);
   draw_curve(
     x1_transferencias,
@@ -1062,28 +1075,28 @@ function draw() {
   );
   stroke(0, 0, 0, 140);
 
-  strokeWeight(10); // 12
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 840 - 60,
-    700,
-    y1_transferencias + 840 - 60,
-    700,
-    y1_composta + 108,
-    x1_composta,
-    y1_composta + 108,
-  );
-  strokeWeight(6);
-  draw_curve(
-    x1_transferencias,
-    y1_transferencias + 848 - 60,
-    700,
-    y1_transferencias + 848 - 60,
-    700,
-    (y1_compactadora += 3),
-    x1_compactadora,
-    (y1_compactadora += 3),
-  );
+  // strokeWeight(10); // 12
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 840 - 60,
+  //   700,
+  //   y1_transferencias + 840 - 60,
+  //   700,
+  //   y1_composta + 108,
+  //   x1_composta,
+  //   y1_composta + 108,
+  // );
+  // strokeWeight(6);
+  // draw_curve(
+  //   x1_transferencias,
+  //   y1_transferencias + 848 - 60,
+  //   700,
+  //   y1_transferencias + 848 - 60,
+  //   700,
+  //   (y1_compactadora += 3),
+  //   x1_compactadora,
+  //   (y1_compactadora += 3),
+  // );
   strokeWeight(27);
   stroke(237, 65, 151, 153);
   draw_curve(
@@ -1782,7 +1795,7 @@ function draw() {
     y1_transferencias + 833 + 3,
   );
 
-  strokeWeight(1); // rme – disposicion final
+  strokeWeight(1); // rme – disposicion final ya
   draw_curve(
     x1_rme,
     y1_rme + 1,
@@ -1840,7 +1853,8 @@ function draw() {
   rect(x1_edo - 30, y1_edo + 895, ancho + 35, alto - 45);
   rect(x1_seleccion + 30, y1_seleccion + 150, ancho + 35, alto + 100);
 
-  strokeWeight(1); // selección – disposición final
+   //---------------------------------------- selección – disposición final
+  strokeWeight(1);
   draw_curve(
     x1_seleccion,
     y1_seleccion + 1 + 90,
@@ -1891,7 +1905,7 @@ function draw() {
     x1_disposicion,
     y1_disposicion + 533 + 1,
   );
-  // 02
+  //------------------------------------ 02
   draw_curve(
     x1_seleccion,
     y1_seleccion + 1 + 240,
@@ -1943,7 +1957,8 @@ function draw() {
     y1_disposicion + 533 + 2,
   );
 
-  strokeWeight(8); // selección - recuperación de subproductos
+  //-------------------------------- selección - recuperación de subproductos
+  strokeWeight(8);  
   draw_curve(
     x1_seleccion,
     y1_seleccion + 100,
