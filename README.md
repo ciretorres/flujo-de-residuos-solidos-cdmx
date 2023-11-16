@@ -48,7 +48,7 @@ This is the versión 0.0.2 in 2018.
 
 This is the versión 0.0.3 in 2019.
 
-<img loading="lazy" src="docs/.vitepress/public/img/_capturas/Screen Shot 2023-10-31 at 16.51.09.pn" width="900" alt="">
+<img loading="lazy" src="docs/.vitepress/public/img/_capturas/Screen Shot 2023-10-31 at 16.51.09.png" width="900" alt="">
 
 The visualization in this project intented to represent the management from the Urban Solid Waste of each municipality to the final destination site in México City.
 
