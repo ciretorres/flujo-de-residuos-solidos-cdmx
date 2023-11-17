@@ -33,6 +33,7 @@ export default {
   lang: 'es-mx',
   title: 'Flujo de Residuos Sólidos Urbanos de la CDMX',
   description: pkg.description,
+  base: '/flujo-de-residuos-solidos-cdmx/'
   head: [
     [
       'link',

@@ -16,12 +16,17 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm # or pnpm / yarn
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: npm ci # or pnpm install / yarn install / bun install
 
       - name: Build project
-        run: npm run docs:build
+      run: |
+      npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
+      touch docs/.vitepress/dist/.nojekyll
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
@@ -30,10 +35,12 @@ jobs:
           path: docs/.vitepress/dist 
 
   deploy:
-    name: Deploy
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    name: Deploy
 
     steps:
       - name: Download artifact
