@@ -46,10 +46,10 @@ const props = defineProps({
   margin: {
     type: Object,
     default: () => ({
-      top: 20,
-      right: 20,
-      bottom: 20,
-      left: 20,
+      top: 16,
+      right: 16,
+      bottom: 16,
+      left: 16,
     }),
   },
 })
@@ -79,6 +79,7 @@ function configurandoDimensionesParaSVG() {
   svg.value
     .attr('width', width.value + props.margin.left + props.margin.right)
     .attr('height', height.value + props.margin.top + props.margin.bottom)
+  // .style('background', '#1b1b1f')
 
   // const extent = [
   //   [props.margin.left, props.margin.top],
@@ -109,7 +110,7 @@ function creandoSankey() {
     .selectAll('g')
     .data(links)
     .join('g')
-    .style('mix-blend-mode', 'multiply')
+    .style('mix-blend-mode', 'normal')
 
   tooltip.value
     .style('position', 'absolute')
@@ -444,7 +445,12 @@ watch(datos, () => {
 </template>
 
 <style>
+svg {
+  background: #1b1b1f;
+  border-radius: 14px;
+}
 .node-text-rect {
-  fill: var(--vp-c-text-1);
+  /* fill: var(--vp-c-text-1); */
+  fill: #fff;
 }
 </style>
