@@ -136,7 +136,7 @@ function creandoSankey() {
     .selectAll('g')
     .data(links)
     .join('g')
-    .style('mix-blend-mode', 'multiply')
+    .style('mix-blend-mode', 'normal')
 
   tooltip.value
     .style('position', 'absolute')

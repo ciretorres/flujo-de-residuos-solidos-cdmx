@@ -96,6 +96,18 @@ onMounted(() => {
 </template>
 
 <style>
+html.mac
+  body
+  div#app
+  div.Layout.inicio
+  header.VPNav
+  div.VPNavBar
+  div.container {
+  white-space: pre-line;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}
 .alerta-info {
   /* width: 100%; */
   /* min-height: 0.5vh; */
