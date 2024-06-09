@@ -1,7 +1,8 @@
 <script setup>
+import { format } from 'd3-format';
 import { transition } from 'd3-transition';
+
 import { onMounted, ref, shallowRef, toRefs, watch } from 'vue';
-import { idAleatorio } from '../utils';
 
 var idGrafica
 
@@ -44,12 +45,6 @@ const props = defineProps({
       return validado
     },
   },
-  ancho: {
-    type: Number,
-  },
-  alto: {
-    type: Number,
-  },
 })
 
 const sisdaiAlluvial = shallowRef()
@@ -58,21 +53,12 @@ const { datos, variables } = toRefs(props)
 transition
 const margenesSvg = ref({})
 
-const ancho_grafica = ref()
-const alto_grafica = ref()
+const grupoContenedor = ref(),
+  grupoNodos = ref(),
+  grupoEnlaces = ref()
 
-const altoVis = 400
-
-const contenedorSisdaiGraficas = ref(null)
-const espacio_eje_y = ref(0),
-  espacio_eje_x = ref(0)
-
-// const grupoContenedor = ref(),
-//   grupoNodos = ref(),
-//   grupoEnlaces = ref()
-
-// // preguntar a Dani y Moni
-// const formatea = format(',.0f') // cero decimales
+// preguntar a Dani y Moni
+const formatea = format(',.0f') // cero decimales
 
 function creaAlluvial() {
   console.log("hola")
@@ -402,22 +388,13 @@ function creaAlluvial() {
  * Devuelve una cadena de texto aleatoreo.
  * @returns {String}
  */
-// function idAleatorio() {
-//   return 'id-' + Math.random().toString(36).substring(2)
-// }
-
-function obteniendoDimensiones() {
-
-  ancho_grafica.value = props.ancho
-    ? props.ancho
-    : contenedorSisdaiGraficas.value.clientWidth - espacio_eje_y.value
-  alto_grafica.value = props.alto ? props.alto : 400
+function idAleatorio() {
+  return 'id-' + Math.random().toString(36).substring(2)
 }
 
 onMounted(() => {
-  creaAlluvial()
-  window.removeEventListener('resize', obteniendoDimensiones)
-  // idGrafica = buscarIdContenedorHtmlSisdai('grafica', sisdaiAlluvial.value)
+  idGrafica = buscarIdContenedorHtmlSisdai('grafica', sisdaiAlluvial.value)
+  grupoContenedor.value = select('#' + idGrafica + ' svg g.contenedor-alluvial')  
   // grupoContenedor.value = select('#' + idGrafica + ' svg g.contenedor-alluvial')
 
   // margenesSvg.value = usarRegistroGraficas().grafica(idGrafica).margenes
@@ -455,8 +432,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
-    <!-- <div
+  <div
     :sisdai-grafica="id"
     class="contenedor-vis borde-redondeado-8 contenedor-sisdai-graficas"
     :id="id"
@@ -472,12 +448,12 @@ onMounted(() => {
 
       <div class="panel-izquierda-vis">
         <slot name="panel-izquierda-vis" />
-      </div>-->
+      </div>
       <div
         class="contenido-vis"
         ref="contenedorSisdaiGraficas"
       >
-        <!-- <div
+        <div
           class="contenedor-svg-ejes-tooltip"
           :style="{
             height: !grafica().alto
@@ -506,13 +482,13 @@ onMounted(() => {
             ></div>
           </div>
 
-          <figure :style="{ left: espacio_eje_y + 'px' }"> -->
+          <figure :style="{ left: espacio_eje_y + 'px' }">
             <svg
               class="svg-vis"
-              :width="ancho_grafica"
-              :height="alto_grafica"
+              :width="grafica().ancho"
+              :height="grafica().alto"
             >
-              <!-- <g
+              <g
                 class="grupo-fondo"
                 :transform="`translate(${margenes.izquierda}, ${margenes.arriba})`"
               />
@@ -520,7 +496,7 @@ onMounted(() => {
               <g
                 class="eje-x-abajo"
                 :transform="`translate(${margenes.izquierda}, ${
-                  alto_grafica - margenes.abajo
+                  grafica().alto - margenes.abajo
                 })`"
               />
               <g
@@ -532,9 +508,9 @@ onMounted(() => {
               <g
                 class="eje-y-derecha"
                 :transform="`translate(${
-                  ancho_grafica - margenes.derecha
+                  grafica().ancho - margenes.derecha
                 }, ${+margenes.arriba})`"
-              /> -->
+              />
               <!-- <slot /> -->
               <g
                 ref="sisdaiAlluvial"
@@ -544,21 +520,21 @@ onMounted(() => {
                 class="contenedor-alluvial"
               >
               </g>
-              <!-- <g
+              <g
                 class="grupo-frente"
                 :transform="`translate(${margenes.izquierda}, ${margenes.arriba})`"
-              /> -->
+              />
             </svg>
-          <!-- </figure>
+          </figure>
           <div class="contenedor-titulo-eje-x">
             <div
               class="titulo-eje-x vis-titulo-ejes"
               v-html="titulo_eje_x"
             ></div>
           </div>
-        </div> -->
+        </div>
       </div>
-      <!-- <div class="panel-derecha-vis">
+      <div class="panel-derecha-vis">
         <slot name="panel-derecha-vis" />
       </div>
 
@@ -566,6 +542,7 @@ onMounted(() => {
         <slot name="panel-pie-vis" />
       </div>
     </div>
-  </div> -->
+
+    <ContenedorVisAtribuciones />
   </div>
 </template>
