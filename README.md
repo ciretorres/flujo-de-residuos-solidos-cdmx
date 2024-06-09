@@ -38,15 +38,15 @@ Initially, the project began with the purpose to explore with visual design and 
 
 ### Presentación
 
-This is the versión 0.0.1-beta.1 in the early 2018.
+This is the versión 0.1.0-beta.0 in the early 2018.
 
 <img loading="lazy" src="docs/.vitepress/public/img/_capturas/Screen Shot 2023-10-31 at 18.30.14.png" width="900" alt="">
 
-This is the versión 0.0.2 in 2018.
+This is the versión 0.2.0 in 2018.
 
 <img loading="lazy" src="docs/.vitepress/public/img/_capturas/Screen Shot 2023-10-31 at 18.30.58.png" width="900" alt="">
 
-This is the versión 0.0.3 in 2019.
+This is the versión 0.3.0 in 2019.
 
 <img loading="lazy" src="docs/.vitepress/public/img/_capturas/Screen Shot 2023-10-31 at 16.51.09.png" width="900" alt="">
 
