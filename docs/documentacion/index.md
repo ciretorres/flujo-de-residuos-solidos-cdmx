@@ -26,10 +26,9 @@ As a reference, the [strokeWeight](https://processing.org/reference/strokeWeight
 The data was scaled divide between ten (e.g. 1,038.23 ton/day, to obtain 103.82 and take only the integer value. For now). This es logarithm scale.
 With this, we can trial the tools, that i'm using, to measure how they work with sufficienctly.
 
-If you are interested in work together or colaborate, send me a whatsapp 5547904238, or feel free to mail me at erictorres.velasco@gmail.com
+If you are interested in work together or colaborate, send me a <a href="//api.whatsapp.com/send?phone=5547904238">Whatsapp</a>, or feel free to mail me at erictorres.velasco@gmail.com
 
 Don't forget to check the code [here](https://github.com/ciretorres/flujo-de-residuos-solidos-cdmx/).
-Last update: **11/2023**
 
 ## Summary
 
@@ -65,7 +64,7 @@ The visualization in this project intented to represent the management from the 
 
 All this with respect to the previous research in collaboration with the team Master degree in Information Design and proffesor [Nora Morales](http://noramorales.academia.edu/) who guided us into the process.
 
-[Go top](#Summary)
+<a href="#summary">Go top</a>
 
 ### Analysis
 
@@ -86,7 +85,7 @@ Commonly, we use maps for modelling the rational relation space, and for taking 
 | <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7625.jpg" alt=""> | <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7626.jpg" alt="">          | <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7627.jpg" alt="">          | <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7628.jpg" alt="">>         |
 | <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7629.jpg" alt=""> | <img loading="lazy" src="../.vitepress/public/img/_capturas/P_20171018_155556.jpg" alt=""> | <img loading="lazy" src="../.vitepress/public/img/_capturas/P_20171018_155737.jpg" alt=""> | <img loading="lazy" src="../.vitepress/public/img/_capturas/P_20171018_160221.jpg" alt=""> |
 
-[Go top](#Summary)
+<a href="#summary">Go top</a>
 
 ### Exploration
 
@@ -132,7 +131,7 @@ That reasoning, set me on working with another techonology to design a represent
 
 With a serie of others works designed by the team, that integrated the comprehension of the whole system. In this visualization, each municipality was referred to its imagotype for the print version.
 
-[Go top](#Summary)
+<a href="#summary">Go top</a>
 
 ---
 
@@ -164,7 +163,7 @@ With this categorization process, we could finally viewed the gaps that the info
 
 Finally, the result, with a few problems with the knowledge about the tool, was a sketching prototype made in Processing. With this last update in 01/06/2018.
 
-[Go top](#Summary)
+<a href="#summary">Go top</a>
 
 ## Desarrollo
 
@@ -176,7 +175,7 @@ Finally, the result, with a few problems with the knowledge about the tool, was 
 **CDMX:** Ciudad de México  
 **RSU:** Residuos Sólidos Urbanos
 
-[Go top](#Summary)
+<a href="#summary">Go top</a>
 
 ## Conclusiones
 
@@ -222,6 +221,6 @@ The question that we asked ourselves is, where are going as a society in this co
 
 [SEMARNAT-directorio-centros-acopio-materiales-provenientes-residuos-solidos-mexico-2010.pdf](../.vitepress/public/bibliografia/SEMARNAT-directorio-centros-acopio-materiales-provenientes-residuos-solidos-mexico-2010.pdf)
 
-[Go top](#Summary)
+<a href="#summary">Go top</a>
 
 ---
