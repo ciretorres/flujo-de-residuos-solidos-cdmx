@@ -1,28 +1,3 @@
----
-sectionName: inicio
----
-
-<script setup>
-import basico from "./.vitepress/components/basico.vue";
-</script>
-
-# Flujo de Residuos Solidos Urbanos de la CDMX
-
-<basico />
-
-## Acronyms_and_abbreviations
-
-DGSU: Dirección General de Servicios Urbanos  
-CEDA: Central de Abastos  
-RME: Residuos de Manejo Especial  
-CDMX: Ciudad de México  
-RSU: Residuos Sólidos Urbanos
-
-## Código
-
-::: details Click me to view the code
-
-```vue
 <script setup>
 import * as d3 from 'd3'
 import { sankey, sankeyLinkHorizontal } from 'd3-sankey'
@@ -32,7 +7,7 @@ import { onMounted, onUnmounted, ref, toRefs, watch } from 'vue'
 const props = defineProps({
   sankey_id: {
     type: String,
-    default: () => 'sankey',
+    default: () => 'sankey2',
   },
   datos: {
     type: Object,
@@ -71,10 +46,10 @@ const props = defineProps({
   margin: {
     type: Object,
     default: () => ({
-      top: 20,
-      right: 20,
-      bottom: 20,
-      left: 20,
+      top: 16,
+      right: 16,
+      bottom: 16,
+      left: 16,
     }),
   },
 })
@@ -104,6 +79,7 @@ function configurandoDimensionesParaSVG() {
   svg.value
     .attr('width', width.value + props.margin.left + props.margin.right)
     .attr('height', height.value + props.margin.top + props.margin.bottom)
+  // .style('background', '#1b1b1f')
 
   // const extent = [
   //   [props.margin.left, props.margin.top],
@@ -143,7 +119,7 @@ function creandoSankey() {
     .style('font-family', 'Arial')
     .style('font-size', '10pt')
     .style('font-weight', 'bold')
-    .style('max-width', '200px')
+    .style('width', '400px')
     .style('padding', '5px')
     .style('background-color', '#FFF')
     .text('Tooltip')
@@ -280,6 +256,170 @@ onMounted(() => {
   creandoSankey()
 
   window.addEventListener('resize', reescalandoPantalla)
+
+  // const itemsGrafica = items
+  // const width = 800
+  // const height = 600
+  // const nodeWidth = 15
+  // const nodeHeight = 20
+  // const nodePadding = 10
+  // const ENABLE_LINKS_GRADIENTS = false
+  // const svg = d3
+  //   .select(svgRef.value)
+  //   .attr('viewBox', [0, -20, width, height + 20])
+  // const { nodes, links } = sankey()
+  //   .nodeId(d => d.name)
+  //   .nodeWidth(nodeWidth)
+  //   .nodeSort(false)
+  //   .nodePadding(nodePadding)
+  //   .extent([
+  //     [1, 1],
+  //     [width, height - nodeHeight],
+  //   ])(itemsGrafica)
+  // const link = svg
+  //   .append('g')
+  //   .attr('fill', 'none')
+  //   .attr('stroke-opacity', 0.7)
+  //   .selectAll('g')
+  //   .data(links)
+  //   .join('g')
+  //   .style('mix-blend-mode', 'multiply')
+  // // console.log(links)
+  // if (ENABLE_LINKS_GRADIENTS) {
+  //   const gradient = link
+  //     .append('linearGradient')
+  //     .attr('id', d => d.id)
+  //     .attr('gradientUnits', 'userSpaceOnUse')
+  //     .attr('x1', d => d.source.x1)
+  //     .attr('x2', d => d.target.x0)
+  //   gradient
+  //     .append('stop')
+  //     .attr('offset', '0%')
+  //     .attr('stop-color', d => d.source.color)
+  //   gradient
+  //     .append('stop')
+  //     .attr('offset', '100%')
+  //     .attr('stop-color', d => d.target.color)
+  // }
+  // let tooltip = d3
+  //   .select('#sankey-biomasa')
+  //   .append('div')
+  //   .style('position', 'absolute')
+  //   .style('visibility', 'hidden')
+  //   .style('border', '1px solid #333')
+  //   .style('font-family', 'Arial')
+  //   .style('font-size', '10pt')
+  //   .style('font-weight', 'bold')
+  //   .style('max-width', '200px')
+  //   .style('padding', '5px')
+  //   .style('background-color', '#FFF')
+  //   .text('Tooltip')
+  // link
+  //   .append('path')
+  //   .attr('d', sankeyLinkHorizontal())
+  //   .attr('stroke', d => d.color)
+  //   .attr('stroke-width', d => Math.max(1, d.width))
+  //   .attr('opacity', '0.5')
+  //   .on('mouseover', function (d, i) {
+  //     d3.select(this).transition().duration('50').attr('opacity', '1')
+  //     tooltip.style('background-color', i.color)
+  //     tooltip.style('color', i.color === '#000000' ? '#FFF' : '#000')
+  //     tooltip.text(
+  //       '' +
+  //         i.source.name +
+  //         ' → ' +
+  //         i.target.name +
+  //         ' : ' +
+  //         i.value +
+  //         ' MtMS/año'
+  //     )
+  //     tooltip.style('visibility', 'visible')
+  //   })
+  //   .on('mouseout', function () {
+  //     d3.select(this).transition().duration('50').attr('opacity', '0.5')
+  //     tooltip.style('visibility', 'hidden')
+  //   })
+  //   .on('mousemove', function (d) {
+  //     return tooltip
+  //       .style('top', d.pageY + 10 + 'px')
+  //       .style('left', d.pageX + 10 + 'px')
+  //   })
+  // // Coloca texto alado del nodo rectángulo
+  // svg
+  //   .append('g')
+  //   .attr('font-size', 9)
+  //   .attr('font-weight', 'bold')
+  //   .selectAll('text')
+  //   .data(nodes)
+  //   .join('text')
+  //   .attr('x', d => (d.x0 < width / 2 ? d.x1 + 6 : d.x0 - 6))
+  //   .attr('y', d => (d.y1 + d.y0) / 2)
+  //   .attr('dy', '0.35em')
+  //   .attr('text-anchor', d => (d.x0 < width / 2 ? 'start' : 'end'))
+  //   .text(d => d.name)
+  //   .attr('class', 'node-text-rect')
+  //   .attr('id', function (d, i) {
+  //     d.id = i
+  //     return 'rect-text-' + i
+  //   })
+  //   .append('tspan')
+  //   .attr('font-size', 9)
+  //   .attr('fill-opacity', 0.7)
+  //   .text(d => ` (${d.value.toLocaleString()})`)
+  // // Coloca el nodo rectángulo
+  // svg
+  //   .append('g')
+  //   .attr('stroke', '#333')
+  //   .attr('stroke-width', '0.75')
+  //   .selectAll('rect')
+  //   .data(nodes)
+  //   .join('rect')
+  //   .attr('x', d => d.x0 + 1)
+  //   .attr('y', d => d.y0)
+  //   .attr('height', d => d.y1 - d.y0)
+  //   .attr('width', d => d.x1 - d.x0 - 2)
+  //   .attr('fill', d => d.color)
+  //   .attr('class', 'node-rect')
+  //   .attr('id', function (d, i) {
+  //     d.id = i
+  //     return 'rect-' + i
+  //   })
+  //   .on('mouseover', function (d, i) {
+  //     let nodeHiglight = []
+  //     link
+  //       .transition()
+  //       .duration(300)
+  //       .style('stroke-opacity', function (l) {
+  //         if (l.source.index === i.index || l.target.index === i.index) {
+  //           nodeHiglight.push(l.target.id)
+  //           nodeHiglight.push(l.source.id)
+  //         }
+  //         return l.source.index === i.index || l.target.index === i.index
+  //           ? 1
+  //           : 0.2
+  //       })
+  //     tooltip.style('background-color', i.color)
+  //     tooltip.style('color', i.color === '#000000' ? '#FFF' : '#000')
+  //     tooltip.text('' + i.name + ' : ' + i.value.toLocaleString() + ' MtMS/año')
+  //     tooltip.style('visibility', 'visible')
+  //     d3.selectAll('.node-rect').style('opacity', 0.2)
+  //     d3.selectAll('.node-text-rect').style('opacity', 0.2)
+  //     for (let i = 0; i < nodeHiglight.length; i++) {
+  //       d3.select('#rect-' + nodeHiglight[i]).style('opacity', 1)
+  //       d3.select('#rect-text-' + nodeHiglight[i]).style('opacity', 1)
+  //     }
+  //   })
+  //   .on('mouseleave', function () {
+  //     link.transition().duration(300).style('stroke-opacity', 0.5)
+  //     d3.selectAll('.node-text-rect').style('opacity', 1)
+  //     d3.selectAll('.node-rect').style('opacity', 1)
+  //     tooltip.style('visibility', 'hidden')
+  //   })
+  //   .on('mousemove', function (d) {
+  //     return tooltip
+  //       .style('top', d.pageY + 10 + 'px')
+  //       .style('left', d.pageX + 10 + 'px')
+  //   })
 })
 
 onUnmounted(() => {
@@ -291,11 +431,7 @@ watch(datos, () => {
   creandoSankey()
 })
 </script>
-```
 
-## html
-
-```vue
 <template>
   <div
     :id="sankey_id"
@@ -307,8 +443,14 @@ watch(datos, () => {
     </div>
   </div>
 </template>
-```
 
-:::
-
-<a href="#flujo-de-residuos-solidos-urbanos-de-la-cdmx">Go top</a>
+<style>
+svg {
+  background: #1b1b1f;
+  border-radius: 14px;
+}
+.node-text-rect {
+  /* fill: var(--vp-c-text-1); */
+  fill: #fff;
+}
+</style>

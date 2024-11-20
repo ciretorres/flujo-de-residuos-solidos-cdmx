@@ -15,10 +15,9 @@ As a reference, the [strokeWeight](https://processing.org/reference/strokeWeight
 The data was scaled divide between ten (e.g. 1,038.23 ton/day, to obtain 103.82 and take only the integer value. For now). This es logarithm scale.
 With this, we can trial the tools, that i'm using, to measure how they work with sufficienctly.
 
-If you are interested in work together or colaborate, send me a whatsapp 5547904238, or feel free to mail me at erictorres.velasco@gmail.com
+If you are interested in work together or colaborate, send me a <a href="//api.whatsapp.com/send?phone=5547904238">Whatsapp</a>, or feel free to mail me at erictorres.velasco@gmail.com
 
 Don't forget to check the code [here](https://github.com/ciretorres/flujo-de-residuos-solidos-cdmx/).
-Last update: **11/2023**
 
 ## Summary
 
@@ -38,15 +37,15 @@ Initially, the project began with the purpose to explore with visual design and 
 
 ### Presentación
 
-This is the versión 0.0.1-beta.1 in the early 2018.
+This is the versión 0.1.0-beta.0 in the early 2018.
 
 <img loading="lazy" src="docs/.vitepress/public/img/_capturas/Screen Shot 2023-10-31 at 18.30.14.png" width="900" alt="">
 
-This is the versión 0.0.2 in 2018.
+This is the versión 0.2.0 in 2018.
 
 <img loading="lazy" src="docs/.vitepress/public/img/_capturas/Screen Shot 2023-10-31 at 18.30.58.png" width="900" alt="">
 
-This is the versión 0.0.3 in 2019.
+This is the versión 0.3.0 in 2019.
 
 <img loading="lazy" src="docs/.vitepress/public/img/_capturas/Screen Shot 2023-10-31 at 16.51.09.png" width="900" alt="">
 

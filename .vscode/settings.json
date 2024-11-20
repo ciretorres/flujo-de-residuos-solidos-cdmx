@@ -15,7 +15,7 @@
     "editor.formatOnSave": true
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "vscode.typescript-language-features",
     "editor.formatOnSave": true
   },
   "[vue]": {
@@ -23,7 +23,7 @@
     "editor.formatOnSave": true
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "vscode.html-language-features",
     "editor.formatOnSave": true
   },
   "[markdown]": {
@@ -35,8 +35,7 @@
       "comments": "off",
       "strings": "off",
       "other": "off"
-    },
-    "editor.formatOnSave": true
+    }
   },
   "eslint.validate": ["javascript", "javascriptreact", "vue"],
   "editor.codeActionsOnSave": {
@@ -45,5 +44,7 @@
     "source.fixAll.eslint": "explicit",
     "source.fixAll.stylelint": "explicit"
   },
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
