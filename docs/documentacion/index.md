@@ -81,7 +81,7 @@ Commonly, we use maps for modelling the rational relation space, and for taking 
 
 |                                                                                   |                                                                                            |                                                                                            |                                                                                            |
 | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7625.jpg" alt=""> | <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7626.jpg" alt="">          | <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7627.jpg" alt="">          | <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7628.jpg" alt="">>         |
+| <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7625.jpg" alt=""> | <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7626.jpg" alt="">          | <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7627.jpg" alt="">          | <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7628.jpg" alt="">         |
 | <img loading="lazy" src="../.vitepress/public/img/_capturas/IMG_7629.jpg" alt=""> | <img loading="lazy" src="../.vitepress/public/img/_capturas/P_20171018_155556.jpg" alt=""> | <img loading="lazy" src="../.vitepress/public/img/_capturas/P_20171018_155737.jpg" alt=""> | <img loading="lazy" src="../.vitepress/public/img/_capturas/P_20171018_160221.jpg" alt=""> |
 
 <a href="#summary">Go top</a>
@@ -158,7 +158,7 @@ With this inspiration in mind, I decided to code the diagram flow structure with
 
 It is relevant to mention, that the color for the lines was used acoording to the [Basic style guide for the Public Administration web sites of Mexico City](http://www.cdmx.gob.mx/storage/app/media/Guia_Estilos_Sitios_Web_CDMX_v.1.3.pdf). That's why the pink is the main color, after the purple that distinguish the selection plants from the final dispotition sites.
 
-With this categorization process, we could finally viewed the gaps that the information presented by SEDEMA has. Without mention, how many urban solid waste quantity ends every day at the final disposition sites.
+**With this categorization process, we could finally viewed the gaps that the information presented by SEDEMA has. Without mention, how many urban solid waste quantity ends every day at the final disposition sites.**
 
 Finally, the result, with a few problems with the knowledge about the tool, was a sketching prototype made in Processing. With this last update in 01/06/2018.
 
