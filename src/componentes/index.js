@@ -1,5 +1,4 @@
 import { FlujoResiduosSolidosUrbanosCDMX } from './flujo-residuos-solidos-urbanos-cdmx'
-import { SisdaiGraficas } from './sisdai-graficas'
 
 export default {
   install: Vue => {
@@ -7,8 +6,7 @@ export default {
       'FlujoResiduosSolidosUrbanosCDMX',
       FlujoResiduosSolidosUrbanosCDMX
     )
-    Vue.component('SisdaiGraficas', SisdaiGraficas)
   },
 }
 
-export { FlujoResiduosSolidosUrbanosCDMX, SisdaiGraficas }
+export { FlujoResiduosSolidosUrbanosCDMX }

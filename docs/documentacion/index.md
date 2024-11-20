@@ -1,6 +1,5 @@
 ---
 outline: deep
-# vitepressPublic: ../.vitepress/public
 ---
 
 <script setup>
