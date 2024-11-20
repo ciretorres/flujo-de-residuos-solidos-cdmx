@@ -15,10 +15,9 @@ As a reference, the [strokeWeight](https://processing.org/reference/strokeWeight
 The data was scaled divide between ten (e.g. 1,038.23 ton/day, to obtain 103.82 and take only the integer value. For now). This es logarithm scale.
 With this, we can trial the tools, that i'm using, to measure how they work with sufficienctly.
 
-If you are interested in work together or colaborate, send me a whatsapp 5547904238, or feel free to mail me at erictorres.velasco@gmail.com
+If you are interested in work together or colaborate, send me a <a href="//api.whatsapp.com/send?phone=5547904238">Whatsapp</a>, or feel free to mail me at erictorres.velasco@gmail.com
 
 Don't forget to check the code [here](https://github.com/ciretorres/flujo-de-residuos-solidos-cdmx/).
-Last update: **11/2023**
 
 ## Summary
 
