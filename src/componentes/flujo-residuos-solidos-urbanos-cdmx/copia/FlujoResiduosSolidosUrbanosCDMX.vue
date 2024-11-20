@@ -1,8 +1,8 @@
 <script setup>
-import * as d3 from 'd3';
-import { sankey, sankeyLinkHorizontal } from 'd3-sankey';
+import * as d3 from 'd3'
+import { sankey, sankeyLinkHorizontal } from 'd3-sankey'
 
-import { onMounted, onUnmounted, ref, toRefs, watch } from 'vue';
+import { onMounted, onUnmounted, ref, toRefs, watch } from 'vue'
 
 const props = defineProps({
   sankey_id: {
