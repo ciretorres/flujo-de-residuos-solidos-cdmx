@@ -8,8 +8,6 @@ import basico from "./.vitepress/components/basico.vue";
 
 # Flujo de Residuos Solidos Urbanos de la CDMX
 
-## Arriba
-
 <basico />
 
 ## Acronyms_and_abbreviations
@@ -313,4 +311,4 @@ watch(datos, () => {
 
 :::
 
-[Go top](#arriba)
+<a href="#flujo-de-residuos-solidos-urbanos-de-la-cdmx">Go top</a>
