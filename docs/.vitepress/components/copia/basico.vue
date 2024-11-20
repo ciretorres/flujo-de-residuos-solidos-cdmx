@@ -2,14 +2,14 @@
 // import { ref } from 'vue'
 // import datos_energia from '../../assets/datos/alluvial_balance_energia.json'
 // const datos = ref(datos_energia)
-import flujo_residuos_solidos_urbanos_cdmx from './../public/data/flujo-residuios-solidos-urbanos-cdmx.json'
-const datos = flujo_residuos_solidos_urbanos_cdmx
+// import flujo_residuos_solidos_urbanos_cdmx from './../public/data/flujo-residuios-solidos-urbanos-cdmx.json'
+// const datos = flujo_residuos_solidos_urbanos_cdmx
 </script>
 
 <template>
   <div>
-    <FlujoResiduosSolidosUrbanosCDMX :datos="datos" />
-    <!-- <FlujoResiduosSolidosUrbanosCDMX
+    <!-- <FlujoResiduosSolidosUrbanosCDMX :datos="datos" /> -->
+    <FlujoResiduosSolidosUrbanosCDMX
       :datos="{
         nodos: [
           { name: 'Nodo 0', id: 'nodo0' },
@@ -30,7 +30,7 @@ const datos = flujo_residuos_solidos_urbanos_cdmx
           color: '#2c7fb8',
         },
       ]"
-    /> -->
+    />
     <!-- <FlujoResiduosSolidosUrbanosCDMX
       :datos="datos"
       :variables="[
