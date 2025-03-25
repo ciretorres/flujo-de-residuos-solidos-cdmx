@@ -1,6 +1,6 @@
 {
   "name": "flujo-residuos-solidos-urbanos-cdmx",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Diagrama de flujo (tipo Sankey) sobre la gestión de los Residuos Sólidos Urbanos en la Ciudad de México",
   "type": "module",
   "main": "./src/index.js",
