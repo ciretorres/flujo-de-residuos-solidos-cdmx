@@ -1,60 +1,87 @@
-import pluginJs from '@eslint/js'
-import pluginVue from 'eslint-plugin-vue'
+import eslint from '@eslint/js'
+import eslintConfigPrettier from 'eslint-config-prettier'
+import eslintPluginVue from 'eslint-plugin-vue'
 import globals from 'globals'
 
-import eslintConfigPrettier from 'eslint-config-prettier'
-
-import html from '@html-eslint/eslint-plugin'
-import htmlParser from '@html-eslint/parser'
-
 export default [
-  { files: ['**/*.{js,mjs,cjs,vue}'] },
   {
     ignores: [
-      '**/node_modules',
-      '**/package.json',
-      '**/package-lock.json',
-      '.git',
-      '**/dist',
-      'docs/.vuepress/dist',
-      'docs/.vitepress/dist',
-      'docs/.vitepress/cache',
-      '**/coverage',
-      '**/libs',
-      '**/deprecated',
+      '**/node_modules/**',
+      '**/dist/**',
+      '**/.vitepress/cache/**',
+      '**/.vitepress/dist/**',
+      '**/coverage/**',
     ],
   },
+
+  eslint.configs.recommended,
+
+  ...eslintPluginVue.configs['flat/recommended'],
+
   {
+    files: ['**/*.{js,mjs,cjs,vue}'],
+
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
+        ...globals.browser,
         ...globals.node,
-        globalThis: 'readonly',
       },
-      parser: htmlParser,
     },
-  },
-  {
-    plugins: {
-      '@html-eslint': html,
-    },
-  },
-  {
+
     rules: {
-      eqeqeq: 'error',
-      'no-new': 0,
-      'no-console': 'off',
-      'no-debugger': 'off',
-      'vue/multi-word-component-names': [
+      'no-console': 'warn',
+      'no-unused-vars': 'warn',
+      'vue/multi-word-component-names': 'off',
+      'vue/max-attributes-per-line': [
         'error',
         {
-          ignores: ['Layout', 'basico', 'default', 'documentacion'],
+          singleline: 3,
+          multiline: 1,
         },
       ],
     },
   },
-  pluginJs.configs.recommended,
-  ...pluginVue.configs['flat/essential'],
+
   eslintConfigPrettier,
 ]
+
+// import { defineConfig, globalIgnores } from 'eslint/config'
+
+// import js from '@eslint/js'
+// import skipFormatting from 'eslint-config-prettier/flat'
+// import pluginOxlint from 'eslint-plugin-oxlint'
+// import pluginVue from 'eslint-plugin-vue'
+// import globals from 'globals'
+
+// export default defineConfig([
+//   {
+//     name: 'app/files-to-lint',
+//     files: ['**/*.{vue,js,mjs,jsx}'],
+//   },
+
+//   globalIgnores([
+//     '**/node_modules/**',
+//       '**/dist/**',
+//       '**/.vitepress/cache/**',
+//       '**/.vitepress/dist/**',
+//       '**/coverage/**',
+//     ]),
+
+//   {
+//     languageOptions: {
+//       globals: {
+//         ...globals.browser,
+//       },
+//     },
+//   },
+
+//   js.configs.recommended,
+
+//   ...pluginVue.configs['flat/essential'],
+
+//   ...pluginOxlint.buildFromOxlintConfigFile('.oxlintrc.json'),
+
+//   skipFormatting,
+// ])

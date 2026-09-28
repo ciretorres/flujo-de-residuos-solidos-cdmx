@@ -1,10 +1,72 @@
-.DS_Store
 .ipynb_checkpoints
 
-docs/.vitepress/dist
-docs/.vitepress/cache
-
-node_modules/
-# package-lock.json
-
 deprecated
+deprecado
+_deprecado
+
+# Dependencias
+node_modules/
+
+# Builds
+dist/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+dist
+dist-ssr
+coverage
+*.local
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+*.iml
+
+# Cobertura y tests
+coverage/
+
+# Temporales
+.tmp/
+.temp/
+.cache/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.tsbuildinfo
+
+.eslintcache
+
+# Cypress
+/cypress/videos/
+/cypress/screenshots/
+
+# Vitest
+__screenshots__/
+
+# Vite
+*.timestamp-*-*.mjs
