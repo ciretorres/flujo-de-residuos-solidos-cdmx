@@ -2,6 +2,7 @@
 import DefaultTheme from 'vitepress/theme'
 import { h } from 'vue'
 // import Layout from './Layout.vue'
+import './custom.css'
 import './style.css'
 
 /** @type {import('vitepress').Theme} */

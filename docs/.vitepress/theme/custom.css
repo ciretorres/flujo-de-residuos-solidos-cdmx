@@ -1,0 +1,40 @@
+.VPHome .container {
+  margin: auto;
+  width: 100%;
+  /* max-width: 1280px; */
+  max-width: none;
+
+  padding: 0 24px;
+}
+@media (min-width: 640px) {
+  .VPHome .container {
+    padding: 0 48px;
+  }
+}
+@media (min-width: 960px) {
+  .VPHome .container {
+    width: 100%;
+    padding: 0 64px;
+  }
+}
+
+/* Opcional: contenido con un ancho controlado */
+.VPHome .container .home-full-width {
+  width: 100%;
+}
+
+.VPHome .fixVPHero {
+  /* padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px) 48px 64px; */
+  padding-top: calc(144px);
+  padding-bottom: 64px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.VPHome .VPHero .fix-padding {
+  padding: 0;
+}
+
+.VPHome .VPHero .main .heading .fixName {
+  max-width: none;
+}
