@@ -1,4 +1,3 @@
-
 En una página Markdown de VitePress se pueden importar y renderizar componentes Vue dentro del bloque `<script setup>`.
 
 ## 7. `package.json`
@@ -20,3 +19,4 @@ Añade estos scripts:
     "format:check": "prettier . --check"
   }
 }
+```

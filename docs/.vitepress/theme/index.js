@@ -15,9 +15,7 @@ export default {
   },
   async enhanceApp({ app, router, siteData }) {
     // ...
-    const FlujoResiduosSolidosUrbanosCDMX = await import(
-      './../../../src/main.js'
-    )
+    const FlujoResiduosSolidosUrbanosCDMX = await import('./../../../src/main.js')
     app.use(FlujoResiduosSolidosUrbanosCDMX.default)
-  }
+  },
 }

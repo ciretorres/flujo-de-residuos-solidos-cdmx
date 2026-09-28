@@ -8,11 +8,8 @@
 import { FlujoResiduosSolidosUrbanosCDMX } from './components'
 
 export default {
-  install: Vue => {
-    Vue.component(
-      'FlujoResiduosSolidosUrbanosCDMX',
-      FlujoResiduosSolidosUrbanosCDMX
-    )
+  install: (Vue) => {
+    Vue.component('FlujoResiduosSolidosUrbanosCDMX', FlujoResiduosSolidosUrbanosCDMX)
   },
 }
 
