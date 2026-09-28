@@ -13,7 +13,8 @@ export default {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },
-  async enhanceApp({ app, router, siteData }) {
+  // async enhanceApp({ app, router, siteData }) {
+  async enhanceApp({ app }) {
     // ...
     const FlujoResiduosSolidosUrbanosCDMX = await import('./../../../src/main.js')
     app.use(FlujoResiduosSolidosUrbanosCDMX.default)
