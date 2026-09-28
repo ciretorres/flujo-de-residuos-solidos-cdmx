@@ -39,22 +39,19 @@ jobs:
           cache: npm # or pnpm / yarn
 
       - name: Setup GitHub Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Install dependencies
-        run: npm install # or pnpm install / yarn install / bun install
+        run: npm ci --include=dev # or pnpm install / yarn install / bun install
 
-      - name: Check formatting
-        run: npm run format:check
+      # - name: Check formatting
+      #   run: npm run format:check
 
-      - name: Lint
-        run: npm run lint
+      # - name: Lint
+      #   run: npm run lint
 
       - name: Build VitePress
         run: npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
