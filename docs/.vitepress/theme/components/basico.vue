@@ -102,16 +102,34 @@ onBeforeUnmount(() => {
 
     <section class="data-section" aria-labelledby="data-title">
       <div class="data-section__header">
-        <h2 id="data-title">Datos del diagrama</h2>
+        <!-- <h2 id="data-title">Datos del diagrama</h2> -->
         <!-- <a v-if="downloadUrl" :href="downloadUrl" download="sankey.json"> Descargar JSON </a> -->
       </div>
 
-      <!-- <pre class="json-viewer"><code>{{ formattedData }}</code></pre> -->
+      <!-- <div class="language-json vp-adaptive-theme">
+        <button title="Copy Code" class="copy"></button><span class="lang">json</span>
+        <pre
+          class="shiki shiki-themes github-light github-dark vp-code"
+          tabindex="0"
+        ><code>{{ formattedData }}</code></pre>
+      </div>
+      <pre class=""><code class="language-json">{{ formattedData }}</code></pre> -->
     </section>
   </section>
 </template>
 
 <style scoped>
+pre {
+  overflow-x: auto;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--vp-code-block-bg);
+  color: var(--vp-code-block-color);
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.875em;
+  line-height: 1.7;
+}
+
 .sankey-page {
   /* width: 100%;
   max-width: 1200px;
