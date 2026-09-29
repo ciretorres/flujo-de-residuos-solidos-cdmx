@@ -63,7 +63,6 @@ function formatJson(value, level = 0) {
 onMounted(async () => {
   // cargando json
   sankeyData.value = await consultarDatos()
-  console.log('sankeyData.value', sankeyData.value)
 
   // formateando el json con filas completas
   formattedData = formatJson(sankeyData.value)

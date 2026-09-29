@@ -31,7 +31,7 @@ export function useDatosApi(endPoint) {
       // const url = `${config.app.baseURL}data/consorcio_variantes_heatmap.json`
       // const url = `${config.app.baseURL}${endPoint}`
       const url = withBase(endPoint)
-      console.log('url', url)
+      // console.log('url', url)
 
       datos.value = await fetchJson(url)
       console.log('datos Cargados')

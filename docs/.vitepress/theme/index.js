@@ -1,5 +1,7 @@
 // https://vitepress.dev/guide/custom-theme
 import DefaultTheme from 'vitepress/theme'
+import MyHero from './components/VPHero/MyHero.vue'
+
 import { h } from 'vue'
 // import Layout from './Layout.vue'
 import './custom.css'
@@ -19,5 +21,6 @@ export default {
     // ...
     const FlujoResiduosSolidosUrbanosCDMX = await import('./../../../src/main.js')
     app.use(FlujoResiduosSolidosUrbanosCDMX.default)
+    app.component('MyHero', MyHero)
   },
 }
