@@ -25,7 +25,6 @@ layout: home
 
 <script setup>
 import basico from "./.vitepress/theme/components/basico.vue";
-// import vphero from "./.vitepress/theme/components/VPHero/vphero.vue";
 </script>
 
 <MyHero />

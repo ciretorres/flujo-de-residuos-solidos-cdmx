@@ -33,6 +33,13 @@
 
 .VPHome .VPHero .main .heading .fixName {
   max-width: none;
+  white-space: nowrap;
+}
+
+@media (max-width: 1250px) {
+  .VPHome .VPHero .main .heading .fixName {
+    white-space: normal;
+  }
 }
 
 .VPHero {
