@@ -11,26 +11,25 @@ next: false
 
 ## Introducción
 
-The Interactive visual interface presents the flow diagram system from the Urban Solid Waste in Mexico City (CDMX), according with [Solid Waste's inventory](http://www.cms.sedema.cdmx.gob.mx/storage/app/media/IRS-2015-14-dic-2016.compressed.pdf) published in 2016 by Secretaría del Medio Ambiente (SEDEMA).
+The diagram illustrates the daily <b>Flow of the Urban Solid Waste System in México City</b> based on [Solid Waste's inventory](http://www.cms.sedema.cdmx.gob.mx/storage/app/media/IRS-2015-14-dic-2016.compressed.pdf) published by Secretaría del Medio Ambiente [(SEDEMA)](https://www.sedema.cdmx.gob.mx/programas/programa/residuos-solidos) in 2016.
 
-The job is been made possible in collaboration with the Design team at the ["Problemas del diseño de información: cuantitiva"](/bibliografia/OP-problemas-disenio-informacion-cuantitativa.pdf) seminar with proffesor [Nora Morales](https://uam-cuajimalpa.academia.edu/NoraMorales), for the Master in Information Design at Universidad Autónoma Metropolitana - campus [Cuajimalpa](http://cua.uam.mx/) in 2017 and [Patricia Galán Lara](https://www.facebook.com/patricia.g.lara.75).
+This interactive visualization was made possible through a collaboration with the Design team from the seminar ["Problemas del diseño de información: cuantitiva"](/bibliografia/OP-problemas-disenio-informacion-cuantitativa.pdf), taught by Proffesor [Nora Morales](https://uam-cuajimalpa.academia.edu/NoraMorales), and [Patricia Galán Lara](https://www.facebook.com/patricia.g.lara.75). The seminar took place as part of the Master's Degree in Information Design at [Cuajimalpa campus](http://cua.uam.mx/) of Universidad Autónoma Metropolitana in 2017.
 
-<img loading="lazy" src="/img/_capturas/Screen Shot 2023-10-31 at 13.08.11.webp" width="900" alt="">
+<img loading="lazy" src="/img/_capturas/Screen Shot 2023-10-31 at 13.08.11.webp" width="900" alt="Versión 0.0.1 del Flujo de RSU de la CDMX">
 
-How many Urban Solid Waste flows through each process station according with the quantities published by SEDEMA?
+How much urban solid waste flows through each processing station, according to the quantities published by SEDEMA?
 
-As a reference, the [nodeWidth](https://www.npmjs.com/package/d3-sankey/v/0.7.0#sankey_nodeWidth) of each pipeline represents the quantity of solid waste, according with the information available.
+As a reference, the [nodeWidth](https://www.npmjs.com/package/d3-sankey/v/0.7.1#sankey_links) of each station represents the amount of solid waste processed there, while the [stroke-width](https://www.npmjs.com/package/d3-sankey/v/0.7.1#sankey_links) of each Sankey link represents the amount of waste flowing through it, based on the available information.
 
-The data was scaled divide between ten (e.g. 1,038.23 ton/day, to obtain 103.82 and take only the integer value. For now). This es logarithm scale.
-With this, we can trial the tools, that i'm using, to measure how they work with sufficienctly.
+The data were divided by ten—for example, 1,038.23 tons per day becomes 103.82—and then rounded down to the nearest integer. This is a temporary measure. The visualization uses a logarithmic scale. This allows us to test the tools I am using and evaluate how well they work with sufficiently large datasets.
 
-If you are interested in work together or colaborate, send me a <a href="//api.whatsapp.com/send?phone=5547904238">Whatsapp</a>, or feel free to mail me at erictorres.velasco@gmail.com
+If you are interested in working or collaborating with me, feel free to email me at erictorres.velasco@gmail.com.
 
-Don't forget to check the code [here](https://github.com/ciretorres/flujo-de-residuos-solidos-cdmx/).
+Don’t forget to check out the code [here](https://github.com/ciretorres/flujo-de-residuos-solidos-cdmx/).
 
 ## Diseño
 
-Initially, the project began with the purpose to explore with visual design and quantity representation structures regarding a social problem in the city with a nine understanding minds at class in Universidad Autónoma Metropolitana (UAM), campus [Cuajimalpa](http://cua.uam.mx/).
+The project initially began as an exploration of visual design and methods for representing quantities in relation to a social problem in the city, developed by curious minds in a course at the [Cuajimalpa campus](http://cua.uam.mx/) of Universidad Autónoma Metropolitana (UAM).
 
 ### Presentación
 
@@ -46,21 +45,21 @@ This is the versión 0.0.3 in 2019.
 
 <img loading="lazy" src="/img/_capturas/Screen Shot 2023-10-31 at 16.51.09.webp" width="900" alt="">
 
-The visualization in this project intented to represent the management from the Urban Solid Waste of each municipality to the final destination site in México City.
+The visualization in this project is intended to represent how urban solid waste is managed in each municipality before reaching its final destination in Mexico City.
 
-All this with respect to the previous research in collaboration with the team Master degree in Information Design and proffesor [Nora Morales](https://uam-cuajimalpa.academia.edu/NoraMorales) who guided us into the process.
+This work builds on previous research conducted in collaboration with the Master’s Degree in Information Design team and Professor [Nora Morales](https://uam-cuajimalpa.academia.edu/NoraMorales), who guided us throughout the process.
 
 ### Analysis
 
-This are like blueprints made from the quantity information we had, the interaction and movement we made:
+These are preliminary blueprints based on the quantitative information available we had, as well as on the interactions and movements we designed.
 
 |                                                                  |                                                                   |                                                                   |
 | ---------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------- |
 | <img loading="lazy" src="/img/_ref/maq.webp" width="900" alt=""> | <img loading="lazy" src="/img/_ref/maq1.webp" width="900" alt=""> | <img loading="lazy" src="/img/_ref/maq2.webp" width="900" alt=""> |
 
-We decided to represent the visualization with a spatio-temporal structure (Meirelles, 2013), because of the type of dimention that the information naturally has been used.
+We decided to represent the visualization using a spatiotemporal structure (Meirelles, 2013), based on the dimensions inherent in the data.
 
-Commonly, we use maps for modelling the rational relation space, and for taking action about the geography. Thus, this visual flow reconstruction came in with the solid waste properties (e.g. location). The quantity is transferred to different management points and the values that acquires in each context are essentials.
+Maps are commonly used to model spatial relationships and to understand or act upon geographic information. For this reason, the visual reconstruction of the flow incorporates the spatial properties of solid waste, such as its location. The quantity of waste is then transferred across different management points, and the values it takes on in each context are essential to understanding the process.
 
 <img loading="lazy" src="/img/RedisenoI.webp" alt="">
 
@@ -71,23 +70,23 @@ Commonly, we use maps for modelling the rational relation space, and for taking 
 
 ### Exploration
 
-In 1869, Charles Minard designed a flow map which displays the Napoleon's March to and from Russia, 1812-1813. This flow map combines statistical data techniques with a timeline, and spatio-temporal information about the French army.
+In 1869, Charles Minard designed a flow map depicting Napoleon’s march to and from Russia in 1812–1813. The map combines statistical data, a timeline, and spatiotemporal information about the French army.
 
-In the flow the **width of the line represents the number of soldiers marching** to and from Russia, with **each millimeter standing for 10,000 men**.
+In the flow map, the **width of the line represents the number of soldiers marching** to and from Russia, with **each millimeter representing 10,000 men**.
 
-The march starts with 420,000 men in the Polish–Russian border (center left, beige line), reaches Moscow with 100,000 (top right), and ends with 10,000 men (black line).
+The march begins with 420,000 men at the Polish–Russian border, shown by the beige line on the left. The army reaches Moscow with 100,000 men, shown at the top right, and returns with only 10,000 men, represented by the black line.
 
-**The line graph at the bottom represents the temperatures** faced by the army on the way back to Poland, which are associated with the line standing for the return trip.
+**The graph at the bottom represents the temperatures** recorded by the army during its return to Poland. These temperatures are aligned with the line representing the return journey.
 
 <img loading="lazy" src="/img/_ref/MapCharlesMinard.webp" width="900" alt="">
 
-"Connections between temperatures and the march offer new levels of information: the relationships between deaths and low temperatures (probably also aggravated by fatigue). For example, 22,000 men died crossing the River Berezina due to the extreme low temperatures (–20°C [–4°F])".
+"Connections between temperatures and the march offer new levels of information: the relationships between deaths and low temperatures (probably also aggravated by fatigue). For example, 22,000 men died crossing the River Berezina due to the extreme low temperatures (–20°C [–4°F])" (Meirelles, 2013:162).
 
 ---
 
 #### Graphic Digital Prototyping
 
-With the information recollected, we needed to figure out how to visualize it. But first, we had to define which question is going to be answer. So, according with the [Solid Waste's inventory](http://www.cms.sedema.cdmx.gob.mx/storage/app/media/IRS-2015-14-dic-2016.compressed.pdf), we tried to catch each value from every site mentioned in the document and draw this numbers in relation with figures and shapes.
+Once we had collected the information, we needed to determine how to visualize it. First, however, we had to define the question we wanted to answer. Based on the [Solid Waste's inventory](http://www.cms.sedema.cdmx.gob.mx/storage/app/media/IRS-2015-14-dic-2016.compressed.pdf), we extracted the values for each site mentioned in the document and represented them using different figures and shapes.
 
 #### Prototype I:
 
@@ -97,51 +96,51 @@ With the information recollected, we needed to figure out how to visualize it. B
 
 <img loading="lazy" src="/img/PrototipoII.webp" alt="">
 
-After that, we noticed that there where some unknown quantities didn't mention in the inventory. Thats why, we decided to descomposed the system and started taking the measure for every site which process the solid waste.
+After that, we noticed that some quantities were not specified in the inventory. That is why we decided to break down the system and begin measuring the amount of solid waste processed at each site.
 
 #### Prototype III:
 
 <img loading="lazy" src="/img/PrototipoIII.webp" alt="">
 
-Ending, with a few changes in representation and color style. We could finally comprehended something bigger and more complex, that motived me to take it to the next level of prototyping and started to understanding its logic structure from the semantic point of view.
+Ultimately, a few changes to the visual representation and color scheme allowed us to gain a broader understanding of the system’s complexity. This motivated me to take the project to the next stage of prototyping and analyze its logical structure from a semantic perspective.
 
 #### Prototype IV:
 
 <img loading="lazy" src="/img/MasterResiduosSolidos.webp" alt="">
 
-That reasoning, set me on working with another techonology to design a represent this kinds of aspects to keep speculating about the physical form that could be naturally understand through some interactive helping tools. The image above was used to be presented in an exhibition at Universidad Autónoma Metropolitana (UAM), campus [Cuajimalpa](http://cua.uam.mx/).
+This reasoning led me to work with another technology in order to design a representation of these aspects and continue exploring the physical form they might take, as well as how they could be understood through interactive tools. The image above was presented at an exhibition at the [Cuajimalpa campus](http://cua.uam.mx/) of Universidad Autónoma Metropolitana (UAM).
 
-With a serie of others works designed by the team, that integrated the comprehension of the whole system. In this visualization, each municipality was referred to its imagotype for the print version.
+It was exhibited alongside a series of other works designed by the team, which together helped communicate the system as a whole. In this visualization, each municipality was represented by its corresponding imagotype in the printed version.
 
 ---
 
 ### Redesign
 
-In 1968, Riall Sankey proposed a diagram as a visual representation tool for talking about thermal effiency in the vapor machines. In Sankey's diagrams **the widths of bands are scaled to the corresponding quantities of the vapor flow**.
+In 1898, Matthew Henry Phineas Riall Sankey introduced a diagram as a visual tool for representing the thermal efficiency of steam engines. In Sankey diagrams, **the width of each band is proportional to the corresponding quantity of steam flow**.
 
 <img loading="lazy" src="/img/_ref/DiagramRiallSankey.webp" alt="">
 
-Flows in Sankey diagrams act much more like 'rivers' (as opposed to threads) in which you lose memory of the previous steps. This can be useful in thoses cases in which the user is more interested in relating different data dimensions next to each other more than centering the visualization partition arround a leading dimension.
+Flows in Sankey diagrams behave more like rivers than threads, since they do not retain a visual memory of their previous steps. This can be useful when users are more interested in comparing relationships across different data dimensions than in organizing the visualization around a single primary dimension.
 
 ---
 
 #### Fineo Density
 
-Fineo Density is visualization technique of continuous flow of data based on Sankey diagram structure, to represent relations between multidimensional categorical data. Fineo has a network structure, where nodes are individual categories grouped under a dimension, with the flow lines representing connections. Connections are grouped at every level, thus providing the width between pairs of axes.
+Fineo Density is a visualization technique for representing continuous data flows based on the structure of Sankey diagrams. It is designed to represent relationships within multidimensional categorical data. Fineo has a network structure in which nodes represent individual categories grouped by dimension, while flow lines represent the connections between them. These connections are grouped at each level, thereby determining the width of the bands between pairs of axes.
 
 <img loading="lazy" src="/img/_ref/FineoDensityDesign.webp" alt="">
 
-With this inspiration in mind, I decided to code the diagram flow structure with the information available used previously, to find how much urban solid waste is transferred from every process site and relate as a category. So first, I had to make some adjustments in adobe illustrator to the graphic visualization prototype to respect every width of the lines.
+Inspired by this approach, I decided to code the flow structure of the diagram using the information collected previously. My goal was to determine how much urban solid waste was transferred from each processing site and represent these flows by category. Before coding the visualization, I adjusted the graphic prototype in Adobe Illustrator to ensure that the line widths accurately reflected the corresponding quantities.
 
 #### Adjustments to graphic prototype of all the links
 
 <img loading="lazy" src="/img/FlujoMinardFinal.webp" alt="">
 
-It is relevant to mention, that the color for the lines was used acoording to the [Basic style guide for the Public Administration web sites of Mexico City](http://www.cdmx.gob.mx/storage/app/media/Guia_Estilos_Sitios_Web_CDMX_v.1.3.pdf). That's why the pink is the main color, after the purple that distinguish the selection plants from the final dispotition sites.
+It is important to note that the colors of the lines were selected according to the [Basic Style Guide for Mexico City Public Administration Websites](http://www.cdmx.gob.mx/storage/app/media/Guia_Estilos_Sitios_Web_CDMX_v.1.3.pdf). For this reason, pink is the primary color, followed by purple, which distinguishes the sorting plants from the final disposal sites.
 
-**With this categorization process, we could finally viewed the gaps that the information presented by SEDEMA has. Without mention, how many urban solid waste quantity ends every day at the final disposition sites.**
+**Through this categorization process, we were finally able to identify gaps in the information provided by SEDEMA, including the lack of data indicating how much urban solid waste reaches the final disposal sites each day.**
 
-Finally, the result, with a few problems with the knowledge about the tool, was a sketching prototype made in Processing. With this last update in 01/06/2018.
+The final result was a sketch-like prototype created in Processing, despite my limited familiarity with the tool at the time. This latest version was completed on June 1, 2018.
 
 ## Desarrollo
 
@@ -155,73 +154,35 @@ Finally, the result, with a few problems with the knowledge about the tool, was 
 
 ## Conclusiones
 
-The management of Urban Solid Waste is a complex system, because there are variants between the information provided by public and private institutions, regulations, social dinamics and sensory data for decision making that involves efficiency, management and indicators production, and quantity consumption.
+The management of urban solid waste is a complex system because of the variations among the information provided by public and private institutions, the regulations in place, social dynamics, and the sensory data used for decision-making.
 
-The question that we asked ourselves is, where are going as a society in this country? Considering the culture of recyling and the excersive of policies that are follow into the straight.
+These factors affect efficiency, management practices, indicator development, and patterns of consumption.
+
+The question we asked ourselves was: Where are we heading as a society in this country? This question considers both the culture of recycling and the implementation of public policies in practice.
 
 ## Referencias
 
-[Programa de Gestión Integral de los Residuos Sólidos para la Ciudad de México Inventario de Residuos Sólidos de la Ciudad de México (2015)](https://www.sedema.cdmx.gob.mx/programas/programa/residuos-%20%20%20%20%20%20%20%20%20%20%20%20%20%20solidos?fbclid=IwAR0KfyUlkjbDuTNzDUCjQT0wtPlCT6b7TuXLRbaKbR3dHC0eisK33lvuUBg)
-
-[Inventario de Residuos Sólidos de la Ciudad de México (2015) ](http://www.cms.sedema.cdmx.gob.mx/storage/app/media/IRS-2015-14-dic-2016.compressed.pdf)
-
-[Guía de estilo básica para portales web de la Administración pública de la Ciudad de México.](https://www.cdmx.gob.mx/storage/app/media/Guia_Estilos_Sitios_Web_CDMX_v.1.3.pdf)
-
-[Schmidt, Mario. Der Einsatz von Sankey-Diagrammen im Stoffstrommanagement (2006)](https://www.econstor.eu/bitstream/10419/97580/1/786508884.pdf)
-
-[Schmidt, Mario. The Sankey Diagram in Energy and Material Flow Management. Part I: History (2008)](http://onlinelibrary.wiley.com/doi/10.1111/j.1530-9290.2008.00004.x/full=)
-
-[Minutes of the Proceedings of the Institution of Civil Engineers. E-ISSN 1753-7843. Volume 134 Issue 1898, 1898, pp. 278-312. PART 4](http://www.icevirtuallibrary.com/doi/abs/10.1680/imotp.1898.19100)
-
-[Sankey-Diagrams](http://www.sankey-diagrams.com/)
-
-[Fineo](http://www.densitydesign.org/research/fineo/)
-
-[Fineo Live](http://fineo.densitydesign.org/custom/vis/index.php?tablename=set131487359439&submit=Visualize)
-
-[Meirelles, Isabelle. 2013. Design for information\_ an introduction to the histories, theories, and best practices behind effective visualizations. USA: Rockport Publishers.](/bibliografi/libro.pdf)
-
-[SEDEMA-inventario-residuos-solidos-cdmx-2015.pdf](/bibliografia/SEDEMA-inventario-residuos-solidos-cdmx-2015.pdf)
-
-[Guia-estilo-basica-portales-web-adminis-publica-cdmx-v.1.3.pdf](/bibliografia/Guia-estilo-basica-portales-web-adminis-publica-cdmx-v.1.3.pdf)
-
-[SEDEMA-programa-gestion-integral-residuos-solidos-2016-2020.pdf](/bibliografia/SEDEMA-programa-gestion-integral-residuos-solidos-2016-2020.pdf)
-
-[PGIRS_Gaceta.pdf](/bibliografia/PGIRS_Gaceta.pdf)
-
-[Norma-ambiental-cdmx-2013.pdf](/bibliografia/Norma-ambiental-cdmx-2013.pdf)
-
-[Diagnostico-actual-flujo-residuos-solidos-urbanos-genera-cdmx.pdf](/bibliografia/Diagnostico-actual-flujo-residuos-solidos-urbanos-genera-cdmx.pdf)
-
-[ESTACIONES_DE_TRANSFERENCIA.pdf](/bibliografia/ESTACIONES_DE_TRANSFERENCIA.pdf)
-
-[SEMARNAT-directorio-centros-acopio-materiales-provenientes-residuos-solidos-mexico-2010.pdf](/bibliografia/SEMARNAT-directorio-centros-acopio-materiales-provenientes-residuos-solidos-mexico-2010.pdf)
+- [Diagnostico-actual-flujo-residuos-solidos-urbanos-genera-cdmx.pdf](/bibliografia/Diagnostico-actual-flujo-residuos-solidos-urbanos-genera-cdmx.pdf)
+- [Estaciones-transferencia-residuos-solidos-areas-urbanas.pdf](/bibliografia/Estaciones-transferencia-residuos-solidos-areas-urbanas.pdf)
+- [Fineo](http://www.densitydesign.org/research/fineo/)
+- [https://densitydesign.org/2011/09/evaluating-social-politics-impact-with-fineo/](https://densitydesign.org/2011/09/evaluating-social-politics-impact-with-fineo/)
+- [Fineo Live](http://fineo.densitydesign.org/custom/vis/index.php?tablename=set131487359439&submit=Visualize)
+- [Guía de estilo básica para portales web de la Administración pública de la Ciudad de México.](https://www.cdmx.gob.mx/storage/app/media/Guia_Estilos_Sitios_Web_CDMX_v.1.3.pdf)
+- [Guia-estilo-basica-portales-web-adminis-publica-cdmx-v.1.3.pdf](/bibliografia/Guia-estilo-basica-portales-web-adminis-publica-cdmx-v.1.3.pdf)
+- [Inventario de Residuos Sólidos de la Ciudad de México (2015) ](http://www.cms.sedema.cdmx.gob.mx/storage/app/media/IRS-2015-14-dic-2016.compressed.pdf)
+- [SEDEMA-inventario-residuos-solidos-cdmx-2015.pdf](/bibliografia/SEDEMA-inventario-residuos-solidos-cdmx-2015.pdf)
+- [Meirelles, Isabelle. 2013. Design for information\_ an introduction to the histories, theories, and best practices behind effective visualizations. USA: Rockport Publishers.](https://archive.org/details/designforinforma0000meir)
+- [Minutes of the Proceedings of the Institution of Civil Engineers. E-ISSN 1753-7843. Volume 134 Issue 1898, 1898, pp. 278-312. PART 4](http://www.icevirtuallibrary.com/doi/abs/10.1680/imotp.1898.19100)
+- [Norma-ambiental-cdmx-2013.pdf](/bibliografia/Norma-ambiental-cdmx-2013.pdf)
+- [PGIRS-gaceta.pdf](/bibliografia/PGIRS-gaceta.pdf)
+- [Programa de Gestión Integral de los Residuos Sólidos para la Ciudad de México Inventario de Residuos Sólidos de la Ciudad de México (2015)](https://www.sedema.cdmx.gob.mx/programas/programa/residuos-%20%20%20%20%20%20%20%20%20%20%20%20%20%20solidos?fbclid=IwAR0KfyUlkjbDuTNzDUCjQT0wtPlCT6b7TuXLRbaKbR3dHC0eisK33lvuUBg)
+- [SEDEMA-programa-gestion-integral-residuos-solidos-2016-2020.pdf](/bibliografia/SEDEMA-programa-gestion-integral-residuos-solidos-2016-2020.pdf)
+- [Sankey-Diagrams](http://www.sankey-diagrams.com/)
+- [Schmidt, Mario. Der Einsatz von Sankey-Diagrammen im Stoffstrommanagement (2006)](https://www.econstor.eu/bitstream/10419/97580/1/786508884.pdf)
+- [Schmidt, Mario. The Sankey Diagram in Energy and Material Flow Management. Part I: History (2008)](http://onlinelibrary.wiley.com/doi/10.1111/j.1530-9290.2008.00004.x/full=)
+- [SEMARNAT-directorio-centros-acopio-materiales-provenientes-residuos-solidos-mexico-2010.pdf](/bibliografia/SEMARNAT-directorio-centros-acopio-materiales-provenientes-residuos-solidos-mexico-2010.pdf)
 
 ---
-
-<!--
-En una página Markdown de VitePress se pueden importar y renderizar componentes Vue dentro del bloque `<script setup>`.
-
-## 7. `package.json`
-
-Añade estos scripts:
-
-```json
-{
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "format": "prettier . --write",
-    "format:check": "prettier . --check"
-  }
-}
-``` -->
 
 <style>
 @media (min-width: 960px) {

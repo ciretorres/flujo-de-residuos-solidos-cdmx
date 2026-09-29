@@ -249,6 +249,16 @@ import basico from "./.vitepress/theme/components/basico.vue";
 
 :::
 
+### Estructura básica de los datos
+
+```ts
+{
+  nodes: [ { id: string, name: string, color: string } ],
+  links: [ { source: string, target: string, value: number, color: string } ]
+}
+
+```
+
 ## Código del diagrama
 
 ::: details Click to view the code
@@ -624,29 +634,59 @@ onUnmounted(() => {
 
 :::
 
-<p class="tagline">Acronyms and abbreviations</p>
+### Estructura del código
+
+- **Configurar:** importar dependencias, propiedades y referencias.
+- **Preparar:** procesar los datos y calcular dimensiones.
+- **Renderizar:** construir el diagrama Sankey en SVG.
+- **Interactuar:** añadir tooltips, resaltados y eventos.
+- **Actualizar:** responder a cambios de datos, tamaño y tema.
+- **Limpiar:** liberar recursos al desmontar el componente.
+
+<!-- <p class="tagline">Acronyms and abbreviations</p>
 
 - DGSU: Dirección General de Servicios Urbanos
 - CEDA: Central de Abastos
 - RME: Residuos de Manejo Especial
 - CDMX: Ciudad de México
-- RSU: Residuos Sólidos Urbanos
+- RSU: Residuos Sólidos Urbanos -->
 
 <div class="home-full-width">
 
 <div class="actions">
   <div class="action">
     <a
+      class="VPButton medium alt"
+      href="/flujo-de-residuos-solidos-cdmx/comienza/introduccion.html"
+      >Comienza</a
+    >
+  </div>
+  <div class="action">
+    <a
       class="VPButton medium brand"
-      href="/flujo-de-residuos-solidos-cdmx/examples/markdown-examples.html"
-      >Markdown Examples</a
+      href="/flujo-de-residuos-solidos-cdmx/comienza/instalacion.html"
+      >Instalación</a
     >
   </div>
   <div class="action">
     <a
       class="VPButton medium alt"
-      href="/flujo-de-residuos-solidos-cdmx/examples/api-examples.html"
-      >API Examples</a
+      href="/flujo-de-residuos-solidos-cdmx/comienza/estructura.html"
+      >Estructura</a
+    >
+  </div>
+  <div class="action">
+    <a
+      class="VPButton medium brand"
+      href="/flujo-de-residuos-solidos-cdmx/documentacion/index.html"
+      >Documentación</a
+    >
+  </div>
+  <div class="action">
+    <a
+      class="VPButton medium alt"
+      href="/flujo-de-residuos-solidos-cdmx/comienza/colabora.html"
+      >Colabora</a
     >
   </div>
 </div>

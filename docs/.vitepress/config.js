@@ -4,7 +4,7 @@ import pkg from '../../package.json'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'My Awesome Project',
+  title: 'Flujo de RSU de la CDMX',
   description: 'A VitePress Site',
   head: [
     [
@@ -30,17 +30,20 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Inicio', link: '/' },
-      { text: 'Examples', link: '/examples/markdown-examples' },
+      { text: 'Comienza', link: '/comienza/introduccion' },
       { text: 'Documentación', link: '/documentacion/index' },
       { text: `v${pkg.version}`, link: pkg.repository.url },
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Comienza',
         items: [
-          { text: 'Markdown Examples', link: '/examples/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/examples/api-examples' },
+          { text: 'Introducción', link: '/comienza/introduccion' },
+          { text: 'Instalación', link: '/comienza/instalacion' },
+          { text: 'Estructura', link: '/comienza/estructura' },
+          { text: 'Documentación', link: '/documentacion/index' },
+          { text: 'Colabora', link: '/comienza/colabora' },
         ],
       },
     ],

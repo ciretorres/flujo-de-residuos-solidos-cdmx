@@ -11,9 +11,6 @@
   ],
   "scripts": {
     "clean": "rm -rf node_modules && rm package-lock.json && npm cache clean -f && npm cache verify",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
     "lint": "run-s \"lint:*\"",
     "lint:oxlint": "oxlint . --fix",
     "lint:eslint": "eslint . --fix --cache",
