@@ -33,7 +33,7 @@ import basico from "./.vitepress/theme/components/basico.vue";
 
 ## Datos del diagrama
 
-::: details
+::: details Click to view the data
 <!-- prettier-ignore -->
 ```json
 {
@@ -251,7 +251,7 @@ import basico from "./.vitepress/theme/components/basico.vue";
 
 ## Código del diagrama
 
-::: details
+::: details Click to view the code
 <!-- prettier-ignore -->
 ```vue
 <script setup>

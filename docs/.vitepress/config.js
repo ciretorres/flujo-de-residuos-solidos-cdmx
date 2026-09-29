@@ -29,7 +29,7 @@ export default defineConfig({
 
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
+      { text: 'Inicio', link: '/' },
       { text: 'Examples', link: '/examples/markdown-examples' },
       { text: 'Documentación', link: '/documentacion/index' },
       { text: `v${pkg.version}`, link: pkg.repository.url },

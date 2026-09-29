@@ -1,10 +1,17 @@
 <script setup>
+import { useRoute } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import { onBeforeUnmount, onMounted, ref } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 
 const { Layout } = DefaultTheme
 
+const route = useRoute()
+
 const mostrarBanner = ref(true)
+
+const estaEnRutaBase = computed(() => {
+  return route.path === '/flujo-de-residuos-solidos-cdmx/'
+})
 
 function cerrarBanner() {
   mostrarBanner.value = false
@@ -28,7 +35,7 @@ onBeforeUnmount(() => {
 <template>
   <Layout>
     <template #layout-top>
-      <div v-if="mostrarBanner" class="top-banner">
+      <div v-if="estaEnRutaBase && mostrarBanner" class="top-banner">
         <button
           class="top-banner__close"
           type="button"
@@ -102,7 +109,7 @@ onBeforeUnmount(() => {
 }
 
 .top-banner__content {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
