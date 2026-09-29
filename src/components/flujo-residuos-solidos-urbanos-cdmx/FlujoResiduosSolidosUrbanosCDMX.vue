@@ -1,7 +1,11 @@
 <script setup>
 import * as d3 from 'd3'
 import { sankey, sankeyLinkHorizontal } from 'd3-sankey'
+import { useData } from 'vitepress'
 import { nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
+
+// para saber si cambia el modo oscuro a claro o viceverza
+const { isDark } = useData()
 
 const props = defineProps({
   sankeyId: {
@@ -208,7 +212,15 @@ function renderChart() {
     .data(links)
     .join('path')
     .attr('d', sankeyLinkHorizontal())
-    .attr('stroke', (link) => link.color || link.source.color || '#94a3b8')
+    .attr('stroke', (link) => {
+      // color de la línea negro si es vista clara
+      if (link.value === 0 && !isDark.value) {
+        return '#000000'
+      } else {
+        // si no la que viene en la base de datos
+        return link.color || link.source.color || '#94a3b8'
+      }
+    })
     // forzando que el valor sea 1 aunque venga en cero
     .attr('stroke-width', (link) => Math.max(1, link.width))
     .style('stroke-opacity', 0.45)
@@ -277,7 +289,7 @@ function renderChart() {
     .attr('y', (node) => (node.y0 + node.y1) / 2)
     .attr('dy', '0.35em')
     .attr('text-anchor', (node) => (node.x0 < innerWidth / 2 ? 'start' : 'end'))
-    .attr('fill', '#e2e8f0')
+    .attr('fill', isDark.value ? '#FFFFFF' : '#000000')
     .text((node) => `${node.name} (${formatValue(node.value || 0)})`)
     .style('pointer-events', 'none')
 }
@@ -324,6 +336,16 @@ onUnmounted(() => {
 
   d3.select(svgRef.value).selectAll('*').interrupt().remove()
 })
+
+watch(
+  isDark,
+  async () => {
+    await nextTick()
+
+    renderChart()
+  },
+  { immediate: true },
+)
 </script>
 
 <template>

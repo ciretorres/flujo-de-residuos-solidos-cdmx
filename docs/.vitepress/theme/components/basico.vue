@@ -103,7 +103,7 @@ onBeforeUnmount(() => {
     <section class="data-section" aria-labelledby="data-title">
       <div class="data-section__header">
         <!-- <h2 id="data-title">Datos del diagrama</h2> -->
-        <!-- <a v-if="downloadUrl" :href="downloadUrl" download="sankey.json"> Descargar JSON </a> -->
+        <a v-if="downloadUrl" :href="downloadUrl" download="sankey.json"> Descargar JSON </a>
       </div>
 
       <!-- <div class="language-json vp-adaptive-theme">
