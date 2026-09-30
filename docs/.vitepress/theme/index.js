@@ -6,8 +6,7 @@ import Layout from './Layout.vue'
 
 import { h } from 'vue'
 
-import './custom.css'
-import './style.css'
+import './style/index.css'
 
 /** @type {import('vitepress').Theme} */
 export default {
@@ -16,7 +15,7 @@ export default {
 
   async enhanceApp({ app /*, router, siteData*/ }) {
     // ...
-    const FlujoResiduosSolidosUrbanosCDMX = await import('./../../../src/main.js')
+    const FlujoResiduosSolidosUrbanosCDMX = await import('./../../../src/components')
     app.use(FlujoResiduosSolidosUrbanosCDMX.default)
 
     app.component('MyHero', MyHero)

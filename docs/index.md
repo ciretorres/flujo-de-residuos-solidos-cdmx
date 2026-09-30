@@ -1,26 +1,6 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-
-# hero:
-#   name: 'My Awesome Project'
-#   text: 'A VitePress Site'
-#   tagline: My great project tagline
-#   actions:
-#     - theme: brand
-#       text: Markdown Examples
-#       link: examples/markdown-examples
-#     - theme: alt
-#       text: API Examples
-#       link: examples/api-examples
-
-# features:
-#   - title: Feature A
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - title: Feature B
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - title: Feature C
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
 <script setup>
@@ -324,6 +304,11 @@ const props = defineProps({
       left: 20,
     }),
   },
+
+  vistaOscura: {
+    type: Boolean,
+    default: false,
+  },
 })
 
 const containerRef = ref(null)
@@ -443,7 +428,6 @@ function renderChart() {
     .attr('transform', `translate(${props.margin.left},${props.margin.top})`)
 
   // d3-sankey modifica internamente los nodos y enlaces.
-  // const graphData = structuredClone(props.datos)
   const graphData = {
     nodes: props.datos.nodes.map((node) => ({ ...node })),
     links: props.datos.links.map((link) => ({ ...link })),
@@ -474,7 +458,15 @@ function renderChart() {
     .data(links)
     .join('path')
     .attr('d', sankeyLinkHorizontal())
-    .attr('stroke', (link) => link.color || link.source.color || '#94a3b8')
+    .attr('stroke', (link) => {
+      // color de la línea negro si es vista clara
+      if (link.value === 0 && !props.vistaOscura) {
+        return '#000000'
+      } else {
+        // si no la que viene en la base de datos
+        return link.color || link.source.color || '#94a3b8'
+      }
+    })
     // forzando que el valor sea 1 aunque venga en cero
     .attr('stroke-width', (link) => Math.max(1, link.width))
     .style('stroke-opacity', 0.45)
@@ -543,7 +535,7 @@ function renderChart() {
     .attr('y', (node) => (node.y0 + node.y1) / 2)
     .attr('dy', '0.35em')
     .attr('text-anchor', (node) => (node.x0 < innerWidth / 2 ? 'start' : 'end'))
-    .attr('fill', '#e2e8f0')
+    .attr('fill', props.vistaOscura ? '#FFFFFF' : '#000000')
     .text((node) => `${node.name} (${formatValue(node.value || 0)})`)
     .style('pointer-events', 'none')
 }
@@ -590,6 +582,16 @@ onUnmounted(() => {
 
   d3.select(svgRef.value).selectAll('*').interrupt().remove()
 })
+
+watch(
+  () => props.vistaOscura,
+  async () => {
+    await nextTick()
+
+    renderChart()
+  },
+  { immediate: true },
+)
 </script>
 
 <template>
@@ -636,67 +638,56 @@ onUnmounted(() => {
 
 ### Estructura del código
 
-- **Configurar:** importar dependencias, propiedades y referencias.
-- **Preparar:** procesar los datos y calcular dimensiones.
-- **Renderizar:** construir el diagrama Sankey en SVG.
-- **Interactuar:** añadir tooltips, resaltados y eventos.
-- **Actualizar:** responder a cambios de datos, tamaño y tema.
-- **Limpiar:** liberar recursos al desmontar el componente.
-
-<!-- <p class="tagline">Acronyms and abbreviations</p>
-
-- DGSU: Dirección General de Servicios Urbanos
-- CEDA: Central de Abastos
-- RME: Residuos de Manejo Especial
-- CDMX: Ciudad de México
-- RSU: Residuos Sólidos Urbanos -->
+```text
+Configurar: importar dependencias, propiedades y referencias.
+  ↓
+Preparar: procesar los datos y calcular dimensiones.
+  ↓
+Renderizar: construir el diagrama Sankey en SVG.
+  ↓
+Interactuar: añadir tooltips, resaltados y eventos.
+  ↓
+Actualizar: responder a cambios de datos, tamaño y tema.
+  ↓
+Limpiar: liberar recursos al desmontar el componente.
+```
 
 <div class="home-full-width">
-
-<div class="actions">
-  <div class="action">
-    <a
-      class="VPButton medium alt"
-      href="/flujo-de-residuos-solidos-cdmx/comienza/introduccion.html"
-      >Comienza</a
-    >
-  </div>
-  <div class="action">
-    <a
-      class="VPButton medium brand"
-      href="/flujo-de-residuos-solidos-cdmx/comienza/instalacion.html"
-      >Instalación</a
-    >
-  </div>
-  <div class="action">
-    <a
-      class="VPButton medium alt"
-      href="/flujo-de-residuos-solidos-cdmx/comienza/estructura.html"
-      >Estructura</a
-    >
-  </div>
-  <div class="action">
-    <a
-      class="VPButton medium brand"
-      href="/flujo-de-residuos-solidos-cdmx/documentacion/index.html"
-      >Documentación</a
-    >
-  </div>
-  <div class="action">
-    <a
-      class="VPButton medium alt"
-      href="/flujo-de-residuos-solidos-cdmx/comienza/colabora.html"
-      >Colabora</a
-    >
+  <div class="actions">
+    <div class="action">
+      <a
+        class="VPButton medium alt"
+        href="/flujo-de-residuos-solidos-cdmx/comienza/introduccion.html"
+        >Comienza</a
+      >
+    </div>
+    <div class="action">
+      <a
+        class="VPButton medium brand"
+        href="/flujo-de-residuos-solidos-cdmx/comienza/instalacion.html"
+        >Instalación</a
+      >
+    </div>
+    <div class="action">
+      <a
+        class="VPButton medium alt"
+        href="/flujo-de-residuos-solidos-cdmx/comienza/estructura.html"
+        >Estructura</a
+      >
+    </div>
+    <div class="action">
+      <a
+        class="VPButton medium brand"
+        href="/flujo-de-residuos-solidos-cdmx/documentacion/index.html"
+        >Documentación</a
+      >
+    </div>
+    <div class="action">
+      <a
+        class="VPButton medium alt"
+        href="/flujo-de-residuos-solidos-cdmx/comienza/colabora.html"
+        >Colabora</a
+      >
+    </div>
   </div>
 </div>
-
-<!-- # Flujo de Residuos Solidos Urbanos de la CDMX
-
-## Mi contenido
-
-Aquí va el contenido Markdown o HTML de la página principal. -->
-
-</div>
-
-<!-- <a href="#flujo-de-residuos-solidos-urbanos-de-la-cdmx">Go top</a> -->

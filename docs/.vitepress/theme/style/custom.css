@@ -20,6 +20,8 @@
   width: 100%;
 }
 
+/* VPHero */
+
 .VPHome .fixVPHero {
   padding-top: calc(144px);
   padding-bottom: 64px;
@@ -282,6 +284,7 @@
   }
 }
 
+/* VPButton */
 .VPButton {
   display: inline-block;
   border: 1px solid transparent;

@@ -90,22 +90,10 @@ onBeforeUnmount(() => {
   min-height: 36px;
   padding: 18px 56px 18px 24px;
 
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px; */
-
   color: #ffffff;
   background: linear-gradient(90deg, #2563eb, #7c3aed);
   font-size: 16px;
   line-height: 20px;
-  /* text-align: center; */
-}
-
-@media (max-width: 640px) {
-  .top-banner {
-    /* padding: 24px 24px; */
-  }
 }
 
 .top-banner__content {
@@ -140,7 +128,6 @@ onBeforeUnmount(() => {
   height: 32px;
   padding: 0;
 
-  /* color: #78350f; */
   color: #ffffff;
   background: transparent;
   border: 0;

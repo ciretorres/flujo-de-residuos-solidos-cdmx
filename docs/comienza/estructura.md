@@ -10,28 +10,15 @@ Una estructura habitual de VitePress es:
 │ ├── .vitepress/
 | │ ├── theme/
 | | │ ├── components/
-| | | │ ├── VPHero/
-| | | │ │ └── MyHeroe.vue
-| | │ │ └── basico.vue
 | | │ ├── composables/
-| | │ │ └── usarDatosApi.js
+| | │ ├── style/
 | | │ ├── utils/
-| | │ │ └── fetchJson.js
-| | | |
-| | │ ├── custom.css
 | | │ ├── index.js
 | | │ ├── Layout.vue
-| │ │ └── style.css
 │ │ └── config.js
 | |
 │ ├── comienza/
-| │ ├── colabora.md
-| │ ├── estructura.md
-| │ ├── instalacion.md
-│ │ └── introduccion.md
-| |
 │ ├── documentacion/
-│ │ └── index.md
 | |
 │ ├── public/
 | │ ├── bibliografia
@@ -46,15 +33,11 @@ Una estructura habitual de VitePress es:
 │ ├── assets/
 │ ├── components/
 | │ ├── flujo-residuos-solidos-urbanos-cdmx/
-| | │ ├── FlujoResiduosSolidosUrbanosCDMX.vue
-| │ │ └── index.js
 │ │ └── index.js
-│ ├── App.vue
 │ └── main.js
 |
 ├── .gitattributes
 ├── .gitignore
-├── index.html
 ├── package.json
 ├── .editorconfig
 ├── .oxlintrc.json

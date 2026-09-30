@@ -1,11 +1,7 @@
 <script setup>
 import * as d3 from 'd3'
 import { sankey, sankeyLinkHorizontal } from 'd3-sankey'
-import { useData } from 'vitepress'
 import { nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
-
-// para saber si cambia el modo oscuro a claro o viceverza
-const { isDark } = useData()
 
 const props = defineProps({
   sankeyId: {
@@ -61,6 +57,11 @@ const props = defineProps({
       bottom: 20,
       left: 20,
     }),
+  },
+
+  vistaOscura: {
+    type: Boolean,
+    default: false,
   },
 })
 
@@ -181,7 +182,6 @@ function renderChart() {
     .attr('transform', `translate(${props.margin.left},${props.margin.top})`)
 
   // d3-sankey modifica internamente los nodos y enlaces.
-  // const graphData = structuredClone(props.datos)
   const graphData = {
     nodes: props.datos.nodes.map((node) => ({ ...node })),
     links: props.datos.links.map((link) => ({ ...link })),
@@ -214,7 +214,7 @@ function renderChart() {
     .attr('d', sankeyLinkHorizontal())
     .attr('stroke', (link) => {
       // color de la línea negro si es vista clara
-      if (link.value === 0 && !isDark.value) {
+      if (link.value === 0 && !props.vistaOscura) {
         return '#000000'
       } else {
         // si no la que viene en la base de datos
@@ -289,7 +289,7 @@ function renderChart() {
     .attr('y', (node) => (node.y0 + node.y1) / 2)
     .attr('dy', '0.35em')
     .attr('text-anchor', (node) => (node.x0 < innerWidth / 2 ? 'start' : 'end'))
-    .attr('fill', isDark.value ? '#FFFFFF' : '#000000')
+    .attr('fill', props.vistaOscura ? '#FFFFFF' : '#000000')
     .text((node) => `${node.name} (${formatValue(node.value || 0)})`)
     .style('pointer-events', 'none')
 }
@@ -338,7 +338,7 @@ onUnmounted(() => {
 })
 
 watch(
-  isDark,
+  () => props.vistaOscura,
   async () => {
     await nextTick()
 

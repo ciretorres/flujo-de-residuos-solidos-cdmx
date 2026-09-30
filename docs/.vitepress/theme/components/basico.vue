@@ -1,9 +1,14 @@
 <script setup>
+import { useData } from 'vitepress'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
+
 import { useDatosApi } from '../composables/usarDatosApi'
 const { /*datos, pending, error,*/ consultarDatos } = useDatosApi(
   '/data/flujo-residuios-solidos-urbanos-cdmx.json',
 )
+
+// para saber si cambia el modo oscuro a claro o viceverza
+const { isDark } = useData()
 
 const sankeyData = ref(null)
 const downloadUrl = ref('')
@@ -80,8 +85,6 @@ onBeforeUnmount(() => {
 
 <template>
   <section class="sankey-page">
-    <!-- <h1>Sankey Diagram</h1> -->
-
     <figure class="sankey" aria-labelledby="sankey-title">
       <figcaption id="sankey-title">
         Diagrama de Flujo de Residuos Solidos Urbanos de la CDMX
@@ -92,6 +95,7 @@ onBeforeUnmount(() => {
           v-if="sankeyData"
           :datos="sankeyData"
           titulo="Diagrama de Flujo de Residuos Solidos Urbanos de la CDMX"
+          :vista-oscura="isDark"
         />
 
         <template #fallback>
@@ -102,18 +106,8 @@ onBeforeUnmount(() => {
 
     <section class="data-section" aria-labelledby="data-title">
       <div class="data-section__header">
-        <!-- <h2 id="data-title">Datos del diagrama</h2> -->
         <a v-if="downloadUrl" :href="downloadUrl" download="sankey.json"> Descargar JSON </a>
       </div>
-
-      <!-- <div class="language-json vp-adaptive-theme">
-        <button title="Copy Code" class="copy"></button><span class="lang">json</span>
-        <pre
-          class="shiki shiki-themes github-light github-dark vp-code"
-          tabindex="0"
-        ><code>{{ formattedData }}</code></pre>
-      </div>
-      <pre class=""><code class="language-json">{{ formattedData }}</code></pre> -->
     </section>
   </section>
 </template>
@@ -130,21 +124,12 @@ pre {
   line-height: 1.7;
 }
 
-.sankey-page {
-  /* width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem; */
-}
-
 .sankey {
   width: 100%;
   margin: 0;
 }
 
 .sankey figcaption {
-  /* margin-bottom: 0.75rem; */
-  /* font-size: 1.125rem; */
   font-weight: 600;
 
   visibility: hidden;
@@ -159,19 +144,6 @@ pre {
 
 .data-section {
   margin-top: 2rem;
-}
-
-.data-section__header {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 0.75rem; */
-}
-
-.data-section h2 {
-  /* margin: 0;
-  font-size: 1.25rem; */
 }
 
 .data-section a {

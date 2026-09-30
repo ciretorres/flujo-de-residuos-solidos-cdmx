@@ -1,16 +1,27 @@
 import eslint from '@eslint/js'
 import eslintConfigPrettier from 'eslint-config-prettier'
+import pluginOxlint from 'eslint-plugin-oxlint'
 import eslintPluginVue from 'eslint-plugin-vue'
 import globals from 'globals'
 
 export default [
   {
     ignores: [
-      '**/node_modules/**',
+      '**/.git',
+      '**/.nuxt',
+
       '**/dist/**',
+      '**/dist-ssr/**',
       '**/.vitepress/cache/**',
       '**/.vitepress/dist/**',
+
+      '**/node_modules/**',
+      '**/package.json',
+      '**/package-lock.json',
       '**/coverage/**',
+      '**/libs',
+
+      '**/deprecated/**',
     ],
   },
 
@@ -18,8 +29,10 @@ export default [
 
   ...eslintPluginVue.configs['flat/recommended'],
 
+  ...pluginOxlint.buildFromOxlintConfigFile('.oxlintrc.json'),
+
   {
-    files: ['**/*.{js,mjs,cjs,vue}'],
+    files: ['**/*.{vue,js,jsx,mjs,cjs,ts,tsx}'],
 
     languageOptions: {
       ecmaVersion: 'latest',
@@ -47,42 +60,3 @@ export default [
 
   eslintConfigPrettier,
 ]
-
-// import { defineConfig, globalIgnores } from 'eslint/config'
-
-// import js from '@eslint/js'
-// import skipFormatting from 'eslint-config-prettier/flat'
-// import pluginOxlint from 'eslint-plugin-oxlint'
-// import pluginVue from 'eslint-plugin-vue'
-// import globals from 'globals'
-
-// export default defineConfig([
-//   {
-//     name: 'app/files-to-lint',
-//     files: ['**/*.{vue,js,mjs,jsx}'],
-//   },
-
-//   globalIgnores([
-//     '**/node_modules/**',
-//       '**/dist/**',
-//       '**/.vitepress/cache/**',
-//       '**/.vitepress/dist/**',
-//       '**/coverage/**',
-//     ]),
-
-//   {
-//     languageOptions: {
-//       globals: {
-//         ...globals.browser,
-//       },
-//     },
-//   },
-
-//   js.configs.recommended,
-
-//   ...pluginVue.configs['flat/essential'],
-
-//   ...pluginOxlint.buildFromOxlintConfigFile('.oxlintrc.json'),
-
-//   skipFormatting,
-// ])
