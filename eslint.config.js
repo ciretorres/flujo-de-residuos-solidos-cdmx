@@ -1,60 +1,62 @@
-import pluginJs from '@eslint/js'
-import pluginVue from 'eslint-plugin-vue'
+import eslint from '@eslint/js'
+import eslintConfigPrettier from 'eslint-config-prettier'
+import pluginOxlint from 'eslint-plugin-oxlint'
+import eslintPluginVue from 'eslint-plugin-vue'
 import globals from 'globals'
 
-import eslintConfigPrettier from 'eslint-config-prettier'
-
-import html from '@html-eslint/eslint-plugin'
-import htmlParser from '@html-eslint/parser'
-
 export default [
-  { files: ['**/*.{js,mjs,cjs,vue}'] },
   {
     ignores: [
-      '**/node_modules',
+      '**/.git',
+      '**/.nuxt',
+
+      '**/dist/**',
+      '**/dist-ssr/**',
+      '**/.vitepress/cache/**',
+      '**/.vitepress/dist/**',
+
+      '**/node_modules/**',
       '**/package.json',
       '**/package-lock.json',
-      '.git',
-      '**/dist',
-      'docs/.vuepress/dist',
-      'docs/.vitepress/dist',
-      'docs/.vitepress/cache',
-      '**/coverage',
+      '**/coverage/**',
       '**/libs',
-      '**/deprecated',
+
+      '**/deprecated/**',
     ],
   },
+
+  eslint.configs.recommended,
+
+  ...eslintPluginVue.configs['flat/recommended'],
+
+  ...pluginOxlint.buildFromOxlintConfigFile('.oxlintrc.json'),
+
   {
+    files: ['**/*.{vue,js,jsx,mjs,cjs,ts,tsx}'],
+
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
+        ...globals.browser,
         ...globals.node,
-        globalThis: 'readonly',
       },
-      parser: htmlParser,
     },
-  },
-  {
-    plugins: {
-      '@html-eslint': html,
-    },
-  },
-  {
+
     rules: {
-      eqeqeq: 'error',
-      'no-new': 0,
-      'no-console': 'off',
-      'no-debugger': 'off',
-      'vue/multi-word-component-names': [
+      // 'no-console': 'warn',
+      'no-console': ['warn', { allow: ['warn', 'error'] }],
+      'no-unused-vars': 'warn',
+      'vue/multi-word-component-names': 'off',
+      'vue/max-attributes-per-line': [
         'error',
         {
-          ignores: ['Layout', 'basico', 'default', 'documentacion'],
+          singleline: 3,
+          multiline: 1,
         },
       ],
     },
   },
-  pluginJs.configs.recommended,
-  ...pluginVue.configs['flat/essential'],
+
   eslintConfigPrettier,
 ]
