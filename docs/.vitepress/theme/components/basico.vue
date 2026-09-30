@@ -1,7 +1,7 @@
 <script setup>
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 import { useDatosApi } from '../composables/usarDatosApi'
-const { datos, pending, error, consultarDatos } = useDatosApi(
+const { /*datos, pending, error,*/ consultarDatos } = useDatosApi(
   '/data/flujo-residuios-solidos-urbanos-cdmx.json',
 )
 

@@ -34,7 +34,7 @@ export function useDatosApi(endPoint) {
       // console.log('url', url)
 
       datos.value = await fetchJson(url)
-      console.log('datos Cargados')
+      console.warn('datos Cargados')
 
       return datos.value
     } catch (err) {

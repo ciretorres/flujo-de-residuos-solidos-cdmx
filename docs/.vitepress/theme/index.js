@@ -14,8 +14,7 @@ export default {
   // Layout,
   extends: DefaultTheme,
 
-  // async enhanceApp({ app, router, siteData }) {
-  async enhanceApp({ app }) {
+  async enhanceApp({ app /*, router, siteData*/ }) {
     // ...
     const FlujoResiduosSolidosUrbanosCDMX = await import('./../../../src/main.js')
     app.use(FlujoResiduosSolidosUrbanosCDMX.default)

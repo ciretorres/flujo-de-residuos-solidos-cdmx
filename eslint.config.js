@@ -31,7 +31,8 @@ export default [
     },
 
     rules: {
-      'no-console': 'warn',
+      // 'no-console': 'warn',
+      'no-console': ['warn', { allow: ['warn', 'error'] }],
       'no-unused-vars': 'warn',
       'vue/multi-word-component-names': 'off',
       'vue/max-attributes-per-line': [
